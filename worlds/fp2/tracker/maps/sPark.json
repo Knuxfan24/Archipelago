@@ -1,0 +1,74 @@
+﻿[
+    {
+        "name": "Shenlin Park (Image 1)",
+        "img": "images/sPark/ShenlinPark-1.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 2)",
+        "img": "images/sPark/ShenlinPark-2.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 3)",
+        "img": "images/sPark/ShenlinPark-3.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 4)",
+        "img": "images/sPark/ShenlinPark-4.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 5)",
+        "img": "images/sPark/ShenlinPark-5.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 6)",
+        "img": "images/sPark/ShenlinPark-6.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 7)",
+        "img": "images/sPark/ShenlinPark-7.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 8)",
+        "img": "images/sPark/ShenlinPark-8.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 9)",
+        "img": "images/sPark/ShenlinPark-9.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 10)",
+        "img": "images/sPark/ShenlinPark-10.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 11)",
+        "img": "images/sPark/ShenlinPark-11.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Shenlin Park (Image 12)",
+        "img": "images/sPark/ShenlinPark-12.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    }
+]

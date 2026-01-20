@@ -1,0 +1,594 @@
+[
+  {
+    "name": "Dragon Valley",
+    "sections": [
+      { "name": "Dragon Valley - Clear" },
+      { "name": "Dragon Valley - Chest 1" },
+      { "name": "Dragon Valley - Chest 2" },
+      { "name": "Dragon Valley - Chest 3" },
+      { "name": "Dragon Valley - Chest 4" },
+      { "name": "Dragon Valley - Chest 5" },
+      { "name": "Dragon Valley - Chest 6" },
+      { "name": "Drake Fly" },
+      { "name": "Keon" },
+      { "name": "Line Cutter" },
+      { "name": "Spy Turretus" },
+      { "name": "Turretus" },
+      { "name": "Proto Pincer" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 80, "y": 216 } ]
+  },
+  {
+    "name": "Shenlin Park",
+    "sections": [
+      { "name": "Shenlin Park - Clear" },
+      { "name": "Shenlin Park - Chest 1" },
+      { "name": "Shenlin Park - Chest 2" },
+      { "name": "Shenlin Park - Chest 3" },
+      { "name": "Jawdrop" },
+      { "name": "Meteor Roller" },
+      { "name": "Peller" },
+      { "name": "Pendurum" },
+      { "name": "Tower Cannon" },
+      { "name": "Traumagotcha" },
+      { "name": "Trigger Joy" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 272, "y": 216 } ]
+  },
+  {
+    "name": "Tiger Falls",
+    "sections": [
+      { "name": "Tiger Falls - Clear" },
+      { "name": "Tiger Falls - Chest 1" },
+      { "name": "Tiger Falls - Chest 2" },
+      { "name": "Tiger Falls - Chest 3" },
+      { "name": "Tiger Falls - Chest 4" },
+      { "name": "Tiger Falls - Chest 5" },
+      { "name": "Tiger Falls - Chest 6" },
+      { "name": "Beartle" },
+      { "name": "Koi Cannon" },
+      { "name": "Rosebud" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 272, "y": 51 } ]
+  },
+  {
+    "name": "Robot Graveyard",
+    "sections": [
+      { "name": "Robot Graveyard - Clear" },
+      { "name": "Robot Graveyard - Chest 1" },
+      { "name": "Robot Graveyard - Chest 2" },
+      { "name": "Spy Turretus" },
+      { "name": "Tombstone Turretus" },
+      { "name": "Turretus" },
+      { "name": "Zombie Trooper" },
+      { "name": "Monster Cube" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 460, "y": 51 } ]
+  },
+  {
+    "name": "Shade Armory",
+    "sections": [
+      { "name": "Shade Armory - Clear" },
+      { "name": "Shade Armory - Chest 1" },
+      { "name": "Shade Armory - Chest 2" },
+      { "name": "Shade Armory - Chest 3" },
+      { "name": "Rifle Trooper" },
+      { "name": "Spy Turretus" },
+      { "name": "Sword Trooper" },
+      { "name": "Troopish" },
+      { "name": "Zombie Trooper" },
+      { "name": "Syntax Spider" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 651, "y": 51 } ]
+  },
+  {
+    "name": "Snowfields",
+    "sections": [
+      { "name": "Snowfields - Clear" },
+      { "name": "Serpentine" },
+      { "name": "Wolf Armour" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 841, "y": 51 } ]
+  },
+  {
+    "name": "Avian Musuem",
+    "sections": [
+      { "name": "Avian Musuem - Clear" },
+      { "name": "Avian Musuem - Chest 1" },
+      { "name": "Avian Musuem - Chest 2" },
+      { "name": "Avian Musuem - Chest 3" },
+      { "name": "Blast Cone" },
+      { "name": "Cocoon" },
+      { "name": "Flamingo" },
+      { "name": "Macer" },
+      { "name": "Torcher" },
+      { "name": "Wood Hopper" },
+      { "name": "Drake Cocoon" },
+      { "name": "Kakugan" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 460, "y": 216 } ]
+  },
+  {
+    "name": "Airship Sigwada",
+    "sections": [
+      { "name": "Airship Sigwada - Clear" },
+      { "name": "Airship Sigwada - Chest 1" },
+      { "name": "Airship Sigwada - Chest 2" },
+      { "name": "Airship Sigwada - Chest 3" },
+      { "name": "Flash Mouth" },
+      { "name": "Girder" },
+      { "name": "Mantis" },
+      { "name": "Macer" },
+      { "name": "Trigger Lancer" },
+      { "name": "Corazon" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 651, "y": 216 } ]
+  },
+  {
+    "name": "Phoenix Highway",
+    "sections": [
+      { "name": "Phoenix Highway - Clear" },
+      { "name": "Phoenix Highway - Chest 1" },
+      { "name": "Phoenix Highway - Chest 2" },
+      { "name": "Phoenix Highway - Chest 3" },
+      { "name": "Phoenix Highway - Chest 4" },
+      { "name": "Bubblorbiter" },
+      { "name": "Burro" },
+      { "name": "Crowitzer" },
+      { "name": "Stahp" },
+      { "name": "Discord" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 272, "y": 383 } ]
+  },
+  {
+    "name": "Zao Land",
+    "sections": [
+      { "name": "Zao Land - Clear" },
+      { "name": "Zao Land - Chest 1" },
+      { "name": "Zao Land - Chest 2" },
+      { "name": "Zao Land - Chest 3" },
+      { "name": "Zao Land - Chest 4" },
+      { "name": "Zao Land - Chest 5" },
+      { "name": "Fire Hopper" },
+      { "name": "Flying Saucer" },
+      { "name": "Folding Snake" },
+      { "name": "Softballer" },
+      { "name": "Toy Decoy" },
+      { "name": "Herald" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 460, "y": 383 } ]
+  },
+  {
+    "name": "The Battlesphere",
+    "sections": [
+      { "name": "Beginner's Gauntlet" },
+      { "name": "Battlebot Battle Royale" },
+      { "name": "Hero Battle Royale" },
+      { "name": "Kalaw's Challenge" },
+      { "name": "Army of One" },
+      { "name": "Ring-Out Challenge" },
+      { "name": "Flip Fire Gauntlet" },
+      { "name": "Vanishing Maze" },
+      { "name": "Mondo Condo" },
+      { "name": "Birds of Prey" },
+      { "name": "Battlebot Revenge" },
+      { "name": "Mach Speed Melee" },
+      { "name": "Galactic Rumble" },
+      { "name": "Stop and Go" },
+      { "name": "Mecha Madness" },
+      { "name": "Rolling Thunder" },
+      { "name": "Blast from the Past" },
+      { "name": "Bubble Battle" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 651, "y": 383 } ]
+  },
+  {
+    "name": "The Battlesphere (Enemies)",
+    "sections": [
+      { "name": "Blast Cone" },
+      { "name": "Bonecrawler" },
+      { "name": "Bonespitter" },
+      { "name": "Boom Beth" },
+      { "name": "Bubblorbiter" },
+      { "name": "Cocoon" },
+      { "name": "Crowitzer" },
+      { "name": "Drake Fly" },
+      { "name": "Droplet Ship" },
+      { "name": "Flamingo" },
+      { "name": "Flash Mouth" },
+      { "name": "Flying Saucer" },
+      { "name": "Folding Snake" },
+      { "name": "Gat Hog" },
+      { "name": "Girder" },
+      { "name": "Hellpo" },
+      { "name": "Iris" },
+      { "name": "Jawdrop" },
+      { "name": "Keon" },
+      { "name": "Line Cutter" },
+      { "name": "Macer" },
+      { "name": "Mantis" },
+      { "name": "Meteor Roller" },
+      { "name": "Pendurum" },
+      { "name": "Pogo Snail" },
+      { "name": "Prawn" },
+      { "name": "Rifle Trooper" },
+      { "name": "Saw Shrimp" },
+      { "name": "Sentinel" },
+      { "name": "Spy Turretus" },
+      { "name": "Stahp" },
+      { "name": "Sword Trooper" },
+      { "name": "Tombstone Turretus" },
+      { "name": "Toy Decoy" },
+      { "name": "Traumagotcha" },
+      { "name": "Turretus" },
+      { "name": "Zombie Trooper" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 611, "y": 484 } ]
+  },
+  {
+    "name": "The Battlesphere (Bosses)",
+    "sections": [
+      { "name": "Acrabelle" },
+      { "name": "Carol" },
+      { "name": "Drake Cocoon" },
+      { "name": "Herald" },
+      { "name": "Kakugan" },
+      { "name": "Lemon Bread" },
+      { "name": "Lilac" },
+      { "name": "Milla" },
+      { "name": "Monster Cube" },
+      { "name": "Neera" },
+      { "name": "Rosebud" },
+      { "name": "Syntax Spider" },
+      { "name": "Trigger Joy" },
+      { "name": "Trigger Lancer" },
+      { "name": "Weather Face" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 691, "y": 484 } ]
+  },
+  {
+    "name": "Globe Opera 1",
+    "sections": [
+      { "name": "Globe Opera 1 - Clear" },
+      { "name": "Globe Opera 1 - Chest 1" },
+      { "name": "Globe Opera 1 - Chest 2" },
+      { "name": "Globe Opera 1 - Chest 3" },
+      { "name": "Globe Opera 1 - Chest 4" },
+      { "name": "Globe Opera 1 - Chest 5" },
+      { "name": "Blast Cone" },
+      { "name": "Boom Beth" },
+      { "name": "Cocoon" },
+      { "name": "Crowitzer" },
+      { "name": "Girder" },
+      { "name": "Koi Cannon" },
+      { "name": "Macer" },
+      { "name": "Meteor Roller" },
+      { "name": "Beast One" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 841, "y": 216 } ]
+  },
+  {
+    "name": "Globe Opera 2",
+    "sections": [
+      { "name": "Globe Opera 2 - Clear" },
+      { "name": "Globe Opera 2 - Chest 1" },
+      { "name": "Globe Opera 2 - Chest 2" },
+      { "name": "Globe Opera 2 - Chest 3" },
+      { "name": "Boom Beth" },
+      { "name": "Cocoon" },
+      { "name": "Fire Hopper" },
+      { "name": "Flash Mouth" },
+      { "name": "Flying Saucer" },
+      { "name": "Jawdrop" },
+      { "name": "Macer" },
+      { "name": "Mantis" },
+      { "name": "Pendurum" },
+      { "name": "Pogo Snail" },
+      { "name": "Softballer" },
+      { "name": "Stahp" },
+      { "name": "Beast Two" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1031, "y": 216 } ]
+  },
+  {
+    "name": "Auditorium",
+    "sections": [
+      { "name": "Auditorium - Clear" },
+      { "name": "Beast Three" },
+      { "name": "BFF2000" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1221, "y": 216 } ]
+  },
+  {
+    "name": "Palace Courtyard",
+    "sections": [
+      { "name": "Palace Courtyard - Clear" },
+      { "name": "Palace Courtyard - Chest" },
+      { "name": "Aqua Trooper" },
+      { "name": "Droplet Ship" },
+      { "name": "Hijacked Police Car" },
+      { "name": "Hot Plate" },
+      { "name": "Duality" },
+      { "name": "Carol" },
+      { "name": "General Gong" },
+      { "name": "Lilac" },
+      { "name": "Milla" },
+      { "name": "Neera" },
+      { "name": "Merga" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1411, "y": 216 } ]
+  },
+  {
+    "name": "Tidal Gate",
+    "sections": [
+      { "name": "Tidal Gate - Clear" },
+      { "name": "Tidal Gate - Chest 1" },
+      { "name": "Tidal Gate - Chest 2" },
+      { "name": "Tidal Gate - Chest 3" },
+      { "name": "Tidal Gate - Chest 4" },
+      { "name": "Tidal Gate - Chest 5" },
+      { "name": "Tidal Gate - Chest 6" },
+      { "name": "Tidal Gate - Chest 7" },
+      { "name": "Tidal Gate - Chest 8" },
+      { "name": "Beartle" },
+      { "name": "Crustaceon" },
+      { "name": "Manpowa" },
+      { "name": "Saw Shrimp" },
+      { "name": "Torcher" },
+      { "name": "Water Hopper" },
+      { "name": "Shell Growth" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1601, "y": 216 } ]
+  },
+  {
+    "name": "Sky Bridge",
+    "sections": [
+      { "name": "Sky Bridge - Clear" },
+      { "name": "Sky Bridge - Chest 1" },
+      { "name": "Sky Bridge - Chest 2" },
+      { "name": "Sky Bridge - Chest 3" },
+      { "name": "Droplet Ship" },
+      { "name": "Durugin" },
+      { "name": "Flying Saucer" },
+      { "name": "Shockula" },
+      { "name": "Stahp" },
+      { "name": "Weather Face" },
+      { "name": "Captain Kalaw" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1792, "y": 51 } ]
+  },
+  {
+    "name": "Lightning Tower",
+    "sections": [
+      { "name": "Lightning Tower - Clear" },
+      { "name": "Lightning Tower - Chest 1" },
+      { "name": "Lightning Tower - Chest 2" },
+      { "name": "Boom Beth" },
+      { "name": "Dart Hog" },
+      { "name": "Peller" },
+      { "name": "Drake Cocoon" },
+      { "name": "Storm Slider" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1982, "y": 51 } ]
+  },
+  {
+    "name": "Zulon Jungle",
+    "sections": [
+      { "name": "Zulon Jungle - Clear" },
+      { "name": "Zulon Jungle - Chest 1" },
+      { "name": "Zulon Jungle - Chest 2" },
+      { "name": "Zulon Jungle - Chest 3" },
+      { "name": "Aqua Trooper" },
+      { "name": "Dino Walker" },
+      { "name": "Drake Fly" },
+      { "name": "Droplet Ship" },
+      { "name": "Flamingo" },
+      { "name": "Rifle Trooper" },
+      { "name": "Sword Trooper" },
+      { "name": "Traumagotcha" },
+      { "name": "Troopish" },
+      { "name": "Monster Cube" },
+      { "name": "Tunnel Driver" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1792, "y": 216 } ]
+  },
+  {
+    "name": "Nalao Lake",
+    "sections": [
+      { "name": "Nalao Lake - Clear" },
+      { "name": "Nalao Lake - Chest 1" },
+      { "name": "Nalao Lake - Chest 2" },
+      { "name": "Nalao Lake - Chest 3" },
+      { "name": "Corrupted Aqua Trooper" },
+      { "name": "Corrupted Dino Walker" },
+      { "name": "Corrupted Drake Fly" },
+      { "name": "Corrupted Flamingo" },
+      { "name": "Corrupted Traumagotcha" },
+      { "name": "Zombie Trooper" },
+      { "name": "Monster Cube" },
+      { "name": "Titan Armor" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1982, "y": 216 } ]
+  },
+  {
+    "name": "Ancestral Forge",
+    "sections": [
+      { "name": "Ancestral Forge - Clear" },
+      { "name": "Ancestral Forge - Chest 1" },
+      { "name": "Ancestral Forge - Chest 2" },
+      { "name": "Ancestral Forge - Chest 3" },
+      { "name": "Ancestral Forge - Chest 4" },
+      { "name": "Ancestral Forge - Chest 5" },
+      { "name": "Ancestral Forge - Chest 6" },
+      { "name": "Ancestral Forge - Chest 7" },
+      { "name": "Bonecrawler" },
+      { "name": "Bonespitter" },
+      { "name": "Iris" },
+      { "name": "Line Cutter" },
+      { "name": "Prawn" },
+      { "name": "Sentinel" },
+      { "name": "Gnawsa Lock" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1601, "y": 383 } ]
+  },
+  {
+    "name": "Magma Starscape",
+    "sections": [
+      { "name": "Magma Starscape - Clear" },
+      { "name": "Magma Starscape - Chest 1" },
+      { "name": "Magma Starscape - Chest 2" },
+      { "name": "Magma Starscape - Chest 3" },
+      { "name": "Burro" },
+      { "name": "Durugin" },
+      { "name": "Hot Plate" },
+      { "name": "Hundred Drillion" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1792, "y": 383 } ]
+  },
+  {
+    "name": "Diamond Point",
+    "sections": [
+      { "name": "Diamond Point - Clear" },
+      { "name": "Askal" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 1982, "y": 383 } ]
+  },
+  {
+    "name": "Gravity Bubble",
+    "sections": [
+      { "name": "Gravity Bubble - Clear" },
+      { "name": "Gravity Bubble - Chest 1" },
+      { "name": "Gravity Bubble - Chest 2" },
+      { "name": "Bubblorbiter" },
+      { "name": "Cocoon" },
+      { "name": "Crustaceon" },
+      { "name": "Folding Snake" },
+      { "name": "Manpowa" },
+      { "name": "Raytracker" },
+      { "name": "Tower Cannon" },
+      { "name": "Water Hopper" },
+      { "name": "Rosebud" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 2172, "y": 216 } ]
+  },
+  {
+    "name": "Bakunawa Chase",
+    "sections": [
+      { "name": "Bakunawa Chase - Clear" },
+      { "name": "Cow Horn" },
+      { "name": "Prawn To Be Wild" },
+      { "name": "Sword Wing" },
+      { "name": "Crabulon" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 2362, "y": 216 } ]
+  },
+  {
+    "name": "Bakunawa Rush",
+    "sections": [
+      { "name": "Bakunawa Rush - Clear" },
+      { "name": "Bakunawa Rush - Chest 1" },
+      { "name": "Bakunawa Rush - Chest 2" },
+      { "name": "Dino Walker" },
+      { "name": "Sentinel" },
+      { "name": "Stahp" },
+      { "name": "Traumagotcha" },
+      { "name": "Discord" },
+      { "name": "Herald" },
+      { "name": "Proto Pincer" },
+      { "name": "Rail Driver" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 2553, "y": 216 } ]
+  },
+  {
+    "name": "Refinery Room",
+    "sections": [
+      { "name": "Refinery Room - Clear" },
+      { "name": "Astral Golmech (Aaa)" },
+      { "name": "Astral Golmech (Askal)" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 2743, "y": 216 } ]
+  },
+  {
+    "name": "Clockwork Arboretum",
+    "sections": [
+      { "name": "Clockwork Arboretum - Clear" },
+      { "name": "Clockwork Arboretum - Chest" },
+      { "name": "Aqua Trooper" },
+      { "name": "Bonecrawler" },
+      { "name": "Cocoon" },
+      { "name": "Crowitzer" },
+      { "name": "Dart Hog" },
+      { "name": "Durugin" },
+      { "name": "Flash Mouth" },
+      { "name": "Hot Plate" },
+      { "name": "Iris" },
+      { "name": "Jawdrop" },
+      { "name": "Keon" },
+      { "name": "Sentinel" },
+      { "name": "Duality" },
+      { "name": "Rosebud" },
+      { "name": "Weather Face" },
+      { "name": "Corazon" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 2933, "y": 216 } ]
+  },
+  {
+    "name": "Inversion Dynamo",
+    "sections": [
+      { "name": "Inversion Dynamo - Clear" },
+      { "name": "Inversion Dynamo - Chest 1" },
+      { "name": "Inversion Dynamo - Chest 2" },
+      { "name": "Inversion Dynamo - Chest 3" },
+      { "name": "Beartle" },
+      { "name": "Corrupted Beartle" },
+      { "name": "Corrupted Flash Mouth" },
+      { "name": "Pendurum" },
+      { "name": "Corrupted Pendurum" },
+      { "name": "Corrupted Raytracker" },
+      { "name": "Rifle Trooper" },
+      { "name": "Spy Turretus" },
+      { "name": "Corrupted Spy Turretus" },
+      { "name": "Sword Trooper" },
+      { "name": "Tombstone Turretus" },
+      { "name": "Traumagotcha" },
+      { "name": "Corrupted Traumagotcha" },
+      { "name": "Turretus" },
+      { "name": "Corrupted Turretus" },
+      { "name": "Shell Growth" },
+      { "name": "Titan Armor" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 3123, "y": 216 } ]
+  },
+  {
+    "name": "Lunar Cannon",
+    "sections": [
+      { "name": "Lunar Cannon - Clear" },
+      { "name": "Lunar Cannon - Chest" },
+      { "name": "Aqua Trooper" },
+      { "name": "Droplet Ship" },
+      { "name": "Manpowa" },
+      { "name": "Shockula" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 3314, "y": 216 } ]
+  },
+  {
+    "name": "Merga",
+    "sections": [
+      { "name": "Merga - Clear" },
+      { "name": "Merga (Blue Moon)" },
+      { "name": "Merga (Blood Moon)" },
+      { "name": "Merga (Super Moon)" },
+      { "name": "Merga (Eclipse)" },
+      { "name": "Merga (Lilith)" },
+      { "name": "Merga" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 3500, "y": 216 } ]
+  },
+  {
+    "name": "Weapon's Core",
+    "sections": [
+      { "name": "Weapon's Core - Clear" }
+    ],
+    "map_locations": [ { "map": "Map", "x": 3695, "y": 216 } ]
+  }
+]

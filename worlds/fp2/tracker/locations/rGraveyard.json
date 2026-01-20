@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Robot Graveyard Chest 1",
+    "sections": [ { "name": "Robot Graveyard - Chest 1" } ],
+    "map_locations": [ { "map": "Robot Graveyard (Image 1)", "x": 2317, "y": 1174 } ]
+  },
+  {
+    "name": "Robot Graveyard Chest 2",
+    "sections": [ { "name": "Robot Graveyard - Chest 2" } ],
+    "map_locations": [ { "map": "Robot Graveyard (Image 2)", "x": 2974, "y": 649 } ]
+  },
+  {
+    "name": "Robot Graveyard Clear",
+    "sections": [
+      { "name": "Robot Graveyard - Clear" },
+      { "name": "Monster Cube" }
+    ],
+    "map_locations": [ { "map": "Robot Graveyard (Image 3)", "x": 2315, "y": 1615 } ]
+  }
+]

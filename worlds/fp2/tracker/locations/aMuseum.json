@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Avian Museum Chest 1",
+    "sections": [ { "name": "Avian Museum - Chest 1" } ],
+    "map_locations": [ { "map": "Avian Museum (Image 2)", "x": 695, "y": 933 } ]
+  },
+  {
+    "name": "Avian Museum Chest 2",
+    "sections": [ { "name": "Avian Museum - Chest 2" } ],
+    "map_locations": [ { "map": "Avian Museum (Image 2)", "x": 2246, "y": 923 } ]
+  },
+  {
+    "name": "Avian Museum Chest 3",
+    "sections": [ { "name": "Avian Museum - Chest 3" } ],
+    "map_locations": [ { "map": "Avian Museum (Image 5)", "x": 1662, "y": 1763 } ]
+  },
+  {
+    "name": "Avian Museum Clear",
+    "sections": [
+      { "name": "Avian Museum - Clear" },
+      { "name": "Kakugan" }
+    ],
+    "map_locations": [ { "map": "Avian Museum (Image 5)", "x": 3607, "y": 1475 } ]
+  }
+]

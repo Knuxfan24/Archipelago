@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Shenlin Park Chest 1",
+    "sections": [ { "name": "Shenlin Park - Chest 1" } ],
+    "map_locations": [ { "map": "Shenlin Park (Image 5)", "x": 3318, "y": 704 } ]
+  },
+  {
+    "name": "Shenlin Park Chest 2",
+    "sections": [ { "name": "Shenlin Park - Chest 2" } ],
+    "map_locations": [ { "map": "Shenlin Park (Image 7)", "x": 2623, "y": 551 } ]
+  },
+  {
+    "name": "Shenlin Park Chest 3",
+    "sections": [ { "name": "Shenlin Park - Chest 3" } ],
+    "map_locations": [ { "map": "Shenlin Park (Image 11)", "x": 1730, "y": 1376 } ]
+  },
+  {
+    "name": "Shenlin Park Clear",
+    "sections": [
+      { "name": "Shenlin Park - Clear" },
+      { "name": "Trigger Joy" }
+    ],
+    "map_locations": [ { "map": "Shenlin Park (Image 12)", "x": 3841, "y": 1320 } ]
+  }
+]

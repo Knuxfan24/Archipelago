@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Shade Armory Chest 1",
+    "sections": [ { "name": "Shade Armory - Chest 1" } ],
+    "map_locations": [ { "map": "Shade Armory (Image 1)", "x": 1663, "y": 699 } ]
+  },
+  {
+    "name": "Shade Armory Chest 2",
+    "sections": [ { "name": "Shade Armory - Chest 2" } ],
+    "map_locations": [ { "map": "Shade Armory (Image 2)", "x": 819, "y": 1787 } ]
+  },
+  {
+    "name": "Shade Armory Chest 3",
+    "sections": [ { "name": "Shade Armory - Chest 3" } ],
+    "map_locations": [ { "map": "Shade Armory (Image 2)", "x": 2425, "y": 353 } ]
+  },
+  {
+    "name": "Shade Armory Clear",
+    "sections": [
+      { "name": "Shade Armory - Clear" },
+      { "name": "Syntax Spider" }
+    ],
+    "map_locations": [ { "map": "Shade Armory (Image 2)", "x": 3090, "y": 1706 } ]
+  }
+]

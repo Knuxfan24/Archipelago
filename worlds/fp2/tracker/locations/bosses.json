@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Drake Cocoon Bosses",
+    "sections": [ { "name": "Drake Cocoon" } ],
+    "map_locations": [
+      { "map": "Avian Museum (Image 2)", "x": 1622, "y": 1005 },
+      { "map": "Avian Museum (Image 5)", "x": 648, "y": 1215 }
+    ]
+  },
+  {
+    "name": "Trigger Lancer Bosses",
+    "sections": [ { "name": "Trigger Lancer" } ],
+    "map_locations": [
+      { "map": "Airship Sigwada (Image 6)", "x": 2658, "y": 1246 }
+    ]
+  }
+]

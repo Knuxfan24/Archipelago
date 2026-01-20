@@ -1,0 +1,62 @@
+﻿[
+    {
+        "name": "Dragon Valley (Image 1)",
+        "img": "images/dValley/DragonValley-0.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Dragon Valley (Image 2)",
+        "img": "images/dValley/DragonValley-1.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Dragon Valley (Image 3)",
+        "img": "images/dValley/DragonValley-2.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Dragon Valley (Image 4)",
+        "img": "images/dValley/DragonValley-3.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Dragon Valley (Image 5)",
+        "img": "images/dValley/DragonValley-4.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Dragon Valley (Image 6)",
+        "img": "images/dValley/DragonValley-5.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Dragon Valley (Image 7)",
+        "img": "images/dValley/DragonValley-6.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Dragon Valley (Image 8)",
+        "img": "images/dValley/DragonValley-7.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Dragon Valley (Image 9)",
+        "img": "images/dValley/DragonValley-8.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Dragon Valley (Image 10)",
+        "img": "images/dValley/DragonValley-9.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    }
+]

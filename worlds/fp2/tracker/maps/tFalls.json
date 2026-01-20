@@ -1,0 +1,20 @@
+﻿[
+    {
+        "name": "Tiger Falls (Image 1)",
+        "img": "images/tFalls/TigerFalls-0.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Tiger Falls (Image 2)",
+        "img": "images/tFalls/TigerFalls-1.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Tiger Falls (Image 3)",
+        "img": "images/tFalls/TigerFalls-2.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    }
+]

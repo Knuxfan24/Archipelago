@@ -1,0 +1,208 @@
+[
+  {
+    "name": "Beginner's Gauntlet",
+    "sections": [
+      { "name": "Beginner's Gauntlet" },
+      { "name": "Gat Hog" },
+      { "name": "Hellpo" },
+      { "name": "Pogo Snail" },
+      { "name": "Saw Shrimp" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 48, "y": 119 } ]
+  },
+  {
+    "name": "Battlebot Battle Royale",
+    "sections": [
+      { "name": "Battlebot Battle Royale" },
+      { "name": "Gat Hog" },
+      { "name": "Hellpo" },
+      { "name": "Pogo Snail" },
+      { "name": "Saw Shrimp" },
+      { "name": "Turretus" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 48, "y": 383 } ]
+  },
+  {
+    "name": "Battlebot Battle Royale",
+    "sections": [
+      { "name": "Hero Battle Royale" },
+      { "name": "Carol" },
+      { "name": "Lilac" },
+      { "name": "Milla" },
+      { "name": "Neera" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 48, "y": 647 } ]
+  },
+  {
+    "name": "Kalaw's Challenge",
+    "sections": [ { "name": "Kalaw's Challenge" } ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 48, "y": 912 } ]
+  },
+  {
+    "name": "Army of One",
+    "sections": [
+      { "name": "Army of One" },
+      { "name": "Gat Hog" },
+      { "name": "Hellpo" },
+      { "name": "Pogo Snail" },
+      { "name": "Saw Shrimp" },
+      { "name": "Turretus" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 628, "y": 119 } ]
+  },
+  {
+    "name": "Ring-Out Challenge",
+    "sections": [ { "name": "Ring-Out Challenge" } ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 628, "y": 383 } ]
+  },
+  {
+    "name": "Flip Fire Gauntlet",
+    "sections": [
+      { "name": "Flip Fire Gauntlet" },
+      { "name": "Flying Saucer" },
+      { "name": "Folding Snake" },
+      { "name": "Girder" },
+      { "name": "Meteor Roller" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 628, "y": 647 } ]
+  },
+  {
+    "name": "Vanishing Maze",
+    "sections": [
+      { "name": "Vanishing Maze" },
+      { "name": "Blast Cone" },
+      { "name": "Flamingo" },
+      { "name": "Keon" },
+      { "name": "Macer" },
+      { "name": "Pendurum" },
+      { "name": "Traumagotcha" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 628, "y": 912 } ]
+  },
+  {
+    "name": "Mondo Condo",
+    "sections": [
+      { "name": "Mondo Condo" },
+      { "name": "Blast Cone" },
+      { "name": "Cocoon" },
+      { "name": "Flying Saucer" },
+      { "name": "Gat Hog" },
+      { "name": "Hellpo" },
+      { "name": "Jawdrop" },
+      { "name": "Line Cutter" },
+      { "name": "Mantis" },
+      { "name": "Drake Cocoon" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 1208, "y": 119 } ]
+  },
+  {
+    "name": "Birds of Prey",
+    "sections": [
+      { "name": "Birds of Prey" },
+      { "name": "Trigger Joy" },
+      { "name": "Trigger Lancer" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 1208, "y": 383 } ]
+  },
+  {
+    "name": "Battlebot Revenge",
+    "sections": [
+      { "name": "Battlebot Revenge" },
+      { "name": "Gat Hog" },
+      { "name": "Hellpo" },
+      { "name": "Pogo Snail" },
+      { "name": "Saw Shrimp" },
+      { "name": "Toy Decoy" },
+      { "name": "Acrabelle" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 1208, "y": 647 } ]
+  },
+  {
+    "name": "Mach Speed Melee",
+    "sections": [
+      { "name": "Mach Speed Melee" },
+      { "name": "Bubblorbiter" },
+      { "name": "Drake Fly" },
+      { "name": "Keon" },
+      { "name": "Line Cutter" },
+      { "name": "Pendurum" },
+      { "name": "Toy Decoy" },
+      { "name": "Traumagotcha" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 1208, "y": 912 } ]
+  },
+  {
+    "name": "Galactic Rumble",
+    "sections": [
+      { "name": "Galactic Rumble" },
+      { "name": "Rifle Trooper" },
+      { "name": "Sword Trooper" },
+      { "name": "Tombstone Turretus" },
+      { "name": "Zombie Trooper" },
+      { "name": "Monster Cube" },
+      { "name": "Syntax Spider" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 1788, "y": 119 } ]
+  },
+  {
+    "name": "Stop and Go",
+    "sections": [
+      { "name": "Stop and Go" },
+      { "name": "Flash Mouth" },
+      { "name": "Stahp" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 1788, "y": 383 } ]
+  },
+  {
+    "name": "Mecha Madness",
+    "sections": [
+      { "name": "Mecha Madness" },
+      { "name": "Boom Beth" },
+      { "name": "Bubblorbiter" },
+      { "name": "Drake Fly" },
+      { "name": "Droplet Ship" },
+      { "name": "Flash Mouth" },
+      { "name": "Hellpo" },
+      { "name": "Keon" },
+      { "name": "Pendurum" },
+      { "name": "Spy Turretus" },
+      { "name": "Stahp" },
+      { "name": "Herald" },
+      { "name": "Kakugan" },
+      { "name": "Monster Cube" },
+      { "name": "Rosebud" },
+      { "name": "Trigger Lancer" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 1788, "y": 647 } ]
+  },
+  {
+    "name": "Rolling Thunder",
+    "sections": [ { "name": "Rolling Thunder" } ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 1788, "y": 912 } ]
+  },
+  {
+    "name": "Blast from the Past",
+    "sections": [
+      { "name": "Blast from the Past" },
+      { "name": "Bonecrawler" },
+      { "name": "Bonespitter" },
+      { "name": "Prawn" },
+      { "name": "Weather Face" },
+      { "name": "Lemon Bread" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 2368, "y": 383 } ]
+  },
+  {
+    "name": "Bubble Battle",
+    "sections": [
+      { "name": "Bubble Battle" },
+      { "name": "Crowitzer" },
+      { "name": "Iris" },
+      { "name": "Pendurum" },
+      { "name": "Pogo Snail" },
+      { "name": "Sentinel" },
+      { "name": "Kakugan" }
+    ],
+    "map_locations": [ { "map": "Battlesphere Menu", "x": 2368, "y": 647 } ]
+  }
+]

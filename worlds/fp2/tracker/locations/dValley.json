@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Dragon Valley Chest 1",
+    "sections": [ { "name": "Dragon Valley - Chest 1" } ],
+    "map_locations": [ { "map": "Dragon Valley (Image 2)", "x": 3630, "y": 623 } ]
+  },
+  {
+    "name": "Dragon Valley Chest 2",
+    "sections": [ { "name": "Dragon Valley - Chest 2" } ],
+    "map_locations": [ { "map": "Dragon Valley (Image 3)", "x": 2797, "y": 283 } ]
+  },
+  {
+    "name": "Dragon Valley Chest 3",
+    "sections": [ { "name": "Dragon Valley - Chest 3" } ],
+    "map_locations": [ { "map": "Dragon Valley (Image 5)", "x": 2339, "y": 469 } ]
+  },
+  {
+    "name": "Dragon Valley Chest 4",
+    "sections": [ { "name": "Dragon Valley - Chest 4" } ],
+    "map_locations": [ { "map": "Dragon Valley (Image 6)", "x": 983, "y": 1280 } ]
+  },
+  {
+    "name": "Dragon Valley Chest 5",
+    "sections": [ { "name": "Dragon Valley - Chest 5" } ],
+    "map_locations": [ { "map": "Dragon Valley (Image 8)", "x": 396, "y": 1299 } ]
+  },
+  {
+    "name": "Dragon Valley Chest 6",
+    "sections": [ { "name": "Dragon Valley - Chest 6" } ],
+    "map_locations": [ { "map": "Dragon Valley (Image 10)", "x": 263, "y": 1151 } ]
+  },
+  {
+    "name": "Dragon Valley Clear",
+    "sections": [
+      { "name": "Dragon Valley - Clear" },
+      { "name": "Proto Pincer" }
+    ],
+    "map_locations": [ { "map": "Dragon Valley (Image 10)", "x": 1583, "y": 528 } ]
+  }
+]

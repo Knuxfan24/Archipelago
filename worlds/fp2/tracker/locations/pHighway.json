@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Phoenix Highway Chest 1",
+    "sections": [ { "name": "Phoenix Highway - Chest 1" } ],
+    "map_locations": [ { "map": "Phoenix Highway (Image 6)", "x": 2699, "y": 664 } ]
+  },
+  {
+    "name": "Phoenix Highway Chest 2",
+    "sections": [ { "name": "Phoenix Highway - Chest 2" } ],
+    "map_locations": [ { "map": "Phoenix Highway (Image 8)", "x": 316, "y": 786 } ]
+  },
+  {
+    "name": "Phoenix Highway Chest 3",
+    "sections": [ { "name": "Phoenix Highway - Chest 3" } ],
+    "map_locations": [ { "map": "Phoenix Highway (Image 8)", "x": 316, "y": 1089 } ]
+  },
+  {
+    "name": "Phoenix Highway Chest 4",
+    "sections": [ { "name": "Phoenix Highway - Chest 4" } ],
+    "map_locations": [ { "map": "Phoenix Highway (Image 8)", "x": 316, "y": 1393 } ]
+  },
+  {
+    "name": "Phoenix Highway Clear",
+    "sections": [
+      { "name": "Phoenix Highway - Clear" },
+      { "name": "Discord" }
+    ],
+    "map_locations": [ { "map": "Phoenix Highway (Image 10)", "x": 1549, "y": 1935 } ]
+  }
+]

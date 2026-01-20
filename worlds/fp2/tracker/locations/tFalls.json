@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Tiger Falls Chest 1",
+    "sections": [ { "name": "Tiger Falls - Chest 1" } ],
+    "map_locations": [ { "map": "Tiger Falls (Image 1)", "x": 1089, "y": 1412 } ]
+  },
+  {
+    "name": "Tiger Falls Chest 2",
+    "sections": [ { "name": "Tiger Falls - Chest 2" } ],
+    "map_locations": [ { "map": "Tiger Falls (Image 1)", "x": 2161, "y": 614 } ]
+  },
+  {
+    "name": "Tiger Falls Chest 3",
+    "sections": [ { "name": "Tiger Falls - Chest 3" } ],
+    "map_locations": [ { "map": "Tiger Falls (Image 2)", "x": 691, "y": 1270 } ]
+  },
+  {
+    "name": "Tiger Falls Chest 4",
+    "sections": [ { "name": "Tiger Falls - Chest 4" } ],
+    "map_locations": [ { "map": "Tiger Falls (Image 2)", "x": 730, "y": 1213 } ]
+  },
+  {
+    "name": "Tiger Falls Chest 5",
+    "sections": [ { "name": "Tiger Falls - Chest 5" } ],
+    "map_locations": [ { "map": "Tiger Falls (Image 3)", "x": 1453, "y": 1550 } ]
+  },
+  {
+    "name": "Tiger Falls Chest 6",
+    "sections": [ { "name": "Tiger Falls - Chest 6" } ],
+    "map_locations": [ { "map": "Tiger Falls (Image 3)", "x": 3340, "y": 820 } ]
+  },
+  {
+    "name": "Tiger Falls Clear",
+    "sections": [
+      { "name": "Tiger Falls - Clear" },
+      { "name": "Rosebud" }
+    ],
+    "map_locations": [ { "map": "Tiger Falls (Image 3)", "x": 4493, "y": 542 } ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Airship Sigwada Chest 1",
+    "sections": [ { "name": "Airship Sigwada - Chest 1" } ],
+    "map_locations": [ { "map": "Airship Sigwada (Image 3)", "x": 526, "y": 113 } ]
+  },
+  {
+    "name": "Airship Sigwada Chest 2",
+    "sections": [ { "name": "Airship Sigwada - Chest 2" } ],
+    "map_locations": [ { "map": "Airship Sigwada (Image 6)", "x": 176, "y": 945 } ]
+  },
+  {
+    "name": "Airship Sigwada Chest 3",
+    "sections": [ { "name": "Airship Sigwada - Chest 3" } ],
+    "map_locations": [ { "map": "Airship Sigwada (Image 6)", "x": 329, "y": 1427 } ]
+  },
+  {
+    "name": "Airship Sigwada Clear",
+    "sections": [
+      { "name": "Airship Sigwada - Clear" },
+      { "name": "Corazon" }
+    ],
+    "map_locations": [ { "map": "Airship Sigwada (Image 6)", "x": 2478, "y": 689 } ]
+  }
+]

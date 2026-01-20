@@ -1,0 +1,38 @@
+﻿[
+    {
+        "name": "Airship Sigwada (Image 1)",
+        "img": "images/aSigwada/AirshipSigwada-0.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Airship Sigwada (Image 2)",
+        "img": "images/aSigwada/AirshipSigwada-1.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Airship Sigwada (Image 3)",
+        "img": "images/aSigwada/AirshipSigwada-2.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Airship Sigwada (Image 4)",
+        "img": "images/aSigwada/AirshipSigwada-3.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Airship Sigwada (Image 5)",
+        "img": "images/aSigwada/AirshipSigwada-4.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Airship Sigwada (Image 6)",
+        "img": "images/aSigwada/AirshipSigwada-5.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    }
+]

@@ -1,0 +1,32 @@
+﻿[
+    {
+        "name": "Avian Museum (Image 1)",
+        "img": "images/aMuseum/AvianMuseum-0.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Avian Museum (Image 2)",
+        "img": "images/aMuseum/AvianMuseum-1.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Avian Museum (Image 3)",
+        "img": "images/aMuseum/AvianMuseum-2.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Avian Museum (Image 4)",
+        "img": "images/aMuseum/AvianMuseum-3.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Avian Museum (Image 5)",
+        "img": "images/aMuseum/AvianMuseum-4.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    }
+]

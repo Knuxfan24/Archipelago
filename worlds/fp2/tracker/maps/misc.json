@@ -1,0 +1,14 @@
+﻿[
+    {
+        "name": "Map",
+        "img": "images/map.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    },
+    {
+        "name": "Battlesphere Menu",
+        "img": "images/battlesphereList.png",
+        "location_size": 40,
+        "location_border_thickness": 5
+    }
+]
