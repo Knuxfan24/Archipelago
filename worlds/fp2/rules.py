@@ -506,7 +506,6 @@ def set_all_location_rules(world: FP2World) -> None:
         
         set_rule(macer, requiresBattlesphereChallenge(8))
         add_rule(macer, aMuseum, "or")
-        add_rule(macer, gOpera1, "or")
         add_rule(macer, gOpera2, "or")
         
         set_rule(manpowa, tGate)
