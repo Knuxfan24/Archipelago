@@ -39,7 +39,7 @@ class FP2World(World):
 
     def fill_slot_data(self) -> Mapping[str, Any]:
         return self.options.as_dict(
-            "death_link", "ring_link", "trap_link", "chest_tracer_items", "chapters", "shop_information", "trap_stones", "fast_weapons_core", "dangerous_time_limit", "chest_tracers", "chests", "chest_tracer_strict", "enemies", "bosses", "milla_shop", "milla_shop_price", "milla_shop_amount", "vinyl_shop", "vinyl_shop_price", "vinyl_shop_amount"
+            "death_link", "ring_link", "trap_link", "chest_tracer_items", "chapters", "shop_information", "trap_stones", "fast_weapons_core", "dangerous_time_limit", "chest_tracers", "chests", "chest_tracer_strict", "enemies", "bosses", "milla_shop", "milla_shop_price", "milla_shop_amount", "vinyl_shop", "vinyl_shop_price", "vinyl_shop_amount", "item_boxes"
         )
     
     # TODO: Maybe make look up tables of some sort for the maps that are just left to right rather than just jamming a load of if statements together?

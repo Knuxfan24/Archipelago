@@ -86,7 +86,7 @@
     "sections": [
       { "name": "Snowfields - Clear" },
       { "name": "Serpentine" },
-      { "name": "Wolf Armour" }
+      { "name": "Wolf Armor" }
     ],
     "map_locations": [ { "map": "Map", "x": 841, "y": 51 } ]
   },

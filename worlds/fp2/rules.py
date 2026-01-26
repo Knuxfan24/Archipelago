@@ -217,6 +217,59 @@ def set_all_location_rules(world: FP2World) -> None:
         add_rule(world.get_location("Nalao Lake - Chest 2"), lambda state: state.has(world.glitches_item_name, world.player), "or")
         add_rule(world.get_location("Nalao Lake - Chest 3"), lambda state: state.has(world.glitches_item_name, world.player), "or")
         
+    # Add the Battlesphere Key requirements for the Item Boxes.
+    if world.options.item_boxes:
+        if world.options.item_boxes_crystals:
+            set_rule(world.get_location("Beginner's Gauntlet - Crystal Box 1"), lambda state: state.has("Battlesphere Key", world.player, 1))
+            set_rule(world.get_location("Beginner's Gauntlet - Crystal Box 2"), lambda state: state.has("Battlesphere Key", world.player, 1))
+            set_rule(world.get_location("Beginner's Gauntlet - Crystal Box 3"), lambda state: state.has("Battlesphere Key", world.player, 1))
+            set_rule(world.get_location("Flip Fire Gauntlet - Crystal Box 1"), lambda state: state.has("Battlesphere Key", world.player, 7))
+            set_rule(world.get_location("Flip Fire Gauntlet - Crystal Box 2"), lambda state: state.has("Battlesphere Key", world.player, 7))
+            set_rule(world.get_location("Stop and Go - Crystal Box 1"), lambda state: state.has("Battlesphere Key", world.player, 14))
+            set_rule(world.get_location("Stop and Go - Crystal Box 2"), lambda state: state.has("Battlesphere Key", world.player, 14))
+            set_rule(world.get_location("Stop and Go - Crystal Box 3"), lambda state: state.has("Battlesphere Key", world.player, 14))
+            set_rule(world.get_location("Mach Speed Melee - Crystal Box 1"), lambda state: state.has("Battlesphere Key", world.player, 12))
+            set_rule(world.get_location("Mach Speed Melee - Crystal Box 2"), lambda state: state.has("Battlesphere Key", world.player, 12))
+            set_rule(world.get_location("Mach Speed Melee - Crystal Box 3"), lambda state: state.has("Battlesphere Key", world.player, 12))
+            set_rule(world.get_location("Mach Speed Melee - Crystal Box 4"), lambda state: state.has("Battlesphere Key", world.player, 12))
+            set_rule(world.get_location("Mach Speed Melee - Crystal Box 5"), lambda state: state.has("Battlesphere Key", world.player, 12))
+            set_rule(world.get_location("Rolling Thunder - Crystal Box 1"), lambda state: state.has("Battlesphere Key", world.player, 16))
+            set_rule(world.get_location("Rolling Thunder - Crystal Box 2"), lambda state: state.has("Battlesphere Key", world.player, 16))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 1"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 2"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 3"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 4"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 5"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 6"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 7"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 8"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 9"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Mondo Condo - Crystal Box 10"), lambda state: state.has("Battlesphere Key", world.player, 9))
+            set_rule(world.get_location("Vanishing Maze - Crystal Box 1"), lambda state: state.has("Battlesphere Key", world.player, 8))
+            set_rule(world.get_location("Vanishing Maze - Crystal Box 2"), lambda state: state.has("Battlesphere Key", world.player, 8))
+            set_rule(world.get_location("Vanishing Maze - Crystal Box 3"), lambda state: state.has("Battlesphere Key", world.player, 8))
+            set_rule(world.get_location("Vanishing Maze - Crystal Box 4"), lambda state: state.has("Battlesphere Key", world.player, 8))
+            set_rule(world.get_location("Vanishing Maze - Crystal Box 5"), lambda state: state.has("Battlesphere Key", world.player, 8))
+         
+        if world.options.item_boxes_petals:
+            set_rule(world.get_location("Stop and Go - Petal Box"), lambda state: state.has("Battlesphere Key", world.player, 14))
+            set_rule(world.get_location("Mach Speed Melee - Petal Box"), lambda state: state.has("Battlesphere Key", world.player, 12))
+            set_rule(world.get_location("Vanishing Maze - Petal Box 1"), lambda state: state.has("Battlesphere Key", world.player, 8))
+            set_rule(world.get_location("Vanishing Maze - Petal Box 2"), lambda state: state.has("Battlesphere Key", world.player, 8))
+            set_rule(world.get_location("Battlebot Battle Royale - Petal Box"), lambda state: state.has("Battlesphere Key", world.player, 2))
+            
+        if world.options.item_boxes_shields:
+            set_rule(world.get_location("Beginner's Gauntlet - Metal Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 1))
+            set_rule(world.get_location("Beginner's Gauntlet - Wood Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 1))
+            set_rule(world.get_location("Beginner's Gauntlet - Petal Box"), lambda state: state.has("Battlesphere Key", world.player, 1))
+            set_rule(world.get_location("Flip Fire Gauntlet - Fire Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 7))
+            set_rule(world.get_location("Vanishing Maze - Metal Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 8))
+            set_rule(world.get_location("Vanishing Maze - Wood Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 8))
+            set_rule(world.get_location("Mecha Madness - Wood Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 15))
+            set_rule(world.get_location("Mecha Madness - Fire Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 15))
+            
+            
+        
     # Set the Star Card requirements for the two shops if they're enabled. 
     def set_shop_rules(shopName):       
         # Get the locations for this shop. 
@@ -668,7 +721,7 @@ def set_all_location_rules(world: FP2World) -> None:
         tLancer = world.get_location("Trigger Lancer")
         tDriver = world.get_location("Tunnel Driver")
         wFace = world.get_location("Weather Face")
-        wArmour = world.get_location("Wolf Armour")  
+        wArmor = world.get_location("Wolf Armor")  
         
         # Set each boss's access rules.
         set_rule(acrabelle, requiresBattlesphereChallenge(11))
@@ -784,7 +837,7 @@ def set_all_location_rules(world: FP2World) -> None:
         add_rule(wFace, sBridge, "or")
         add_rule(wFace, cArboretum, "or")
         
-        set_rule(wArmour, snowfields)
+        set_rule(wArmor, snowfields)
         
 def set_completion_condition(world: FP2World) -> None:
     world.multiworld.completion_condition[world.player] = lambda state: state.has("Cordelia's Final Entry", world.player)

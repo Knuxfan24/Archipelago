@@ -96,6 +96,26 @@ class EnemySanity(DefaultOnToggle):
 class BossSanity(DefaultOnToggle):
     """Makes killing each boss type into checks, adding 44 locations."""
     display_name = "Boss Sanity"
+    
+class ItemBoxSanity(Toggle):
+    """Adds the various item boxes found in stages to the location pool."""
+    display_name = "Item Box Sanity"
+    
+class ItemBoxCrystal(DefaultOnToggle):
+    """Include Crystal Item Boxes in the Item Box Sanity."""
+    display_name = "Item Box Sanity (Crystals)"
+    
+class ItemBoxPetal(DefaultOnToggle):
+    """Include Petal Item Boxes in the Item Box Sanity."""
+    display_name = "Item Box Sanity (Petals)"
+    
+class ItemBoxShield(DefaultOnToggle):
+    """Include Shield Item Boxes in the Item Box Sanity."""
+    display_name = "Item Box Sanity (Shields)"
+    
+class ItemBoxGoldGem(DefaultOnToggle):
+    """Include Gold Gem Item Boxes in the Item Box Sanity."""
+    display_name = "Item Box Sanity (Gold Gem)"
 
 class ExtraItems(DefaultOnToggle):
     """Adds the unused extra item/potion slots to the item pool."""
@@ -211,7 +231,7 @@ option_groups = [
     ),
     OptionGroup(
         "Sanity Options",
-        [EnemySanity, BossSanity],
+        [EnemySanity, BossSanity, ItemBoxSanity, ItemBoxCrystal, ItemBoxPetal, ItemBoxShield, ItemBoxGoldGem],
     ),
     OptionGroup(
         "Trap Options",
@@ -241,6 +261,11 @@ class FP2Options(PerGameCommonOptions):
     shop_information: ShopInfo
     enemies: EnemySanity
     bosses: BossSanity
+    item_boxes: ItemBoxSanity
+    item_boxes_crystals: ItemBoxCrystal
+    item_boxes_petals: ItemBoxPetal
+    item_boxes_shields: ItemBoxShield
+    item_boxes_goldgems: ItemBoxGoldGem
     extra_items: ExtraItems
     trap_stones: TrapBraveStones
     dangerous_time_limit: DangerousTimeLimit

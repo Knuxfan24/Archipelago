@@ -12,6 +12,7 @@ if TYPE_CHECKING:
 # - Bosses
 # - Milla's Shop
 # - Vinyl Shop
+# - Item Boxes
 LOCATION_NAME_TO_ID = {
     "Dragon Valley - Clear": 1,
     "Shenlin Park - Clear": 2,
@@ -52,15 +53,15 @@ LOCATION_NAME_TO_ID = {
     "Flip Fire Gauntlet": 37,
     "Vanishing Maze": 38,
     "Mondo Condo": 39,
-    "Birds of Prey": 40,
-    "Battlebot Revenge": 41,
-    "Mach Speed Melee": 42,
-    "Galactic Rumble": 43,
-    "Stop and Go": 44,
-    "Mecha Madness": 45,
-    "Rolling Thunder": 46,
-    "Blast from the Past": 47,
-    "Bubble Battle": 48,
+    "Birds of Prey": 80,
+    "Battlebot Revenge": 81,
+    "Mach Speed Melee": 82,
+    "Galactic Rumble": 83,
+    "Stop and Go": 84,
+    "Mecha Madness": 85,
+    "Rolling Thunder": 86,
+    "Blast from the Past": 87,
+    "Bubble Battle": 88,
     
     "Dragon Valley - Chest 1": 101,
     "Dragon Valley - Chest 2": 102,
@@ -145,123 +146,123 @@ LOCATION_NAME_TO_ID = {
     "Inversion Dynamo - Chest 3": 181,
     "Lunar Cannon - Chest": 182,
     
-    "Aqua Trooper": 401,
-    "Corrupted Aqua Trooper": 402,
-    "Beartle": 403,
-    "Corrupted Beartle": 404,
-    "Blast Cone": 405,
-    "Bonecrawler": 406,
-    "Bonespitter": 407,
-    "Boom Beth": 408,
-    "Bubblorbiter": 409,
-    "Burro": 410,
-    "Cocoon": 411,
-    "Cow Horn": 412,
-    "Crowitzer": 413,
-    "Crustaceon": 414,
-    "Dart Hog": 415,
-    "Dino Walker": 416,
-    "Corrupted Dino Walker": 417,
-    "Drake Fly": 418,
-    "Corrupted Drake Fly": 419,
-    "Droplet Ship": 420,
-    "Durugin": 421,
-    "Fire Hopper": 422,
-    "Flamingo": 423,
-    "Corrupted Flamingo": 424,
-    "Flash Mouth": 425,
-    "Corrupted Flash Mouth": 426,
-    "Flying Saucer": 427,
-    "Folding Snake": 428,
-    "Gat Hog": 429,
-    "Girder": 430,
-    "Hellpo": 431,
-    "Hijacked Police Car": 432,
-    "Hot Plate": 433,
-    "Iris": 434,
-    "Jawdrop": 435,
-    "Keon": 436,
-    "Koi Cannon": 437,
-    "Line Cutter": 438,
-    "Macer": 439,
-    "Manpowa": 440,
-    "Mantis": 441,
-    "Meteor Roller": 442,
-    "Peller": 443,
-    "Pendurum": 444,
-    "Corrupted Pendurum": 445,
-    "Pogo Snail": 446,
-    "Prawn": 447,
-    "Prawn To Be Wild": 448,
-    "Raytracker": 449,
-    "Corrupted Raytracker": 450,
-    "Rifle Trooper": 451,
-    "Saw Shrimp": 452,
-    "Sentinel": 453,
-    "Shockula": 454,
-    "Softballer": 455,
-    "Spy Turretus": 456,
-    "Corrupted Spy Turretus": 457,
-    "Stahp": 458,
-    "Sword Trooper": 459,
-    "Sword Wing": 460,
-    "Tombstone Turretus": 461,
-    "Torcher": 462,
-    "Tower Cannon": 463,
-    "Toy Decoy": 464,
-    "Traumagotcha": 465,
-    "Corrupted Traumagotcha": 466,
-    "Troopish": 467,
-    "Turretus": 468,
-    "Corrupted Turretus": 469,
-    "Water Hopper": 470,
-    "Wood Hopper": 471,
-    "Zombie Trooper": 472,
+    "Aqua Trooper": 201,
+    "Corrupted Aqua Trooper": 202,
+    "Beartle": 203,
+    "Corrupted Beartle": 204,
+    "Blast Cone": 205,
+    "Bonecrawler": 206,
+    "Bonespitter": 207,
+    "Boom Beth": 208,
+    "Bubblorbiter": 209,
+    "Burro": 210,
+    "Cocoon": 211,
+    "Cow Horn": 212,
+    "Crowitzer": 213,
+    "Crustaceon": 214,
+    "Dart Hog": 215,
+    "Dino Walker": 216,
+    "Corrupted Dino Walker": 217,
+    "Drake Fly": 218,
+    "Corrupted Drake Fly": 219,
+    "Droplet Ship": 220,
+    "Durugin": 221,
+    "Fire Hopper": 222,
+    "Flamingo": 223,
+    "Corrupted Flamingo": 224,
+    "Flash Mouth": 225,
+    "Corrupted Flash Mouth": 226,
+    "Flying Saucer": 227,
+    "Folding Snake": 228,
+    "Gat Hog": 229,
+    "Girder": 230,
+    "Hellpo": 231,
+    "Hijacked Police Car": 232,
+    "Hot Plate": 233,
+    "Iris": 234,
+    "Jawdrop": 235,
+    "Keon": 236,
+    "Koi Cannon": 237,
+    "Line Cutter": 238,
+    "Macer": 239,
+    "Manpowa": 240,
+    "Mantis": 241,
+    "Meteor Roller": 242,
+    "Peller": 243,
+    "Pendurum": 244,
+    "Corrupted Pendurum": 245,
+    "Pogo Snail": 246,
+    "Prawn": 247,
+    "Prawn To Be Wild": 248,
+    "Raytracker": 249,
+    "Corrupted Raytracker": 250,
+    "Rifle Trooper": 251,
+    "Saw Shrimp": 252,
+    "Sentinel": 253,
+    "Shockula": 254,
+    "Softballer": 255,
+    "Spy Turretus": 256,
+    "Corrupted Spy Turretus": 257,
+    "Stahp": 258,
+    "Sword Trooper": 259,
+    "Sword Wing": 260,
+    "Tombstone Turretus": 261,
+    "Torcher": 262,
+    "Tower Cannon": 263,
+    "Toy Decoy": 264,
+    "Traumagotcha": 265,
+    "Corrupted Traumagotcha": 266,
+    "Troopish": 267,
+    "Turretus": 268,
+    "Corrupted Turretus": 269,
+    "Water Hopper": 270,
+    "Wood Hopper": 271,
+    "Zombie Trooper": 272,
     
-    "Acrabelle": 501,
-    "Askal": 502,
-    "Astral Golmech (Aaa)": 503,
-    "Astral Golmech (Askal)": 504,
-    "Beast One": 505,
-    "Beast Two": 506,
-    "Beast Three": 507,
-    "BFF2000": 508,
-    "Captain Kalaw": 509,
-    "Carol": 510,
-    "Corazon": 511,
-    "Crabulon": 512,
-    "Discord": 513,
-    "Drake Cocoon": 514,
-    "Duality": 515,
-    "General Gong": 516,
-    "Gnawsa Lock": 517,
-    "Herald": 518,
-    "Hundred Drillion": 519,
-    "Kakugan": 520,
-    "Lemon Bread": 521,
-    "Lilac": 522,
-    "Merga (Blue Moon)": 523,
-    "Merga (Blood Moon)": 524,
-    "Merga (Super Moon)": 525,
-    "Merga (Eclipse)": 526,
-    "Merga (Lilith)": 527,
-    "Merga": 528,
-    "Milla": 529,
-    "Monster Cube": 530,
-    "Neera": 531,
-    "Proto Pincer": 532,
-    "Rail Driver": 533,
-    "Rosebud": 534,
-    "Serpentine": 535,
-    "Shell Growth": 536,
-    "Storm Slider": 537,
-    "Syntax Spider": 538,
-    "Titan Armor": 539,
-    "Trigger Joy": 540,
-    "Trigger Lancer": 541,
-    "Tunnel Driver": 542,
-    "Weather Face": 543,
-    "Wolf Armour": 544,
+    "Acrabelle": 301,
+    "Askal": 302,
+    "Astral Golmech (Aaa)": 303,
+    "Astral Golmech (Askal)": 304,
+    "Beast One": 305,
+    "Beast Two": 306,
+    "Beast Three": 307,
+    "BFF2000": 308,
+    "Captain Kalaw": 309,
+    "Carol": 310,
+    "Corazon": 311,
+    "Crabulon": 312,
+    "Discord": 313,
+    "Drake Cocoon": 314,
+    "Duality": 315,
+    "General Gong": 316,
+    "Gnawsa Lock": 317,
+    "Herald": 318,
+    "Hundred Drillion": 319,
+    "Kakugan": 320,
+    "Lemon Bread": 321,
+    "Lilac": 322,
+    "Merga (Blue Moon)": 323,
+    "Merga (Blood Moon)": 324,
+    "Merga (Super Moon)": 325,
+    "Merga (Eclipse)": 326,
+    "Merga (Lilith)": 327,
+    "Merga": 328,
+    "Milla": 329,
+    "Monster Cube": 330,
+    "Neera": 331,
+    "Proto Pincer": 332,
+    "Rail Driver": 333,
+    "Rosebud": 334,
+    "Serpentine": 335,
+    "Shell Growth": 336,
+    "Storm Slider": 337,
+    "Syntax Spider": 338,
+    "Titan Armor": 339,
+    "Trigger Joy": 340,
+    "Trigger Lancer": 341,
+    "Tunnel Driver": 342,
+    "Weather Face": 343,
+    "Wolf Armor": 344,
     
     "Milla Shop Item 1": 1000,
     "Milla Shop Item 2": 1001,
@@ -2263,7 +2264,692 @@ LOCATION_NAME_TO_ID = {
     "Vinyl Shop Item 997": 2996,
     "Vinyl Shop Item 998": 2997,
     "Vinyl Shop Item 999": 2998,
-    "Vinyl Shop Item 1000": 2999
+    "Vinyl Shop Item 1000": 2999,
+    
+    "Dragon Valley - Crystal Box 1": 3001,
+    "Dragon Valley - Wood Shield Box 1": 3002,
+    "Dragon Valley - Crystal Box 2": 3003,
+    "Dragon Valley - Crystal Box 3": 3004,
+    "Dragon Valley - Crystal Box 4": 3005,
+    "Dragon Valley - Crystal Box 5": 3006,
+    "Dragon Valley - Petal Box 1": 3007,
+    "Dragon Valley - Crystal Box 6": 3008,
+    "Dragon Valley - Crystal Box 7": 3009,
+    "Dragon Valley - Crystal Box 8": 3010,
+    "Dragon Valley - Crystal Box 9": 3011,
+    "Dragon Valley - Earth Shield Box 1": 3012,
+    "Dragon Valley - Crystal Box 10": 3013,
+    "Dragon Valley - Crystal Box 11": 3014,
+    "Dragon Valley - Crystal Box 12": 3015,
+    "Dragon Valley - Crystal Box 13": 3016,
+    "Dragon Valley - Crystal Box 14": 3017,
+    "Dragon Valley - Crystal Box 15": 3018,
+    "Dragon Valley - Crystal Box 16": 3019,
+    "Dragon Valley - Crystal Box 17": 3020,
+    "Dragon Valley - Wood Shield Box 2": 3021,
+    "Dragon Valley - Petal Box 2": 3022,
+    "Dragon Valley - Crystal Box 18": 3023,
+    "Dragon Valley - Crystal Box 19": 3024,
+    "Dragon Valley - Wood Shield Box 3": 3025,
+    "Dragon Valley - Petal Box 3": 3026,
+    "Dragon Valley - Earth Shield Box 2": 3027,
+    "Dragon Valley - Crystal Box 20": 3028,
+    "Shenlin Park - Fire Shield Box 1": 3029,
+    "Shenlin Park - Crystal Box 1": 3030,
+    "Shenlin Park - Crystal Box 2": 3031,
+    "Shenlin Park - Petal Box 1": 3032,
+    "Shenlin Park - Crystal Box 3": 3033,
+    "Shenlin Park - Water Shield Box 1": 3034,
+    "Shenlin Park - Crystal Box 4": 3035,
+    "Shenlin Park - Crystal Box 5": 3036,
+    "Shenlin Park - Crystal Box 6": 3037,
+    "Shenlin Park - Crystal Box 7": 3038,
+    "Shenlin Park - Crystal Box 8": 3039,
+    "Shenlin Park - Water Shield Box 2": 3040,
+    "Shenlin Park - Crystal Box 9": 3041,
+    "Shenlin Park - Crystal Box 10": 3042,
+    "Shenlin Park - Petal Box 2": 3043,
+    "Shenlin Park - Crystal Box 11": 3044,
+    "Shenlin Park - Crystal Box 12": 3045,
+    "Shenlin Park - Crystal Box 13": 3046,
+    "Shenlin Park - Crystal Box 14": 3047,
+    "Shenlin Park - Crystal Box 15": 3048,
+    "Shenlin Park - Fire Shield Box 2": 3049,
+    "Shenlin Park - Crystal Box 16": 3050,
+    "Shenlin Park - Crystal Box 17": 3051,
+    "Shenlin Park - Petal Box 3": 3052,
+    "Shenlin Park - Crystal Box 18": 3053,
+    "Shenlin Park - Crystal Box 19": 3054,
+    "Shenlin Park - Crystal Box 20": 3055,
+    "Shenlin Park - Water Shield Box 3": 3056,
+    "Avian Museum - Crystal Box 1": 3057,
+    "Avian Museum - Petal Box 1": 3058,
+    "Avian Museum - Fire Shield Box": 3059,
+    "Avian Museum - Crystal Box 2": 3060,
+    "Avian Museum - Petal Box 2": 3061,
+    "Avian Museum - Wood Shield Box": 3062,
+    "Avian Museum - Petal Box 3": 3063,
+    "Avian Museum - Crystal Box 3": 3064,
+    "Avian Museum - Crystal Box 4": 3065,
+    "Avian Museum - Crystal Box 5": 3066,
+    "Avian Museum - Crystal Box 6": 3067,
+    "Avian Museum - Crystal Box 7": 3068,
+    "Avian Museum - Crystal Box 8": 3069,
+    "Avian Museum - Petal Box 4": 3070,
+    "Avian Museum - Crystal Box 9": 3071,
+    "Avian Museum - Crystal Box 10": 3072,
+    "Avian Museum - Crystal Box 11": 3073,
+    "Avian Museum - Crystal Box 12": 3074,
+    "Avian Museum - Earth Shield Box": 3075,
+    "Avian Museum - Petal Box 5": 3076,
+    "Avian Museum - Crystal Box 13": 3077,
+    "Avian Museum - Petal Box 6": 3078,
+    "Avian Museum - Metal Shield Box": 3079,
+    "Avian Museum - Petal Box 7": 3080,
+    "Airship Sigwada - Wood Shield Box 1": 3081,
+    "Airship Sigwada - Crystal Box 1": 3082,
+    "Airship Sigwada - Crystal Box 2": 3083,
+    "Airship Sigwada - Crystal Box 3": 3084,
+    "Airship Sigwada - Crystal Box 4": 3085,
+    "Airship Sigwada - Petal Box 1": 3086,
+    "Airship Sigwada - Metal Shield Box": 3087,
+    "Airship Sigwada - Crystal Box 5": 3088,
+    "Airship Sigwada - Petal Box 2": 3089,
+    "Airship Sigwada - Crystal Box 6": 3090,
+    "Airship Sigwada - Crystal Box 7": 3091,
+    "Airship Sigwada - Wood Shield Box 2": 3092,
+    "Airship Sigwada - Crystal Box 8": 3093,
+    "Airship Sigwada - Crystal Box 9": 3094,
+    "Airship Sigwada - Crystal Box 10": 3095,
+    "Airship Sigwada - Crystal Box 11": 3096,
+    "Airship Sigwada - Petal Box 3": 3097,
+    "Airship Sigwada - Petal Box 4": 3098,
+    "Airship Sigwada - Water Shield Box": 3099,
+    "Airship Sigwada - Petal Box 5": 3100,
+    "Tiger Falls - Crystal Box 1": 3101,
+    "Tiger Falls - Crystal Box 2": 3102,
+    "Tiger Falls - Crystal Box 3": 3103,
+    "Tiger Falls - Crystal Box 4": 3104,
+    "Tiger Falls - Crystal Box 5": 3105,
+    "Tiger Falls - Crystal Box 6": 3106,
+    "Tiger Falls - Crystal Box 7": 3107,
+    "Tiger Falls - Crystal Box 8": 3108,
+    "Tiger Falls - Crystal Box 9": 3109,
+    "Tiger Falls - Petal Box 1": 3110,
+    "Tiger Falls - Earth Shield Box": 3111,
+    "Tiger Falls - Petal Box 2": 3112,
+    "Tiger Falls - Crystal Box 10": 3113,
+    "Tiger Falls - Crystal Box 11": 3114,
+    "Tiger Falls - Water Shield Box": 3115,
+    "Tiger Falls - Crystal Box 12": 3116,
+    "Tiger Falls - Crystal Box 13": 3117,
+    "Tiger Falls - Metal Shield Box": 3118,
+    "Tiger Falls - Crystal Box 14": 3119,
+    "Tiger Falls - Petal Box 3": 3120,
+    "Tiger Falls - Crystal Box 15": 3121,
+    "Tiger Falls - Petal Box 4": 3122,
+    "Tiger Falls - Crystal Box 16": 3123,
+    "Tiger Falls - Crystal Box 17": 3124,
+    "Tiger Falls - Crystal Box 18": 3125,
+    "Tiger Falls - Crystal Box 19": 3126,
+    "Tiger Falls - Crystal Box 20": 3127,
+    "Robot Graveyard - Metal Shield Box 1": 3128,
+    "Robot Graveyard - Crystal Box 1": 3129,
+    "Robot Graveyard - Crystal Box 2": 3130,
+    "Robot Graveyard - Petal Box 1": 3131,
+    "Robot Graveyard - Petal Box 2": 3132,
+    "Robot Graveyard - Crystal Box 3": 3133,
+    "Robot Graveyard - Crystal Box 4": 3134,
+    "Robot Graveyard - Water Shield Box": 3135,
+    "Robot Graveyard - Crystal Box 5": 3136,
+    "Robot Graveyard - Crystal Box 6": 3137,
+    "Robot Graveyard - Crystal Box 7": 3138,
+    "Robot Graveyard - Crystal Box 8": 3139,
+    "Robot Graveyard - Crystal Box 9": 3140,
+    "Robot Graveyard - Crystal Box 10": 3141,
+    "Robot Graveyard - Metal Shield Box 2": 3142,
+    "Robot Graveyard - Petal Box 3": 3143,
+    "Shade Armory - Crystal Box 1": 3144,
+    "Shade Armory - Petal Box 1": 3145,
+    "Shade Armory - Metal Shield Box 1": 3146,
+    "Shade Armory - Crystal Box 2": 3147,
+    "Shade Armory - Crystal Box 3": 3148,
+    "Shade Armory - Crystal Box 4": 3149,
+    "Shade Armory - Crystal Box 5": 3150,
+    "Shade Armory - Crystal Box 6": 3151,
+    "Shade Armory - Earth Shield Box 1": 3152,
+    "Shade Armory - Metal Shield Box 2": 3153,
+    "Shade Armory - Crystal Box 7": 3154,
+    "Shade Armory - Crystal Box 8": 3155,
+    "Shade Armory - Petal Box 2": 3156,
+    "Shade Armory - Crystal Box 9": 3157,
+    "Shade Armory - Petal Box 3": 3158,
+    "Shade Armory - Crystal Box 10": 3159,
+    "Shade Armory - Crystal Box 11": 3160,
+    "Shade Armory - Crystal Box 12": 3161,
+    "Shade Armory - Crystal Box 13": 3162,
+    "Shade Armory - Crystal Box 14": 3163,
+    "Shade Armory - Wood Shield Box": 3164,
+    "Shade Armory - Earth Shield Box 2": 3165,
+    "Shade Armory - Petal Box 4": 3166,
+    "Shade Armory - Crystal Box 15": 3167,
+    "Shade Armory - Crystal Box 16": 3168,
+    "Shade Armory - Petal Box 5": 3169,
+    "Shade Armory - Water Shield Box": 3170,
+    "Snowfields - Wood Shield Box": 3171,
+    "Phoenix Highway - Crystal Box 1": 3172,
+    "Phoenix Highway - Crystal Box 2": 3173,
+    "Phoenix Highway - Petal Box 1": 3174,
+    "Phoenix Highway - Crystal Box 3": 3175,
+    "Phoenix Highway - Crystal Box 4": 3176,
+    "Phoenix Highway - Water Shield Box": 3177,
+    "Phoenix Highway - Crystal Box 5": 3178,
+    "Phoenix Highway - Crystal Box 6": 3179,
+    "Phoenix Highway - Crystal Box 7": 3180,
+    "Phoenix Highway - Crystal Box 8": 3181,
+    "Phoenix Highway - Petal Box 2": 3182,
+    "Phoenix Highway - Crystal Box 9": 3183,
+    "Phoenix Highway - Crystal Box 10": 3184,
+    "Phoenix Highway - Crystal Box 11": 3185,
+    "Phoenix Highway - Crystal Box 12": 3186,
+    "Phoenix Highway - Crystal Box 13": 3187,
+    "Phoenix Highway - Crystal Box 14": 3188,
+    "Phoenix Highway - Crystal Box 15": 3189,
+    "Phoenix Highway - Crystal Box 16": 3190,
+    "Phoenix Highway - Crystal Box 17": 3191,
+    "Phoenix Highway - Crystal Box 18": 3192,
+    "Phoenix Highway - Crystal Box 19": 3193,
+    "Phoenix Highway - Earth Shield Box": 3194,
+    "Phoenix Highway - Crystal Box 20": 3195,
+    "Phoenix Highway - Crystal Box 21": 3196,
+    "Phoenix Highway - Crystal Box 22": 3197,
+    "Phoenix Highway - Crystal Box 23": 3198,
+    "Phoenix Highway - Crystal Box 24": 3199,
+    "Phoenix Highway - Petal Box 3": 3200,
+    "Phoenix Highway - Crystal Box 25": 3201,
+    "Phoenix Highway - Wood Shield": 3202,
+    "Phoenix Highway - Crystal Box 26": 3203,
+    "Phoenix Highway - Fire Shield Box": 3204,
+    "Phoenix Highway - Crystal Box 27": 3205,
+    "Phoenix Highway - Crystal Box 28": 3206,
+    "Phoenix Highway - Crystal Box 29": 3207,
+    "Zao Land - Crystal Box 1": 3208,
+    "Zao Land - Crystal Box 2": 3209,
+    "Zao Land - Crystal Box 3": 3210,
+    "Zao Land - Crystal Box 4": 3211,
+    "Zao Land - Crystal Box 5": 3212,
+    "Zao Land - Petal Box 1": 3213,
+    "Zao Land - Crystal Box 6": 3214,
+    "Zao Land - Fire Shield Box": 3215,
+    "Zao Land - Petal Box 2": 3216,
+    "Zao Land - Earth Shield Box 1": 3217,
+    "Zao Land - Crystal Box 7": 3218,
+    "Zao Land - Crystal Box 8": 3219,
+    "Zao Land - Crystal Box 9": 3220,
+    "Zao Land - Crystal Box 10": 3221,
+    "Zao Land - Crystal Box 11": 3222,
+    "Zao Land - Crystal Box 12": 3223,
+    "Zao Land - Crystal Box 13": 3224,
+    "Zao Land - Petal Box 3": 3225,
+    "Zao Land - Crystal Box 14": 3226,
+    "Zao Land - Crystal Box 15": 3227,
+    "Zao Land - Crystal Box 16": 3228,
+    "Zao Land - Water Shield Box": 3229,
+    "Zao Land - Petal Box 4": 3230,
+    "Zao Land - Crystal Box 17": 3231,
+    "Zao Land - Crystal Box 18": 3232,
+    "Zao Land - Crystal Box 19": 3233,
+    "Zao Land - Earth Shield Box 2": 3234,
+    "Zao Land - Crystal Box 20": 3235,
+    "Zao Land - Crystal Box 21": 3236,
+    "Zao Land - Wood Shield Box": 3237,
+    "Zao Land - Crystal Box 22": 3238,
+    "Zao Land - Crystal Box 23": 3239,
+    "Zao Land - Crystal Box 24": 3240,
+    "Globe Opera 1 - Wood Shield Box": 3241,
+    "Globe Opera 1 - Crystal Box 1": 3242,
+    "Globe Opera 1 - Crystal Box 2": 3243,
+    "Globe Opera 1 - Petal Box 1": 3244,
+    "Globe Opera 1 - Crystal Box 3": 3245,
+    "Globe Opera 1 - Crystal Box 4": 3246,
+    "Globe Opera 1 - Crystal Box 5": 3247,
+    "Globe Opera 1 - Crystal Box 6": 3248,
+    "Globe Opera 1 - Crystal Box 7": 3249,
+    "Globe Opera 1 - Petal Box 2": 3250,
+    "Globe Opera 1 - Petal Box 3": 3251,
+    "Globe Opera 1 - Crystal Box 8": 3252,
+    "Globe Opera 1 - Crystal Box 9": 3253,
+    "Globe Opera 1 - Crystal Box 10": 3254,
+    "Globe Opera 1 - Crystal Box 11": 3255,
+    "Globe Opera 1 - Crystal Box 12": 3256,
+    "Globe Opera 1 - Crystal Box 13": 3257,
+    "Globe Opera 1 - Metal Shield Box": 3258,
+    "Globe Opera 1 - Crystal Box 14": 3259,
+    "Globe Opera 1 - Crystal Box 15": 3260,
+    "Globe Opera 1 - Crystal Box 16": 3261,
+    "Globe Opera 1 - Crystal Box 17": 3262,
+    "Globe Opera 1 - Crystal Box 18": 3263,
+    "Globe Opera 1 - Petal Box 4": 3264,
+    "Globe Opera 2 - Crystal Box 1": 3265,
+    "Globe Opera 2 - Crystal Box 2": 3266,
+    "Globe Opera 2 - Crystal Box 3": 3267,
+    "Globe Opera 2 - Crystal Box 4": 3268,
+    "Globe Opera 2 - Crystal Box 5": 3269,
+    "Globe Opera 2 - Crystal Box 6": 3270,
+    "Globe Opera 2 - Crystal Box 7": 3271,
+    "Globe Opera 2 - Crystal Box 8": 3272,
+    "Globe Opera 2 - Crystal Box 9": 3273,
+    "Globe Opera 2 - Crystal Box 10": 3274,
+    "Globe Opera 2 - Crystal Box 11": 3275,
+    "Globe Opera 2 - Water Shield Box": 3276,
+    "Globe Opera 2 - Crystal Box 12": 3277,
+    "Globe Opera 2 - Crystal Box 13": 3278,
+    "Globe Opera 2 - Petal Box 1": 3279,
+    "Globe Opera 2 - Crystal Box 14": 3280,
+    "Globe Opera 2 - Crystal Box 15": 3281,
+    "Globe Opera 2 - Wood Shield Box": 3282,
+    "Globe Opera 2 - Crystal Box 16": 3283,
+    "Globe Opera 2 - Crystal Box 17": 3284,
+    "Globe Opera 2 - Petal Box 2": 3285,
+    "Globe Opera 2 - Crystal Box 18": 3286,
+    "Globe Opera 2 - Metal Shield Box": 3287,
+    "Globe Opera 2 - Crystal Box 19": 3288,
+    "Globe Opera 2 - Crystal Box 20": 3289,
+    "Globe Opera 2 - Crystal Box 21": 3290,
+    "Globe Opera 2 - Crystal Box 22": 3291,
+    "Globe Opera 2 - Crystal Box 23": 3292,
+    "Globe Opera 2 - Petal Box 3": 3293,
+    "Globe Opera 2 - Crystal Box 24": 3294,
+    "Globe Opera 2 - Crystal Box 25": 3295,
+    "Globe Opera 2 - Crystal Box 26": 3296,
+    "Globe Opera 2 - Petal Box 4": 3297,
+    "Globe Opera 2 - Crystal Box 27": 3298,
+    "Globe Opera 2 - Crystal Box 28": 3299,
+    "Globe Opera 2 - Crystal Box 29": 3300,
+    "Globe Opera 2 - Crystal Box 30": 3301,
+    "Globe Opera 2 - Crystal Box 31": 3302,
+    "Globe Opera 2 - Crystal Box 32": 3303,
+    "Globe Opera 2 - Fire Shield Box": 3304,
+    "Globe Opera 2 - Petal Box 5": 3305,
+    "Globe Opera 2 - Crystal Box 33": 3306,
+    "Globe Opera 2 - Crystal Box 34": 3307,
+    "Globe Opera 2 - Petal Box 6": 3308,
+    "Globe Opera 2 - Petal Box 7": 3309,
+    "Palace Courtyard - Wood Shield Box": 3310,
+    "Palace Courtyard - Crystal Box 1": 3311,
+    "Palace Courtyard - Crystal Box 2": 3312,
+    "Palace Courtyard - Petal Box": 3313,
+    "Tidal Gate - Crystal Box 1": 3314,
+    "Tidal Gate - Wood Shield Box 1": 3315,
+    "Tidal Gate - Crystal Box 2": 3316,
+    "Tidal Gate - Crystal Box 3": 3317,
+    "Tidal Gate - Crystal Box 4": 3318,
+    "Tidal Gate - Crystal Box 5": 3319,
+    "Tidal Gate - Petal Box 1": 3320,
+    "Tidal Gate - Crystal Box 6": 3321,
+    "Tidal Gate - Water Shield Box 1": 3322,
+    "Tidal Gate - Crystal Box 7": 3323,
+    "Tidal Gate - Water Shield Box 2": 3324,
+    "Tidal Gate - Petal Box 2": 3325,
+    "Tidal Gate - Crystal Box 8": 3326,
+    "Tidal Gate - Crystal Box 9": 3327,
+    "Tidal Gate - Crystal Box 10": 3328,
+    "Tidal Gate - Crystal Box 11": 3329,
+    "Tidal Gate - Gold Gem Box": 3330,
+    "Tidal Gate - Earth Shield Box": 3331,
+    "Tidal Gate - Crystal Box 12": 3332,
+    "Tidal Gate - Crystal Box 13": 3333,
+    "Tidal Gate - Crystal Box 14": 3334,
+    "Tidal Gate - Crystal Box 15": 3335,
+    "Tidal Gate - Crystal Box 16": 3336,
+    "Tidal Gate - Crystal Box 17": 3337,
+    "Tidal Gate - Crystal Box 18": 3338,
+    "Tidal Gate - Crystal Box 19": 3339,
+    "Tidal Gate - Crystal Box 20": 3340,
+    "Tidal Gate - Petal Box 3": 3341,
+    "Tidal Gate - Crystal Box 21": 3342,
+    "Tidal Gate - Wood Shield Box 2": 3343,
+    "Tidal Gate - Fire Shield Box": 3344,
+    "Zulon Jungle - Crystal Box 1": 3345,
+    "Zulon Jungle - Metal Shield Box 1": 3346,
+    "Zulon Jungle - Metal Shield Box 2": 3347,
+    "Zulon Jungle - Crystal Box 2": 3348,
+    "Zulon Jungle - Crystal Box 3": 3349,
+    "Zulon Jungle - Petal Box 1": 3350,
+    "Zulon Jungle - Crystal Box 4": 3351,
+    "Zulon Jungle - Fire Shield Box 1": 3352,
+    "Zulon Jungle - Crystal Box 5": 3353,
+    "Zulon Jungle - Fire Shield Box 2": 3354,
+    "Zulon Jungle - Petal Box 2": 3355,
+    "Zulon Jungle - Crystal Box 6": 3356,
+    "Zulon Jungle - Earth Shield Box 1": 3357,
+    "Zulon Jungle - Wood Shield Box 1": 3358,
+    "Zulon Jungle - Crystal Box 7": 3359,
+    "Zulon Jungle - Crystal Box 8": 3360,
+    "Zulon Jungle - Earth Shield Box 2": 3361,
+    "Zulon Jungle - Crystal Box 9": 3362,
+    "Zulon Jungle - Crystal Box 10": 3363,
+    "Zulon Jungle - Crystal Box 11": 3364,
+    "Zulon Jungle - Crystal Box 12": 3365,
+    "Zulon Jungle - Wood Shield Box 2": 3366,
+    "Zulon Jungle - Wood Shield Box 3": 3367,
+    "Zulon Jungle - Crystal Box 13": 3368,
+    "Zulon Jungle - Crystal Box 14": 3369,
+    "Zulon Jungle - Crystal Box 15": 3370,
+    "Zulon Jungle - Crystal Box 16": 3371,
+    "Zulon Jungle - Earth Shield Box 3": 3372,
+    "Zulon Jungle - Gold Gem Box": 3373,
+    "Zulon Jungle - Metal Shield Box 3": 3374,
+    "Zulon Jungle - Petal Box 3": 3375,
+    "Zulon Jungle - Crystal Box 17": 3376,
+    "Zulon Jungle - Crystal Box 18": 3377,
+    "Zulon Jungle - Fire Shield Box 3": 3378,
+    "Zulon Jungle - Crystal Box 19": 3379,
+    "Zulon Jungle - Petal Box 4": 3380,
+    "Zulon Jungle - Petal Box 5": 3381,
+    "Nalao Lake - Earth Shield Box 1": 3382,
+    "Nalao Lake - Crystal Box 1": 3383,
+    "Nalao Lake - Crystal Box 2": 3384,
+    "Nalao Lake - Crystal Box 3": 3385,
+    "Nalao Lake - Crystal Box 4": 3386,
+    "Nalao Lake - Crystal Box 5": 3387,
+    "Nalao Lake - Earth Shield Box 2": 3388,
+    "Nalao Lake - Crystal Box 6": 3389,
+    "Nalao Lake - Water Shield Box 1": 3390,
+    "Nalao Lake - Crystal Box 7": 3391,
+    "Nalao Lake - Crystal Box 8": 3392,
+    "Nalao Lake - Crystal Box 9": 3393,
+    "Nalao Lake - Crystal Box 10": 3394,
+    "Nalao Lake - Crystal Box 11": 3395,
+    "Nalao Lake - Crystal Box 12": 3396,
+    "Nalao Lake - Fire Shield Box": 3397,
+    "Nalao Lake - Gold Gem Box": 3398,
+    "Nalao Lake - Crystal Box 13": 3399,
+    "Nalao Lake - Water Shield Box 2": 3400,
+    "Nalao Lake - Metal Shield Box 1": 3401,
+    "Nalao Lake - Crystal Box 14": 3402,
+    "Nalao Lake - Crystal Box 15": 3403,
+    "Nalao Lake - Crystal Box 16": 3404,
+    "Nalao Lake - Crystal Box 17": 3405,
+    "Nalao Lake - Crystal Box 18": 3406,
+    "Nalao Lake - Petal Box 1": 3407,
+    "Nalao Lake - Crystal Box 19": 3408,
+    "Nalao Lake - Crystal Box 20": 3409,
+    "Nalao Lake - Crystal Box 21": 3410,
+    "Nalao Lake - Crystal Box 22": 3411,
+    "Nalao Lake - Crystal Box 23": 3412,
+    "Nalao Lake - Metal Shield Box 2": 3413,
+    "Nalao Lake - Crystal Box 24": 3414,
+    "Nalao Lake - Crystal Box 25": 3415,
+    "Nalao Lake - Crystal Box 26": 3416,
+    "Nalao Lake - Crystal Box 27": 3417,
+    "Nalao Lake - Petal Box 2": 3418,
+    "Nalao Lake - Crystal Box 28": 3419,
+    "Nalao Lake - Crystal Box 29": 3420,
+    "Sky Bridge - Crystal Box 1": 3421,
+    "Sky Bridge - Crystal Box 2": 3422,
+    "Sky Bridge - Crystal Box 3": 3423,
+    "Sky Bridge - Crystal Box 4": 3424,
+    "Sky Bridge - Wood Shield Box 1": 3425,
+    "Sky Bridge - Petal Box 1": 3426,
+    "Sky Bridge - Crystal Box 5": 3427,
+    "Sky Bridge - Petal Box 2": 3428,
+    "Sky Bridge - Crystal Box 6": 3429,
+    "Sky Bridge - Crystal Box 7": 3430,
+    "Sky Bridge - Crystal Box 8": 3431,
+    "Sky Bridge - Wood Shield Box 2": 3432,
+    "Sky Bridge - Fire Shield Box": 3433,
+    "Sky Bridge - Crystal Box 9": 3434,
+    "Sky Bridge - Petal Box 3": 3435,
+    "Sky Bridge - Crystal Box 10": 3436,
+    "Sky Bridge - Crystal Box 11": 3437,
+    "Sky Bridge - Crystal Box 12": 3438,
+    "Sky Bridge - Crystal Box 13": 3439,
+    "Sky Bridge - Crystal Box 14": 3440,
+    "Sky Bridge - Earth Shield Box 1": 3441,
+    "Sky Bridge - Earth Shield Box 2": 3442,
+    "Sky Bridge - Crystal Box 15": 3443,
+    "Sky Bridge - Crystal Box 16": 3444,
+    "Sky Bridge - Crystal Box 17": 3445,
+    "Lightning Tower - Metal Shield Box": 3446,
+    "Lightning Tower - Petal Box 1": 3447,
+    "Lightning Tower - Petal Box 2": 3448,
+    "Lightning Tower - Earth Shield Box": 3449,
+    "Lightning Tower - Crystal Box 1": 3450,
+    "Lightning Tower - Crystal Box 2": 3451,
+    "Lightning Tower - Crystal Box 3": 3452,
+    "Lightning Tower - Crystal Box 4": 3453,
+    "Lightning Tower - Crystal Box 5": 3454,
+    "Lightning Tower - Crystal Box 6": 3455,
+    "Lightning Tower - Crystal Box 7": 3456,
+    "Lightning Tower - Crystal Box 8": 3457,
+    "Lightning Tower - Petal Box 3": 3458,
+    "Lightning Tower - Water Shield Box": 3459,
+    "Lightning Tower - Crystal Box 9": 3460,
+    "Ancestral Forge - Water Shield Box 1": 3461,
+    "Ancestral Forge - Petal Box 1": 3462,
+    "Ancestral Forge - Petal Box 2": 3463,
+    "Ancestral Forge - Crystal Box 1": 3464,
+    "Ancestral Forge - Gold Gem Box": 3465,
+    "Ancestral Forge - Crystal Box 2": 3466,
+    "Ancestral Forge - Crystal Box 3": 3467,
+    "Ancestral Forge - Crystal Box 4": 3468,
+    "Ancestral Forge - Water Shield Box 2": 3469,
+    "Ancestral Forge - Wood Shield Box": 3470,
+    "Ancestral Forge - Earth Shield Box": 3471,
+    "Ancestral Forge - Crystal Box 5": 3472,
+    "Ancestral Forge - Petal Box 3": 3473,
+    "Ancestral Forge - Crystal Box 6": 3474,
+    "Ancestral Forge - Petal Box 4": 3475,
+    "Ancestral Forge - Crystal Box 7": 3476,
+    "Ancestral Forge - Petal Box 5": 3477,
+    "Ancestral Forge - Crystal Box 8": 3478,
+    "Magma Starscape - Crystal Box 1": 3479,
+    "Magma Starscape - Crystal Box 2": 3480,
+    "Magma Starscape - Crystal Box 3": 3481,
+    "Magma Starscape - Crystal Box 4": 3482,
+    "Magma Starscape - Crystal Box 5": 3483,
+    "Magma Starscape - Crystal Box 6": 3484,
+    "Magma Starscape - Crystal Box 7": 3485,
+    "Magma Starscape - Petal Box 1": 3486,
+    "Magma Starscape - Earth Shield Box 1": 3487,
+    "Magma Starscape - Crystal Box 8": 3488,
+    "Magma Starscape - Earth Shield Box 2": 3489,
+    "Magma Starscape - Fire Shield Box 1": 3490,
+    "Magma Starscape - Crystal Box 9": 3491,
+    "Magma Starscape - Crystal Box 10": 3492,
+    "Magma Starscape - Crystal Box 11": 3493,
+    "Magma Starscape - Crystal Box 12": 3494,
+    "Magma Starscape - Crystal Box 13": 3495,
+    "Magma Starscape - Fire Shield Box 2": 3496,
+    "Magma Starscape - Crystal Box 14": 3497,
+    "Magma Starscape - Crystal Box 15": 3498,
+    "Magma Starscape - Crystal Box 16": 3499,
+    "Magma Starscape - Crystal Box 17": 3500,
+    "Magma Starscape - Crystal Box 18": 3501,
+    "Magma Starscape - Petal Box 2": 3502,
+    "Magma Starscape - Crystal Box 19": 3503,
+    "Magma Starscape - Crystal Box 20": 3504,
+    "Magma Starscape - Crystal Box 21": 3505,
+    "Magma Starscape - Crystal Box 22": 3506,
+    "Magma Starscape - Crystal Box 23": 3507,
+    "Magma Starscape - Crystal Box 24": 3508,
+    "Magma Starscape - Crystal Box 25": 3509,
+    "Magma Starscape - Crystal Box 26": 3510,
+    "Magma Starscape - Petal Box 3": 3511,
+    "Magma Starscape - Crystal Box 27": 3512,
+    "Magma Starscape - Crystal Box 28": 3513,
+    "Magma Starscape - Crystal Box 29": 3514,
+    "Magma Starscape - Crystal Box 30": 3515,
+    "Magma Starscape - Petal Box 4": 3516,
+    "Magma Starscape - Crystal Box 31": 3517,
+    "Magma Starscape - Crystal Box 32": 3518,
+    "Magma Starscape - Crystal Box 33": 3519,
+    "Magma Starscape - Crystal Box 34": 3520,
+    "Magma Starscape - Crystal Box 35": 3521,
+    "Magma Starscape - Crystal Box 36": 3522,
+    "Magma Starscape - Fire Shield Box 3": 3523,
+    "Gravity Bubble - Water Shield Box 1": 3524,
+    "Gravity Bubble - Crystal Box 1": 3525,
+    "Gravity Bubble - Crystal Box 2": 3526,
+    "Gravity Bubble - Crystal Box 3": 3527,
+    "Gravity Bubble - Crystal Box 4": 3528,
+    "Gravity Bubble - Crystal Box 5": 3529,
+    "Gravity Bubble - Water Shield Box 2": 3530,
+    "Gravity Bubble - Crystal Box 6": 3531,
+    "Gravity Bubble - Crystal Box 7": 3532,
+    "Gravity Bubble - Crystal Box 8": 3533,
+    "Gravity Bubble - Crystal Box 9": 3534,
+    "Gravity Bubble - Crystal Box 10": 3535,
+    "Gravity Bubble - Crystal Box 11": 3536,
+    "Gravity Bubble - Crystal Box 12": 3537,
+    "Gravity Bubble - Crystal Box 13": 3538,
+    "Gravity Bubble - Crystal Box 14": 3539,
+    "Gravity Bubble - Crystal Box 15": 3540,
+    "Gravity Bubble - Crystal Box 16": 3541,
+    "Gravity Bubble - Crystal Box 17": 3542,
+    "Gravity Bubble - Water Shield Box 3": 3543,
+    "Gravity Bubble - Crystal Box 18": 3544,
+    "Gravity Bubble - Crystal Box 19": 3545,
+    "Gravity Bubble - Crystal Box 20": 3546,
+    "Gravity Bubble - Crystal Box 21": 3547,
+    "Bakunawa Rush - Crystal Box 1": 3548,
+    "Bakunawa Rush - Water Shield Box": 3549,
+    "Bakunawa Rush - Petal Box 1": 3550,
+    "Bakunawa Rush - Earth Shield Box": 3551,
+    "Bakunawa Rush - Crystal Box 2": 3552,
+    "Bakunawa Rush - Crystal Box 3": 3553,
+    "Bakunawa Rush - Metal Shield Box": 3554,
+    "Bakunawa Rush - Petal Box 2": 3555,
+    "Bakunawa Rush - Crystal Box 4": 3556,
+    "Bakunawa Rush - Petal Box 3": 3557,
+    "Clockwork Arboretum - Crystal Box 1": 3558,
+    "Clockwork Arboretum - Petal Box 1": 3559,
+    "Clockwork Arboretum - Fire Shield Box 1": 3560,
+    "Clockwork Arboretum - Crystal Box 2": 3561,
+    "Clockwork Arboretum - Crystal Box 3": 3562,
+    "Clockwork Arboretum - Crystal Box 4": 3563,
+    "Clockwork Arboretum - Petal Box 2": 3564,
+    "Clockwork Arboretum - Crystal Box 5": 3565,
+    "Clockwork Arboretum - Crystal Box 6": 3566,
+    "Clockwork Arboretum - Crystal Box 7": 3567,
+    "Clockwork Arboretum - Petal Box 3": 3568,
+    "Clockwork Arboretum - Petal Box 4": 3569,
+    "Clockwork Arboretum - Petal Box 5": 3570,
+    "Clockwork Arboretum - Petal Box 6": 3571,
+    "Clockwork Arboretum - Petal Box 7": 3572,
+    "Clockwork Arboretum - Petal Box 8": 3573,
+    "Clockwork Arboretum - Wood Shield Box": 3574,
+    "Clockwork Arboretum - Crystal Box 8": 3575,
+    "Clockwork Arboretum - Crystal Box 9": 3576,
+    "Clockwork Arboretum - Crystal Box 10": 3577,
+    "Clockwork Arboretum - Crystal Box 11": 3578,
+    "Clockwork Arboretum - Crystal Box 12": 3579,
+    "Clockwork Arboretum - Gold Gem Box": 3580,
+    "Clockwork Arboretum - Crystal Box 13": 3581,
+    "Clockwork Arboretum - Crystal Box 14": 3582,
+    "Clockwork Arboretum - Crystal Box 15": 3583,
+    "Clockwork Arboretum - Earth Shield Box": 3584,
+    "Clockwork Arboretum - Crystal Box 16": 3585,
+    "Clockwork Arboretum - Fire Shield Box 2": 3586,
+    "Inversion Dynamo - Crystal Box 1": 3587,
+    "Inversion Dynamo - Crystal Box 2": 3588,
+    "Inversion Dynamo - Crystal Box 3": 3589,
+    "Inversion Dynamo - Crystal Box 4": 3590,
+    "Inversion Dynamo - Gold Gem Box": 3591,
+    "Inversion Dynamo - Crystal Box 5": 3592,
+    "Inversion Dynamo - Crystal Box 6": 3593,
+    "Inversion Dynamo - Crystal Box 7": 3594,
+    "Inversion Dynamo - Petal Box 1": 3595,
+    "Inversion Dynamo - Earth Shield Box": 3596,
+    "Inversion Dynamo - Petal Box 2": 3597,
+    "Inversion Dynamo - Crystal Box 8": 3598,
+    "Inversion Dynamo - Crystal Box 9": 3599,
+    "Inversion Dynamo - Crystal Box 10": 3600,
+    "Inversion Dynamo - Crystal Box 11": 3601,
+    "Inversion Dynamo - Metal Shield Box 1": 3602,
+    "Inversion Dynamo - Crystal Box 12": 3603,
+    "Inversion Dynamo - Wood Shield Box 1": 3604,
+    "Inversion Dynamo - Crystal Box 13": 3605,
+    "Inversion Dynamo - Crystal Box 14": 3606,
+    "Inversion Dynamo - Wood Shield Box 2": 3607,
+    "Inversion Dynamo - Crystal Box 15": 3608,
+    "Inversion Dynamo - Crystal Box 16": 3609,
+    "Inversion Dynamo - Crystal Box 17": 3610,
+    "Inversion Dynamo - Crystal Box 18": 3611,
+    "Inversion Dynamo - Petal Box 3": 3612,
+    "Inversion Dynamo - Crystal Box 19": 3613,
+    "Inversion Dynamo - Crystal Box 20": 3614,
+    "Inversion Dynamo - Crystal Box 21": 3615,
+    "Inversion Dynamo - Crystal Box 22": 3616,
+    "Inversion Dynamo - Petal Box 4": 3617,
+    "Inversion Dynamo - Crystal Box 23": 3618,
+    "Inversion Dynamo - Crystal Box 24": 3619,
+    "Inversion Dynamo - Crystal Box 25": 3620,
+    "Inversion Dynamo - Crystal Box 26": 3621,
+    "Inversion Dynamo - Petal Box 5": 3622,
+    "Inversion Dynamo - Crystal Box 27": 3623,
+    "Inversion Dynamo - Crystal Box 28": 3624,
+    "Inversion Dynamo - Metal Shield Box 2": 3625,
+    "Lunar Cannon - Crystal Box 1": 3626,
+    "Lunar Cannon - Wood Shield Box": 3627,
+    "Lunar Cannon - Crystal Box 2": 3628,
+    "Lunar Cannon - Petal Box 1": 3629,
+    "Lunar Cannon - Petal Box 2": 3630,
+    "Lunar Cannon - Crystal Box 3": 3631,
+    "Lunar Cannon - Crystal Box 4": 3632,
+    "Lunar Cannon - Crystal Box 5": 3633,
+    "Lunar Cannon - Fire Shield Box": 3634,
+    "Lunar Cannon - Crystal Box 6": 3635,
+    "Lunar Cannon - Crystal Box 7": 3636,
+    "Lunar Cannon - Water Shield Box": 3637,
+    "Lunar Cannon - Earth Shield Box": 3638,
+    "Lunar Cannon - Crystal Box 8": 3639,
+    "Lunar Cannon - Metal Shield Box": 3640,
+    "Lunar Cannon - Crystal Box 9": 3641,
+    "Lunar Cannon - Crystal Box 10": 3642,
+    "Lunar Cannon - Petal Box 3": 3643,
+    "Lunar Cannon - Petal Box 4": 3644,
+    "Beginner's Gauntlet - Metal Shield Box": 3645,
+    "Beginner's Gauntlet - Crystal Box 1": 3646,
+    "Beginner's Gauntlet - Wood Shield Box": 3647,
+    "Beginner's Gauntlet - Crystal Box 2": 3648,
+    "Beginner's Gauntlet - Crystal Box 3": 3649,
+    "Flip Fire Gauntlet - Crystal Box 1": 3651,
+    "Flip Fire Gauntlet - Fire Shield Box": 3652,
+    "Flip Fire Gauntlet - Crystal Box 2": 3653,
+    "Stop and Go - Crystal Box 1": 3654,
+    "Stop and Go - Petal Box": 3655,
+    "Stop and Go - Crystal Box 2": 3656,
+    "Stop and Go - Crystal Box 3": 3657,
+    "Mach Speed Melee - Crystal Box 1": 3658,
+    "Mach Speed Melee - Crystal Box 2": 3659,
+    "Mach Speed Melee - Crystal Box 3": 3660,
+    "Mach Speed Melee - Crystal Box 4": 3661,
+    "Mach Speed Melee - Crystal Box 5": 3662,
+    "Mach Speed Melee - Petal Box": 3663,
+    "Rolling Thunder - Crystal Box 1": 3664,
+    "Rolling Thunder - Crystal Box 2": 3665,
+    "Mondo Condo - Crystal Box 1": 3666,
+    "Mondo Condo - Crystal Box 2": 3667,
+    "Mondo Condo - Crystal Box 3": 3668,
+    "Mondo Condo - Crystal Box 4": 3669,
+    "Mondo Condo - Crystal Box 5": 3670,
+    "Mondo Condo - Crystal Box 6": 3671,
+    "Mondo Condo - Crystal Box 7": 3672,
+    "Mondo Condo - Crystal Box 8": 3673,
+    "Mondo Condo - Crystal Box 9": 3674,
+    "Mondo Condo - Crystal Box 10": 3675,
+    "Vanishing Maze - Crystal Box 1": 3676,
+    "Vanishing Maze - Metal Shield Box": 3677,
+    "Vanishing Maze - Crystal Box 2": 3678,
+    "Vanishing Maze - Crystal Box 3": 3679,
+    "Vanishing Maze - Crystal Box 4": 3680,
+    "Vanishing Maze - Crystal Box 5": 3681,
+    "Vanishing Maze - Wood Shield Box": 3682,
+    "Mecha Madness - Wood Shield Box": 3685,
+    "Mecha Madness - Fire Shield Box": 3686,
+    "Battlebot Battle Royale - Petal Box": 3687
 }
 
 class FP2Location(Location):
@@ -2447,6 +3133,240 @@ def create_regular_locations(world: FP2World) -> None:
         iDynamoChests.add_locations(iDynamoChestLocations, FP2Location)
         lCannonChests.add_locations(lCannonChestLocations, FP2Location)
 
+    # Add the various item box locations to their approriate stage region if the Item Box Sanity option is enabled.
+    if world.options.item_boxes:
+        # Get the item regions.
+        dValleyItems = world.get_region("Dragon Valley Item Boxes")
+        sParkItems = world.get_region("Shenlin Park Item Boxes")
+        tFallsItems = world.get_region("Tiger Falls Item Boxes")
+        rGraveyardItems = world.get_region("Robot Graveyard Item Boxes")
+        sArmoryItems = world.get_region("Shade Armory Item Boxes")
+        snowfieldsItems = world.get_region("Snowfields Item Boxes")
+        aMuseumItems = world.get_region("Avian Museum Item Boxes")
+        aSigwadaItems = world.get_region("Airship Sigwada Item Boxes")
+        pHighwayItems = world.get_region("Phoenix Highway Item Boxes")
+        zLandItems = world.get_region("Zao Land Item Boxes")
+        gOpera1Items = world.get_region("Globe Opera 1 Item Boxes")
+        gOpera2Items = world.get_region("Globe Opera 2 Item Boxes")
+        pCourtyardItems = world.get_region("Palace Courtyard Item Boxes")
+        tGateItems = world.get_region("Tidal Gate Item Boxes")
+        sBridgeItems = world.get_region("Sky Bridge Item Boxes")
+        lTowerItems = world.get_region("Lightning Tower Item Boxes")
+        zJungleItems = world.get_region("Zulon Jungle Item Boxes")
+        nLakeItems = world.get_region("Nalao Lake Item Boxes")
+        aForgeItems = world.get_region("Ancestral Forge Item Boxes")
+        mStarscapeItems = world.get_region("Magma Starscape Item Boxes")
+        gBubbleItems = world.get_region("Gravity Bubble Item Boxes")
+        bRushItems = world.get_region("Bakunawa Rush Item Boxes")
+        cArboretumItems = world.get_region("Clockwork Arboretum Item Boxes")
+        iDynamoItems = world.get_region("Inversion Dynamo Item Boxes")
+        lCannonItems = world.get_region("Lunar Cannon Item Boxes")
+        battlesphereItems = world.get_region("Battlesphere Item Boxes")
+        
+        # Add the Crystal Box locations if needed.
+        if world.options.item_boxes_crystals:
+            dValleyCrystalBoxLocations = get_location_names_with_ids(["Dragon Valley - Crystal Box 1", "Dragon Valley - Crystal Box 2", "Dragon Valley - Crystal Box 3", "Dragon Valley - Crystal Box 4", "Dragon Valley - Crystal Box 5", "Dragon Valley - Crystal Box 6", "Dragon Valley - Crystal Box 7", "Dragon Valley - Crystal Box 8", "Dragon Valley - Crystal Box 9", "Dragon Valley - Crystal Box 10", "Dragon Valley - Crystal Box 11", "Dragon Valley - Crystal Box 12", "Dragon Valley - Crystal Box 13", "Dragon Valley - Crystal Box 14", "Dragon Valley - Crystal Box 15", "Dragon Valley - Crystal Box 16", "Dragon Valley - Crystal Box 17", "Dragon Valley - Crystal Box 18", "Dragon Valley - Crystal Box 19", "Dragon Valley - Crystal Box 20"])
+            sParkCrystalBoxLocations = get_location_names_with_ids(["Shenlin Park - Crystal Box 1", "Shenlin Park - Crystal Box 2", "Shenlin Park - Crystal Box 3", "Shenlin Park - Crystal Box 4", "Shenlin Park - Crystal Box 5", "Shenlin Park - Crystal Box 6", "Shenlin Park - Crystal Box 7", "Shenlin Park - Crystal Box 8", "Shenlin Park - Crystal Box 9", "Shenlin Park - Crystal Box 10", "Shenlin Park - Crystal Box 11", "Shenlin Park - Crystal Box 12", "Shenlin Park - Crystal Box 13", "Shenlin Park - Crystal Box 14", "Shenlin Park - Crystal Box 15", "Shenlin Park - Crystal Box 16", "Shenlin Park - Crystal Box 17", "Shenlin Park - Crystal Box 18", "Shenlin Park - Crystal Box 19", "Shenlin Park - Crystal Box 20"])
+            tFallsCrystalBoxLocations = get_location_names_with_ids(["Tiger Falls - Crystal Box 1", "Tiger Falls - Crystal Box 2", "Tiger Falls - Crystal Box 3", "Tiger Falls - Crystal Box 4", "Tiger Falls - Crystal Box 5", "Tiger Falls - Crystal Box 6", "Tiger Falls - Crystal Box 7", "Tiger Falls - Crystal Box 8", "Tiger Falls - Crystal Box 9", "Tiger Falls - Crystal Box 10", "Tiger Falls - Crystal Box 11", "Tiger Falls - Crystal Box 12", "Tiger Falls - Crystal Box 13", "Tiger Falls - Crystal Box 14", "Tiger Falls - Crystal Box 15", "Tiger Falls - Crystal Box 16", "Tiger Falls - Crystal Box 17", "Tiger Falls - Crystal Box 18", "Tiger Falls - Crystal Box 19", "Tiger Falls - Crystal Box 20"])
+            rGraveyardCrystalBoxLocations = get_location_names_with_ids(["Robot Graveyard - Crystal Box 1", "Robot Graveyard - Crystal Box 2", "Robot Graveyard - Crystal Box 3", "Robot Graveyard - Crystal Box 4", "Robot Graveyard - Crystal Box 5", "Robot Graveyard - Crystal Box 6", "Robot Graveyard - Crystal Box 7", "Robot Graveyard - Crystal Box 8", "Robot Graveyard - Crystal Box 9", "Robot Graveyard - Crystal Box 10"])
+            sArmoryCrystalBoxLocations = get_location_names_with_ids(["Shade Armory - Crystal Box 1", "Shade Armory - Crystal Box 2", "Shade Armory - Crystal Box 3", "Shade Armory - Crystal Box 4", "Shade Armory - Crystal Box 5", "Shade Armory - Crystal Box 6", "Shade Armory - Crystal Box 7", "Shade Armory - Crystal Box 8", "Shade Armory - Crystal Box 9", "Shade Armory - Crystal Box 10", "Shade Armory - Crystal Box 11", "Shade Armory - Crystal Box 12", "Shade Armory - Crystal Box 13", "Shade Armory - Crystal Box 14", "Shade Armory - Crystal Box 15", "Shade Armory - Crystal Box 16"])
+            aMuseumCrystalBoxLocations = get_location_names_with_ids(["Avian Museum - Crystal Box 1", "Avian Museum - Crystal Box 2", "Avian Museum - Crystal Box 3", "Avian Museum - Crystal Box 4", "Avian Museum - Crystal Box 5", "Avian Museum - Crystal Box 6", "Avian Museum - Crystal Box 7", "Avian Museum - Crystal Box 8", "Avian Museum - Crystal Box 9", "Avian Museum - Crystal Box 10", "Avian Museum - Crystal Box 11", "Avian Museum - Crystal Box 12", "Avian Museum - Crystal Box 13"])
+            aSigwadaCrystalBoxLocations = get_location_names_with_ids(["Airship Sigwada - Crystal Box 1", "Airship Sigwada - Crystal Box 2", "Airship Sigwada - Crystal Box 3", "Airship Sigwada - Crystal Box 4", "Airship Sigwada - Crystal Box 5", "Airship Sigwada - Crystal Box 6", "Airship Sigwada - Crystal Box 7", "Airship Sigwada - Crystal Box 8", "Airship Sigwada - Crystal Box 9", "Airship Sigwada - Crystal Box 10", "Airship Sigwada - Crystal Box 11"])
+            pHighwayCrystalBoxLocations = get_location_names_with_ids(["Phoenix Highway - Crystal Box 1", "Phoenix Highway - Crystal Box 2", "Phoenix Highway - Crystal Box 3", "Phoenix Highway - Crystal Box 4", "Phoenix Highway - Crystal Box 5", "Phoenix Highway - Crystal Box 6", "Phoenix Highway - Crystal Box 7", "Phoenix Highway - Crystal Box 8", "Phoenix Highway - Crystal Box 9", "Phoenix Highway - Crystal Box 10", "Phoenix Highway - Crystal Box 11", "Phoenix Highway - Crystal Box 12", "Phoenix Highway - Crystal Box 13", "Phoenix Highway - Crystal Box 14", "Phoenix Highway - Crystal Box 15", "Phoenix Highway - Crystal Box 16", "Phoenix Highway - Crystal Box 17", "Phoenix Highway - Crystal Box 18", "Phoenix Highway - Crystal Box 19", "Phoenix Highway - Crystal Box 20", "Phoenix Highway - Crystal Box 21", "Phoenix Highway - Crystal Box 22", "Phoenix Highway - Crystal Box 23", "Phoenix Highway - Crystal Box 24", "Phoenix Highway - Crystal Box 25", "Phoenix Highway - Crystal Box 26", "Phoenix Highway - Crystal Box 27", "Phoenix Highway - Crystal Box 28", "Phoenix Highway - Crystal Box 29"])
+            zLandCrystalBoxLocations = get_location_names_with_ids(["Zao Land - Crystal Box 1", "Zao Land - Crystal Box 2", "Zao Land - Crystal Box 3", "Zao Land - Crystal Box 4", "Zao Land - Crystal Box 5", "Zao Land - Crystal Box 6", "Zao Land - Crystal Box 7", "Zao Land - Crystal Box 8", "Zao Land - Crystal Box 9", "Zao Land - Crystal Box 10", "Zao Land - Crystal Box 11", "Zao Land - Crystal Box 12", "Zao Land - Crystal Box 13", "Zao Land - Crystal Box 14", "Zao Land - Crystal Box 15", "Zao Land - Crystal Box 16", "Zao Land - Crystal Box 17", "Zao Land - Crystal Box 18", "Zao Land - Crystal Box 19", "Zao Land - Crystal Box 20", "Zao Land - Crystal Box 21", "Zao Land - Crystal Box 22", "Zao Land - Crystal Box 23", "Zao Land - Crystal Box 24"])
+            gOpera1CrystalBoxLocations = get_location_names_with_ids(["Globe Opera 1 - Crystal Box 1", "Globe Opera 1 - Crystal Box 2", "Globe Opera 1 - Crystal Box 3", "Globe Opera 1 - Crystal Box 4", "Globe Opera 1 - Crystal Box 5", "Globe Opera 1 - Crystal Box 6", "Globe Opera 1 - Crystal Box 7", "Globe Opera 1 - Crystal Box 8", "Globe Opera 1 - Crystal Box 9", "Globe Opera 1 - Crystal Box 10", "Globe Opera 1 - Crystal Box 11", "Globe Opera 1 - Crystal Box 12", "Globe Opera 1 - Crystal Box 13", "Globe Opera 1 - Crystal Box 14", "Globe Opera 1 - Crystal Box 15", "Globe Opera 1 - Crystal Box 16", "Globe Opera 1 - Crystal Box 17", "Globe Opera 1 - Crystal Box 18"])
+            gOpera2CrystalBoxLocations = get_location_names_with_ids(["Globe Opera 2 - Crystal Box 1", "Globe Opera 2 - Crystal Box 2", "Globe Opera 2 - Crystal Box 3", "Globe Opera 2 - Crystal Box 4", "Globe Opera 2 - Crystal Box 5", "Globe Opera 2 - Crystal Box 6", "Globe Opera 2 - Crystal Box 7", "Globe Opera 2 - Crystal Box 8", "Globe Opera 2 - Crystal Box 9", "Globe Opera 2 - Crystal Box 10", "Globe Opera 2 - Crystal Box 11", "Globe Opera 2 - Crystal Box 12", "Globe Opera 2 - Crystal Box 13", "Globe Opera 2 - Crystal Box 14", "Globe Opera 2 - Crystal Box 15", "Globe Opera 2 - Crystal Box 16", "Globe Opera 2 - Crystal Box 17", "Globe Opera 2 - Crystal Box 18", "Globe Opera 2 - Crystal Box 19", "Globe Opera 2 - Crystal Box 20", "Globe Opera 2 - Crystal Box 21", "Globe Opera 2 - Crystal Box 22", "Globe Opera 2 - Crystal Box 23", "Globe Opera 2 - Crystal Box 24", "Globe Opera 2 - Crystal Box 25", "Globe Opera 2 - Crystal Box 26", "Globe Opera 2 - Crystal Box 27", "Globe Opera 2 - Crystal Box 28", "Globe Opera 2 - Crystal Box 29", "Globe Opera 2 - Crystal Box 30", "Globe Opera 2 - Crystal Box 31", "Globe Opera 2 - Crystal Box 32", "Globe Opera 2 - Crystal Box 33", "Globe Opera 2 - Crystal Box 34"])
+            pCourtyardCrystalBoxLocations = get_location_names_with_ids(["Palace Courtyard - Crystal Box 1", "Palace Courtyard - Crystal Box 2"])
+            tGateCrystalBoxLocations = get_location_names_with_ids(["Tidal Gate - Crystal Box 1", "Tidal Gate - Crystal Box 2", "Tidal Gate - Crystal Box 3", "Tidal Gate - Crystal Box 4", "Tidal Gate - Crystal Box 5", "Tidal Gate - Crystal Box 6", "Tidal Gate - Crystal Box 7", "Tidal Gate - Crystal Box 8", "Tidal Gate - Crystal Box 9", "Tidal Gate - Crystal Box 10", "Tidal Gate - Crystal Box 11", "Tidal Gate - Crystal Box 12", "Tidal Gate - Crystal Box 13", "Tidal Gate - Crystal Box 14", "Tidal Gate - Crystal Box 15", "Tidal Gate - Crystal Box 16", "Tidal Gate - Crystal Box 17", "Tidal Gate - Crystal Box 18", "Tidal Gate - Crystal Box 19", "Tidal Gate - Crystal Box 20", "Tidal Gate - Crystal Box 21"])
+            sBridgeCrystalBoxLocations = get_location_names_with_ids(["Sky Bridge - Crystal Box 1", "Sky Bridge - Crystal Box 2", "Sky Bridge - Crystal Box 3", "Sky Bridge - Crystal Box 4", "Sky Bridge - Crystal Box 5", "Sky Bridge - Crystal Box 6", "Sky Bridge - Crystal Box 7", "Sky Bridge - Crystal Box 8", "Sky Bridge - Crystal Box 9", "Sky Bridge - Crystal Box 10", "Sky Bridge - Crystal Box 11", "Sky Bridge - Crystal Box 12", "Sky Bridge - Crystal Box 13", "Sky Bridge - Crystal Box 14", "Sky Bridge - Crystal Box 15", "Sky Bridge - Crystal Box 16", "Sky Bridge - Crystal Box 17"])
+            lTowerCrystalBoxLocations = get_location_names_with_ids(["Lightning Tower - Crystal Box 1", "Lightning Tower - Crystal Box 2", "Lightning Tower - Crystal Box 3", "Lightning Tower - Crystal Box 4", "Lightning Tower - Crystal Box 5", "Lightning Tower - Crystal Box 6", "Lightning Tower - Crystal Box 7", "Lightning Tower - Crystal Box 8", "Lightning Tower - Crystal Box 9"])
+            zJungleCrystalBoxLocations = get_location_names_with_ids(["Zulon Jungle - Crystal Box 1", "Zulon Jungle - Crystal Box 2", "Zulon Jungle - Crystal Box 3", "Zulon Jungle - Crystal Box 4", "Zulon Jungle - Crystal Box 5", "Zulon Jungle - Crystal Box 6", "Zulon Jungle - Crystal Box 7", "Zulon Jungle - Crystal Box 8", "Zulon Jungle - Crystal Box 9", "Zulon Jungle - Crystal Box 10", "Zulon Jungle - Crystal Box 11", "Zulon Jungle - Crystal Box 12", "Zulon Jungle - Crystal Box 13", "Zulon Jungle - Crystal Box 14", "Zulon Jungle - Crystal Box 15", "Zulon Jungle - Crystal Box 16", "Zulon Jungle - Crystal Box 17", "Zulon Jungle - Crystal Box 18", "Zulon Jungle - Crystal Box 19"])
+            nLakeCrystalBoxLocations = get_location_names_with_ids(["Nalao Lake - Crystal Box 1", "Nalao Lake - Crystal Box 2", "Nalao Lake - Crystal Box 3", "Nalao Lake - Crystal Box 4", "Nalao Lake - Crystal Box 5", "Nalao Lake - Crystal Box 6", "Nalao Lake - Crystal Box 7", "Nalao Lake - Crystal Box 8", "Nalao Lake - Crystal Box 9", "Nalao Lake - Crystal Box 10", "Nalao Lake - Crystal Box 11", "Nalao Lake - Crystal Box 12", "Nalao Lake - Crystal Box 13", "Nalao Lake - Crystal Box 14", "Nalao Lake - Crystal Box 15", "Nalao Lake - Crystal Box 16", "Nalao Lake - Crystal Box 17", "Nalao Lake - Crystal Box 18", "Nalao Lake - Crystal Box 19", "Nalao Lake - Crystal Box 20", "Nalao Lake - Crystal Box 21", "Nalao Lake - Crystal Box 22", "Nalao Lake - Crystal Box 23", "Nalao Lake - Crystal Box 24", "Nalao Lake - Crystal Box 25", "Nalao Lake - Crystal Box 26", "Nalao Lake - Crystal Box 27", "Nalao Lake - Crystal Box 28", "Nalao Lake - Crystal Box 29"])
+            aForgeCrystalBoxLocations = get_location_names_with_ids(["Ancestral Forge - Crystal Box 1", "Ancestral Forge - Crystal Box 2", "Ancestral Forge - Crystal Box 3", "Ancestral Forge - Crystal Box 4", "Ancestral Forge - Crystal Box 5", "Ancestral Forge - Crystal Box 6", "Ancestral Forge - Crystal Box 7", "Ancestral Forge - Crystal Box 8"])
+            mStarscapeCrystalBoxLocations = get_location_names_with_ids(["Magma Starscape - Crystal Box 1", "Magma Starscape - Crystal Box 2", "Magma Starscape - Crystal Box 3", "Magma Starscape - Crystal Box 4", "Magma Starscape - Crystal Box 5", "Magma Starscape - Crystal Box 6", "Magma Starscape - Crystal Box 7", "Magma Starscape - Crystal Box 8", "Magma Starscape - Crystal Box 9", "Magma Starscape - Crystal Box 10", "Magma Starscape - Crystal Box 11", "Magma Starscape - Crystal Box 12", "Magma Starscape - Crystal Box 13", "Magma Starscape - Crystal Box 14", "Magma Starscape - Crystal Box 15", "Magma Starscape - Crystal Box 16", "Magma Starscape - Crystal Box 17", "Magma Starscape - Crystal Box 18", "Magma Starscape - Crystal Box 19", "Magma Starscape - Crystal Box 20", "Magma Starscape - Crystal Box 21", "Magma Starscape - Crystal Box 22", "Magma Starscape - Crystal Box 23", "Magma Starscape - Crystal Box 24", "Magma Starscape - Crystal Box 25", "Magma Starscape - Crystal Box 26", "Magma Starscape - Crystal Box 27", "Magma Starscape - Crystal Box 28", "Magma Starscape - Crystal Box 29", "Magma Starscape - Crystal Box 30", "Magma Starscape - Crystal Box 31", "Magma Starscape - Crystal Box 32", "Magma Starscape - Crystal Box 33", "Magma Starscape - Crystal Box 34", "Magma Starscape - Crystal Box 35", "Magma Starscape - Crystal Box 36"])
+            gBubbleCrystalBoxLocations = get_location_names_with_ids(["Gravity Bubble - Crystal Box 1", "Gravity Bubble - Crystal Box 2", "Gravity Bubble - Crystal Box 3", "Gravity Bubble - Crystal Box 4", "Gravity Bubble - Crystal Box 5", "Gravity Bubble - Crystal Box 6", "Gravity Bubble - Crystal Box 7", "Gravity Bubble - Crystal Box 8", "Gravity Bubble - Crystal Box 9", "Gravity Bubble - Crystal Box 10", "Gravity Bubble - Crystal Box 11", "Gravity Bubble - Crystal Box 12", "Gravity Bubble - Crystal Box 13", "Gravity Bubble - Crystal Box 14", "Gravity Bubble - Crystal Box 15", "Gravity Bubble - Crystal Box 16", "Gravity Bubble - Crystal Box 17", "Gravity Bubble - Crystal Box 18", "Gravity Bubble - Crystal Box 19", "Gravity Bubble - Crystal Box 20", "Gravity Bubble - Crystal Box 21"])
+            bRushCrystalBoxLocations = get_location_names_with_ids(["Bakunawa Rush - Crystal Box 1", "Bakunawa Rush - Crystal Box 2", "Bakunawa Rush - Crystal Box 3", "Bakunawa Rush - Crystal Box 4"])
+            cArboretumCrystalBoxLocations = get_location_names_with_ids(["Clockwork Arboretum - Crystal Box 1", "Clockwork Arboretum - Crystal Box 2", "Clockwork Arboretum - Crystal Box 3", "Clockwork Arboretum - Crystal Box 4", "Clockwork Arboretum - Crystal Box 5", "Clockwork Arboretum - Crystal Box 6", "Clockwork Arboretum - Crystal Box 7", "Clockwork Arboretum - Crystal Box 8", "Clockwork Arboretum - Crystal Box 9", "Clockwork Arboretum - Crystal Box 10", "Clockwork Arboretum - Crystal Box 11", "Clockwork Arboretum - Crystal Box 12", "Clockwork Arboretum - Crystal Box 13", "Clockwork Arboretum - Crystal Box 14", "Clockwork Arboretum - Crystal Box 15", "Clockwork Arboretum - Crystal Box 16"])
+            iDynamoCrystalBoxLocations = get_location_names_with_ids(["Inversion Dynamo - Crystal Box 1", "Inversion Dynamo - Crystal Box 2", "Inversion Dynamo - Crystal Box 3", "Inversion Dynamo - Crystal Box 4", "Inversion Dynamo - Crystal Box 5", "Inversion Dynamo - Crystal Box 6", "Inversion Dynamo - Crystal Box 7", "Inversion Dynamo - Crystal Box 8", "Inversion Dynamo - Crystal Box 9", "Inversion Dynamo - Crystal Box 10", "Inversion Dynamo - Crystal Box 11", "Inversion Dynamo - Crystal Box 12", "Inversion Dynamo - Crystal Box 13", "Inversion Dynamo - Crystal Box 14", "Inversion Dynamo - Crystal Box 15", "Inversion Dynamo - Crystal Box 16", "Inversion Dynamo - Crystal Box 17", "Inversion Dynamo - Crystal Box 18", "Inversion Dynamo - Crystal Box 19", "Inversion Dynamo - Crystal Box 20", "Inversion Dynamo - Crystal Box 21", "Inversion Dynamo - Crystal Box 22", "Inversion Dynamo - Crystal Box 23", "Inversion Dynamo - Crystal Box 24", "Inversion Dynamo - Crystal Box 25", "Inversion Dynamo - Crystal Box 26", "Inversion Dynamo - Crystal Box 27", "Inversion Dynamo - Crystal Box 28"])
+            lCannonCrystalBoxLocations = get_location_names_with_ids(["Lunar Cannon - Crystal Box 1", "Lunar Cannon - Crystal Box 2", "Lunar Cannon - Crystal Box 3", "Lunar Cannon - Crystal Box 4", "Lunar Cannon - Crystal Box 5", "Lunar Cannon - Crystal Box 6", "Lunar Cannon - Crystal Box 7", "Lunar Cannon - Crystal Box 8", "Lunar Cannon - Crystal Box 9", "Lunar Cannon - Crystal Box 10"])
+            battlesphere1CrystalBoxLocations = get_location_names_with_ids(["Beginner's Gauntlet - Crystal Box 1", "Beginner's Gauntlet - Crystal Box 2", "Beginner's Gauntlet - Crystal Box 3"])
+            battlesphere2CrystalBoxLocations = get_location_names_with_ids(["Flip Fire Gauntlet - Crystal Box 1", "Flip Fire Gauntlet - Crystal Box 2"])
+            battlesphere3CrystalBoxLocations = get_location_names_with_ids(["Stop and Go - Crystal Box 1", "Stop and Go - Crystal Box 2", "Stop and Go - Crystal Box 3"])
+            battlesphere4CrystalBoxLocations = get_location_names_with_ids(["Mach Speed Melee - Crystal Box 1", "Mach Speed Melee - Crystal Box 2", "Mach Speed Melee - Crystal Box 3", "Mach Speed Melee - Crystal Box 4", "Mach Speed Melee - Crystal Box 5"])
+            battlesphere5CrystalBoxLocations = get_location_names_with_ids(["Rolling Thunder - Crystal Box 1", "Rolling Thunder - Crystal Box 2"])
+            battlesphere6CrystalBoxLocations = get_location_names_with_ids(["Mondo Condo - Crystal Box 1", "Mondo Condo - Crystal Box 2", "Mondo Condo - Crystal Box 3", "Mondo Condo - Crystal Box 4", "Mondo Condo - Crystal Box 5", "Mondo Condo - Crystal Box 6", "Mondo Condo - Crystal Box 7", "Mondo Condo - Crystal Box 8", "Mondo Condo - Crystal Box 9", "Mondo Condo - Crystal Box 10"])
+            battlesphere7CrystalBoxLocations = get_location_names_with_ids(["Vanishing Maze - Crystal Box 1", "Vanishing Maze - Crystal Box 2", "Vanishing Maze - Crystal Box 3", "Vanishing Maze - Crystal Box 4", "Vanishing Maze - Crystal Box 5"])
+            
+            dValleyItems.add_locations(dValleyCrystalBoxLocations, FP2Location)
+            sParkItems.add_locations(sParkCrystalBoxLocations, FP2Location)
+            tFallsItems.add_locations(tFallsCrystalBoxLocations, FP2Location)
+            rGraveyardItems.add_locations(rGraveyardCrystalBoxLocations, FP2Location)
+            sArmoryItems.add_locations(sArmoryCrystalBoxLocations, FP2Location)
+            aMuseumItems.add_locations(aMuseumCrystalBoxLocations, FP2Location)
+            aSigwadaItems.add_locations(aSigwadaCrystalBoxLocations, FP2Location)
+            pHighwayItems.add_locations(pHighwayCrystalBoxLocations, FP2Location)
+            zLandItems.add_locations(zLandCrystalBoxLocations, FP2Location)
+            gOpera1Items.add_locations(gOpera1CrystalBoxLocations, FP2Location)
+            gOpera2Items.add_locations(gOpera2CrystalBoxLocations, FP2Location)
+            pCourtyardItems.add_locations(pCourtyardCrystalBoxLocations, FP2Location)
+            tGateItems.add_locations(tGateCrystalBoxLocations, FP2Location)
+            sBridgeItems.add_locations(sBridgeCrystalBoxLocations, FP2Location)
+            lTowerItems.add_locations(lTowerCrystalBoxLocations, FP2Location)
+            zJungleItems.add_locations(zJungleCrystalBoxLocations, FP2Location)
+            nLakeItems.add_locations(nLakeCrystalBoxLocations, FP2Location)
+            aForgeItems.add_locations(aForgeCrystalBoxLocations, FP2Location)
+            mStarscapeItems.add_locations(mStarscapeCrystalBoxLocations, FP2Location)
+            gBubble.add_locations(gBubbleCrystalBoxLocations, FP2Location)
+            bRushItems.add_locations(bRushCrystalBoxLocations, FP2Location)
+            cArboretumItems.add_locations(cArboretumCrystalBoxLocations, FP2Location)
+            iDynamoItems.add_locations(iDynamoCrystalBoxLocations, FP2Location)
+            lCannonItems.add_locations(lCannonCrystalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere1CrystalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere2CrystalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere3CrystalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere4CrystalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere5CrystalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere6CrystalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere7CrystalBoxLocations, FP2Location)
+        
+        # Add the Petal Box locations if needed.
+        if world.options.item_boxes_petals:
+            dValleyPetalBoxLocations = get_location_names_with_ids(["Dragon Valley - Petal Box 1", "Dragon Valley - Petal Box 2", "Dragon Valley - Petal Box 3"])
+            sParkPetalBoxLocations = get_location_names_with_ids(["Shenlin Park - Petal Box 1", "Shenlin Park - Petal Box 2", "Shenlin Park - Petal Box 3"])
+            tFallsPetalBoxLocations = get_location_names_with_ids(["Tiger Falls - Petal Box 1", "Tiger Falls - Petal Box 2", "Tiger Falls - Petal Box 3", "Tiger Falls - Petal Box 4"])
+            rGraveyardPetalBoxLocations = get_location_names_with_ids(["Robot Graveyard - Petal Box 1", "Robot Graveyard - Petal Box 2", "Robot Graveyard - Petal Box 3"])
+            sArmoryPetalBoxLocations = get_location_names_with_ids(["Shade Armory - Petal Box 1", "Shade Armory - Petal Box 2", "Shade Armory - Petal Box 3", "Shade Armory - Petal Box 4", "Shade Armory - Petal Box 5"])
+            aMuseumPetalBoxLocations = get_location_names_with_ids(["Avian Museum - Petal Box 1", "Avian Museum - Petal Box 2", "Avian Museum - Petal Box 3", "Avian Museum - Petal Box 4", "Avian Museum - Petal Box 5", "Avian Museum - Petal Box 6", "Avian Museum - Petal Box 7"])
+            aSigwadaPetalBoxLocations = get_location_names_with_ids(["Airship Sigwada - Petal Box 1", "Airship Sigwada - Petal Box 2", "Airship Sigwada - Petal Box 3", "Airship Sigwada - Petal Box 4", "Airship Sigwada - Petal Box 5"])
+            pHighwayPetalBoxLocations = get_location_names_with_ids(["Phoenix Highway - Petal Box 1", "Phoenix Highway - Petal Box 2", "Phoenix Highway - Petal Box 3"])
+            zLandPetalBoxLocations = get_location_names_with_ids(["Zao Land - Petal Box 1", "Zao Land - Petal Box 2", "Zao Land - Petal Box 3", "Zao Land - Petal Box 4"])
+            gOpera1PetalBoxLocations = get_location_names_with_ids(["Globe Opera 1 - Petal Box 1", "Globe Opera 1 - Petal Box 2", "Globe Opera 1 - Petal Box 3", "Globe Opera 1 - Petal Box 4"])
+            gOpera2PetalBoxLocations = get_location_names_with_ids(["Globe Opera 2 - Petal Box 1", "Globe Opera 2 - Petal Box 2", "Globe Opera 2 - Petal Box 3", "Globe Opera 2 - Petal Box 4", "Globe Opera 2 - Petal Box 5", "Globe Opera 2 - Petal Box 6", "Globe Opera 2 - Petal Box 7"])
+            pCourtyardPetalBoxLocations = get_location_names_with_ids(["Palace Courtyard - Petal Box"])
+            tGatePetalBoxLocations = get_location_names_with_ids(["Tidal Gate - Petal Box 1", "Tidal Gate - Petal Box 2", "Tidal Gate - Petal Box 3"])
+            sBridgePetalBoxLocations = get_location_names_with_ids(["Sky Bridge - Petal Box 1", "Sky Bridge - Petal Box 2", "Sky Bridge - Petal Box 3"])
+            lTowerPetalBoxLocations = get_location_names_with_ids(["Lightning Tower - Petal Box 1", "Lightning Tower - Petal Box 2", "Lightning Tower - Petal Box 3"])
+            zJunglePetalBoxLocations = get_location_names_with_ids(["Zulon Jungle - Petal Box 1", "Zulon Jungle - Petal Box 2", "Zulon Jungle - Petal Box 3", "Zulon Jungle - Petal Box 4", "Zulon Jungle - Petal Box 5"])
+            nLakePetalBoxLocations = get_location_names_with_ids(["Nalao Lake - Petal Box 1", "Nalao Lake - Petal Box 2"])
+            aForgePetalBoxLocations = get_location_names_with_ids(["Ancestral Forge - Petal Box 1", "Ancestral Forge - Petal Box 2", "Ancestral Forge - Petal Box 3", "Ancestral Forge - Petal Box 4", "Ancestral Forge - Petal Box 5"])
+            mStarscapePetalBoxLocations = get_location_names_with_ids(["Magma Starscape - Petal Box 1", "Magma Starscape - Petal Box 2", "Magma Starscape - Petal Box 3", "Magma Starscape - Petal Box 4"])
+            bRushPetalBoxLocations = get_location_names_with_ids(["Bakunawa Rush - Petal Box 1", "Bakunawa Rush - Petal Box 2", "Bakunawa Rush - Petal Box 3"])
+            cArboretumPetalBoxLocations = get_location_names_with_ids(["Clockwork Arboretum - Petal Box 1", "Clockwork Arboretum - Petal Box 2", "Clockwork Arboretum - Petal Box 3", "Clockwork Arboretum - Petal Box 4", "Clockwork Arboretum - Petal Box 5", "Clockwork Arboretum - Petal Box 6", "Clockwork Arboretum - Petal Box 7", "Clockwork Arboretum - Petal Box 8"])
+            iDynamoPetalBoxLocations = get_location_names_with_ids(["Inversion Dynamo - Petal Box 1", "Inversion Dynamo - Petal Box 2", "Inversion Dynamo - Petal Box 3", "Inversion Dynamo - Petal Box 4", "Inversion Dynamo - Petal Box 5"])
+            lCannonPetalBoxLocations = get_location_names_with_ids(["Lunar Cannon - Petal Box 1", "Lunar Cannon - Petal Box 2", "Lunar Cannon - Petal Box 3", "Lunar Cannon - Petal Box 4"])
+            battlesphere1PetalBoxLocations = get_location_names_with_ids(["Beginner's Gauntlet - Petal Box"])
+            battlesphere3PetalBoxLocations = get_location_names_with_ids(["Stop and Go - Petal Box"])
+            battlesphere4PetalBoxLocations = get_location_names_with_ids(["Mach Speed Melee - Petal Box"])
+            battlesphere7PetalBoxLocations = get_location_names_with_ids(["Vanishing Maze - Petal Box 1", "Vanishing Maze - Petal Box 2"])
+            battlesphereArenaPetalBoxLocations = get_location_names_with_ids(["Battlebot Battle Royale - Petal Box"])
+            
+            dValleyItems.add_locations(dValleyPetalBoxLocations, FP2Location)
+            sParkItems.add_locations(sParkPetalBoxLocations, FP2Location)
+            tFallsItems.add_locations(tFallsPetalBoxLocations, FP2Location)
+            rGraveyardItems.add_locations(rGraveyardPetalBoxLocations, FP2Location)
+            sArmoryItems.add_locations(sArmoryPetalBoxLocations, FP2Location)
+            aMuseumItems.add_locations(aMuseumPetalBoxLocations, FP2Location)
+            aSigwadaItems.add_locations(aSigwadaPetalBoxLocations, FP2Location)
+            pHighwayItems.add_locations(pHighwayPetalBoxLocations, FP2Location)
+            zLandItems.add_locations(zLandPetalBoxLocations, FP2Location)
+            gOpera1Items.add_locations(gOpera1PetalBoxLocations, FP2Location)
+            gOpera2Items.add_locations(gOpera2PetalBoxLocations, FP2Location)
+            pCourtyardItems.add_locations(pCourtyardPetalBoxLocations, FP2Location)
+            tGateItems.add_locations(tGatePetalBoxLocations, FP2Location)
+            sBridgeItems.add_locations(sBridgePetalBoxLocations, FP2Location)
+            lTowerItems.add_locations(lTowerPetalBoxLocations, FP2Location)
+            zJungleItems.add_locations(zJunglePetalBoxLocations, FP2Location)
+            nLakeItems.add_locations(nLakePetalBoxLocations, FP2Location)
+            aForgeItems.add_locations(aForgePetalBoxLocations, FP2Location)
+            mStarscapeItems.add_locations(mStarscapePetalBoxLocations, FP2Location)
+            bRushItems.add_locations(bRushPetalBoxLocations, FP2Location)
+            cArboretumItems.add_locations(cArboretumPetalBoxLocations, FP2Location)
+            iDynamoItems.add_locations(iDynamoPetalBoxLocations, FP2Location)
+            lCannon.add_locations(lCannonPetalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere1PetalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere3PetalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere4PetalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere7PetalBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphereArenaPetalBoxLocations, FP2Location)
+        
+        # Add the Shield Box locations if needed.
+        if world.options.item_boxes_shields:
+            dValleyShieldBoxLocations = get_location_names_with_ids(["Dragon Valley - Wood Shield Box 1", "Dragon Valley - Earth Shield Box 1", "Dragon Valley - Wood Shield Box 2", "Dragon Valley - Wood Shield Box 3", "Dragon Valley - Earth Shield Box 2"])
+            sParkShieldBoxLocations = get_location_names_with_ids(["Shenlin Park - Fire Shield Box 1", "Shenlin Park - Water Shield Box 1", "Shenlin Park - Water Shield Box 2", "Shenlin Park - Fire Shield Box 2", "Shenlin Park - Water Shield Box 3"])
+            tFallsShieldBoxLocations = get_location_names_with_ids(["Tiger Falls - Earth Shield Box", "Tiger Falls - Water Shield Box", "Tiger Falls - Metal Shield Box"])
+            rGraveyardShieldBoxLocations = get_location_names_with_ids(["Robot Graveyard - Metal Shield Box 1", "Robot Graveyard - Water Shield Box", "Robot Graveyard - Metal Shield Box 2"])
+            sArmoryShieldBoxLocations = get_location_names_with_ids(["Shade Armory - Metal Shield Box 1", "Shade Armory - Earth Shield Box 1", "Shade Armory - Metal Shield Box 2", "Shade Armory - Wood Shield Box", "Shade Armory - Earth Shield Box 2", "Shade Armory - Water Shield Box"])
+            snowfieldsShieldBoxLocations = get_location_names_with_ids(["Snowfields - Wood Shield Box"])
+            aMuseumShieldBoxLocations = get_location_names_with_ids(["Avian Museum - Fire Shield Box", "Avian Museum - Wood Shield Box", "Avian Museum - Earth Shield Box", "Avian Museum - Metal Shield Box"])
+            aSigwadaShieldBoxLocations = get_location_names_with_ids(["Airship Sigwada - Wood Shield Box 1", "Airship Sigwada - Metal Shield Box", "Airship Sigwada - Wood Shield Box 2", "Airship Sigwada - Water Shield Box"])
+            pHighwayShieldBoxLocations = get_location_names_with_ids(["Phoenix Highway - Water Shield Box", "Phoenix Highway - Earth Shield Box", "Phoenix Highway - Fire Shield Box"])
+            zLandShieldBoxLocations = get_location_names_with_ids(["Zao Land - Fire Shield Box", "Zao Land - Earth Shield Box 1", "Zao Land - Water Shield Box", "Zao Land - Earth Shield Box 2", "Zao Land - Wood Shield Box"])
+            gOpera1ShieldBoxLocations = get_location_names_with_ids(["Globe Opera 1 - Wood Shield Box", "Globe Opera 1 - Metal Shield Box"])
+            gOpera2ShieldBoxLocations = get_location_names_with_ids(["Globe Opera 2 - Water Shield Box", "Globe Opera 2 - Wood Shield Box", "Globe Opera 2 - Metal Shield Box", "Globe Opera 2 - Fire Shield Box"])
+            pCourtyardShieldBoxLocations = get_location_names_with_ids(["Palace Courtyard - Wood Shield Box"])
+            tGateShieldBoxLocations = get_location_names_with_ids(["Tidal Gate - Wood Shield Box 1", "Tidal Gate - Water Shield Box 1", "Tidal Gate - Water Shield Box 2", "Tidal Gate - Earth Shield Box", "Tidal Gate - Wood Shield Box 2", "Tidal Gate - Fire Shield Box"])
+            sBridgeShieldBoxLocations = get_location_names_with_ids(["Sky Bridge - Wood Shield Box 1", "Sky Bridge - Wood Shield Box 2", "Sky Bridge - Fire Shield Box", "Sky Bridge - Earth Shield Box 1", "Sky Bridge - Earth Shield Box 2"])
+            lTowerShieldBoxLocations = get_location_names_with_ids(["Lightning Tower - Metal Shield Box", "Lightning Tower - Earth Shield Box", "Lightning Tower - Water Shield Box"])
+            zJungleShieldBoxLocations = get_location_names_with_ids(["Zulon Jungle - Metal Shield Box 1", "Zulon Jungle - Metal Shield Box 2", "Zulon Jungle - Fire Shield Box 1", "Zulon Jungle - Fire Shield Box 2", "Zulon Jungle - Earth Shield Box 1", "Zulon Jungle - Wood Shield Box 1", "Zulon Jungle - Earth Shield Box 2", "Zulon Jungle - Wood Shield Box 2", "Zulon Jungle - Wood Shield Box 3", "Zulon Jungle - Earth Shield Box 3", "Zulon Jungle - Metal Shield Box 3", "Zulon Jungle - Fire Shield Box 3"])
+            nLakeShieldBoxLocations = get_location_names_with_ids(["Nalao Lake - Earth Shield Box 1", "Nalao Lake - Earth Shield Box 2", "Nalao Lake - Water Shield Box 1", "Nalao Lake - Fire Shield Box", "Nalao Lake - Water Shield Box 2", "Nalao Lake - Metal Shield Box 1", "Nalao Lake - Metal Shield Box 2"])
+            aForgeShieldBoxLocations = get_location_names_with_ids(["Ancestral Forge - Water Shield Box 1", "Ancestral Forge - Water Shield Box 2", "Ancestral Forge - Wood Shield Box", "Ancestral Forge - Earth Shield Box"])
+            mStarscapeShieldBoxLocations = get_location_names_with_ids(["Magma Starscape - Earth Shield Box 1", "Magma Starscape - Earth Shield Box 2", "Magma Starscape - Fire Shield Box 1", "Magma Starscape - Fire Shield Box 2", "Magma Starscape - Fire Shield Box 3"])
+            gBubbleShieldBoxLocations = get_location_names_with_ids(["Gravity Bubble - Water Shield Box 1", "Gravity Bubble - Water Shield Box 2", "Gravity Bubble - Water Shield Box 3"])
+            bRushShieldBoxLocations = get_location_names_with_ids(["Bakunawa Rush - Water Shield Box", "Bakunawa Rush - Earth Shield Box", "Bakunawa Rush - Metal Shield Box"])
+            cArboretumShieldBoxLocations = get_location_names_with_ids(["Clockwork Arboretum - Fire Shield Box 1", "Clockwork Arboretum - Wood Shield Box", "Clockwork Arboretum - Earth Shield Box", "Clockwork Arboretum - Fire Shield Box 2"])
+            iDynamoShieldBoxLocations = get_location_names_with_ids(["Inversion Dynamo - Earth Shield Box", "Inversion Dynamo - Metal Shield Box 1", "Inversion Dynamo - Wood Shield Box 1", "Inversion Dynamo - Wood Shield Box 2", "Inversion Dynamo - Metal Shield Box 2"])
+            lCannonShieldBoxLocations = get_location_names_with_ids(["Lunar Cannon - Wood Shield Box", "Lunar Cannon - Fire Shield Box", "Lunar Cannon - Water Shield Box", "Lunar Cannon - Earth Shield Box", "Lunar Cannon - Metal Shield Box"])
+            battlesphere1ShieldBoxLocations = get_location_names_with_ids(["Beginner's Gauntlet - Metal Shield Box", "Beginner's Gauntlet - Wood Shield Box"])
+            battlesphere2ShieldBoxLocations = get_location_names_with_ids(["Flip Fire Gauntlet - Fire Shield Box"])
+            battlesphere7ShieldBoxLocations = get_location_names_with_ids(["Vanishing Maze - Metal Shield Box", "Vanishing Maze - Wood Shield Box"])
+            battlesphere8ShieldBoxLocations = get_location_names_with_ids(["Mecha Madness - Wood Shield Box", "Mecha Madness - Fire Shield Box"])
+            
+            dValleyItems.add_locations(dValleyShieldBoxLocations, FP2Location)
+            sParkItems.add_locations(sParkShieldBoxLocations, FP2Location)
+            tFallsItems.add_locations(tFallsShieldBoxLocations, FP2Location)
+            rGraveyardItems.add_locations(rGraveyardShieldBoxLocations, FP2Location)
+            sArmoryItems.add_locations(sArmoryShieldBoxLocations, FP2Location)
+            snowfieldsItems.add_locations(snowfieldsShieldBoxLocations, FP2Location)
+            aMuseumItems.add_locations(aMuseumShieldBoxLocations, FP2Location)
+            aSigwadaItems.add_locations(aSigwadaShieldBoxLocations, FP2Location)
+            pHighwayItems.add_locations(pHighwayShieldBoxLocations, FP2Location)
+            zLandItems.add_locations(zLandShieldBoxLocations, FP2Location)
+            gOpera1Items.add_locations(gOpera1ShieldBoxLocations, FP2Location)
+            gOpera2Items.add_locations(gOpera2ShieldBoxLocations, FP2Location)
+            pCourtyardItems.add_locations(pCourtyardShieldBoxLocations, FP2Location)
+            tGateItems.add_locations(tGateShieldBoxLocations, FP2Location)
+            sBridgeItems.add_locations(sBridgeShieldBoxLocations, FP2Location)
+            lTowerItems.add_locations(lTowerShieldBoxLocations, FP2Location)
+            zJungleItems.add_locations(zJungleShieldBoxLocations, FP2Location)
+            nLakeItems.add_locations(nLakeShieldBoxLocations, FP2Location)
+            aForgeItems.add_locations(aForgeShieldBoxLocations, FP2Location)
+            mStarscapeItems.add_locations(mStarscapeShieldBoxLocations, FP2Location)
+            gBubbleItems.add_locations(gBubbleShieldBoxLocations, FP2Location)
+            bRushItems.add_locations(bRushShieldBoxLocations, FP2Location)
+            cArboretumItems.add_locations(cArboretumShieldBoxLocations, FP2Location)
+            iDynamoItems.add_locations(iDynamoShieldBoxLocations, FP2Location)
+            lCannonItems.add_locations(lCannonShieldBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere1ShieldBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere2ShieldBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere7ShieldBoxLocations, FP2Location)
+            battlesphereItems.add_locations(battlesphere8ShieldBoxLocations, FP2Location)
+            
+        # Add the Gold Gem Box locations if needed.
+        if world.options.item_boxes_goldgems:
+            tGateGoldGemBoxLocations = get_location_names_with_ids(["Tidal Gate - Gold Gem Box"])
+            zJungleGoldGemBoxLocations = get_location_names_with_ids(["Zulon Jungle - Gold Gem Box"])
+            nLakeGoldGemBoxLocations = get_location_names_with_ids(["Nalao Lake - Gold Gem Box"])
+            aForgeGoldGemBoxLocations = get_location_names_with_ids(["Ancestral Forge - Gold Gem Box"])
+            cArboretumGoldGemBoxLocations = get_location_names_with_ids(["Clockwork Arboretum - Gold Gem Box"])
+            iDynamoGoldGemBoxLocations = get_location_names_with_ids(["Inversion Dynamo - Gold Gem Box"])
+            
+            tGateItems.add_locations(tGateGoldGemBoxLocations, FP2Location)
+            zJungleItems.add_locations(zJungleGoldGemBoxLocations, FP2Location)
+            nLakeItems.add_locations(nLakeGoldGemBoxLocations, FP2Location)
+            aForgeItems.add_locations(aForgeGoldGemBoxLocations, FP2Location)
+            cArboretumItems.add_locations(cArboretumGoldGemBoxLocations, FP2Location)
+            iDynamoItems.add_locations(iDynamoGoldGemBoxLocations, FP2Location)
+
     def create_shop_locations(locationCount, shopName, startIndex):
         shopLocations = {}
         for shopIndex in range(locationCount):
@@ -2469,7 +3389,7 @@ def create_regular_locations(world: FP2World) -> None:
         enemySanity.add_locations(enemySanityLocations, FP2Location)
     if world.options.bosses:
         bossSanity = world.get_region("Boss")
-        bossSanityLocations = get_location_names_with_ids(["Acrabelle", "Askal", "Astral Golmech (Aaa)", "Astral Golmech (Askal)", "Beast One", "Beast Two", "Beast Three", "BFF2000", "Captain Kalaw", "Carol", "Corazon", "Crabulon", "Discord", "Drake Cocoon", "Duality", "General Gong", "Gnawsa Lock", "Herald", "Hundred Drillion", "Kakugan", "Lemon Bread", "Lilac", "Merga (Blue Moon)", "Merga (Blood Moon)", "Merga (Super Moon)", "Merga (Eclipse)", "Merga (Lilith)", "Merga", "Milla", "Monster Cube", "Neera", "Proto Pincer", "Rail Driver", "Rosebud", "Serpentine", "Shell Growth", "Storm Slider", "Syntax Spider", "Titan Armor", "Trigger Joy", "Trigger Lancer", "Tunnel Driver", "Weather Face", "Wolf Armour"])
+        bossSanityLocations = get_location_names_with_ids(["Acrabelle", "Askal", "Astral Golmech (Aaa)", "Astral Golmech (Askal)", "Beast One", "Beast Two", "Beast Three", "BFF2000", "Captain Kalaw", "Carol", "Corazon", "Crabulon", "Discord", "Drake Cocoon", "Duality", "General Gong", "Gnawsa Lock", "Herald", "Hundred Drillion", "Kakugan", "Lemon Bread", "Lilac", "Merga (Blue Moon)", "Merga (Blood Moon)", "Merga (Super Moon)", "Merga (Eclipse)", "Merga (Lilith)", "Merga", "Milla", "Monster Cube", "Neera", "Proto Pincer", "Rail Driver", "Rosebud", "Serpentine", "Shell Growth", "Storm Slider", "Syntax Spider", "Titan Armor", "Trigger Joy", "Trigger Lancer", "Tunnel Driver", "Weather Face", "Wolf Armor"])
         bossSanity.add_locations(bossSanityLocations, FP2Location)
         
 def create_events(world: FP2World) -> None:
