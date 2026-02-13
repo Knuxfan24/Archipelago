@@ -153,8 +153,12 @@ def create_zulag4_regions(world: NNTWorld) -> None:
     zulag4SligPathG = Region("Zulag 4 (Slig Path Post Grenades)", world.player, world.multiworld)
     zulag4S2 = Region("Zulag 4 (Secret Area 2)", world.player, world.multiworld)
     boardroom = Region("Boardroom", world.player, world.multiworld)
+    alf = Region("Alf's Escape", world.player, world.multiworld)
 
-    regions = [zulag4, zulag4S1, zulag4SligPath, zulag4SligPathG, zulag4S2, boardroom]
+    regions = [zulag4, zulag4S1, zulag4SligPath, zulag4SligPathG, zulag4S2]
+    
+    if world.options.goal == 0: regions.append(boardroom)
+    if world.options.goal == 1: regions.append(alf)
 
     world.multiworld.regions += regions
 
@@ -341,11 +345,17 @@ def connect_zulag4_regions(world: NNTWorld) -> None:
     zulag4SligPath = world.get_region("Zulag 4 (Slig Path)")
     zulag4SligPathG = world.get_region("Zulag 4 (Slig Path Post Grenades)")
     zulag4S2 = world.get_region("Zulag 4 (Secret Area 2)")
-    boardroom = world.get_region("Boardroom")
     
     menu.connect(zulag4, "Menu to Zulag 4")
     zulag4.connect(zulag4S1, "Zulag 4 Secret Area 1 Access")
     zulag4.connect(zulag4SligPath, "Zulag 4 Slig Path")
     zulag4SligPath.connect(zulag4SligPathG, "Zulag 4 Slig Path Post Grenades")
     zulag4SligPathG.connect(zulag4S2, "Zulag 4 Secret Area 2 Access")
-    menu.connect(boardroom, "Menu to Boardroom")
+    
+    if (world.options.goal == 0):
+        boardroom = world.get_region("Boardroom")
+        menu.connect(boardroom, "Menu to Boardroom")
+        
+    if (world.options.goal == 1):
+        alf = world.get_region("Alf's Escape")
+        menu.connect(alf, "Menu to Alf's Escape")

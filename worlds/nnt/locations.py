@@ -1038,5 +1038,10 @@ def create_zulag4_locations(world: NNTWorld) -> None:
     zulag4SligPathG.add_locations(zulag4SligPathGMuds, NNTLocation)
     zulag4S2.add_locations(zulag4S2Muds, NNTLocation)
     
-    boardroom = world.get_region("Boardroom")
-    boardroom.add_event("Boardroom Destruction", "Victory", location_type=NNTLocation, item_type=items.NNTItem)
+    if world.options.goal == 0:
+        boardroom = world.get_region("Boardroom")
+        boardroom.add_event("Boardroom Destruction", "Victory", location_type=NNTLocation, item_type=items.NNTItem)
+    
+    if world.options.goal == 1:
+        alf = world.get_region("Alf's Escape")
+        alf.add_event("Alf Rescued", "Victory", location_type=NNTLocation, item_type=items.NNTItem)

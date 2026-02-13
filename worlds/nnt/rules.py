@@ -134,8 +134,6 @@ def set_zulag2_entrance_rules(world: NNTWorld) -> None:
     add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 7"), lambda state: state.has("Levers", world.player))
     add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 6"), lambda state: state.has("Levers", world.player))
     add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 5"), lambda state: state.has("Levers", world.player))
-    add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 1"), lambda state: state.has("Levers", world.player))
-    add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 4"), lambda state: state.has("Levers", world.player))
     add_rule(world.get_location("Zulag 2 Door 1"), lambda state: state.has("Levers", world.player))
     set_rule(zulag2Door1Back, lambda state: state.has("Shrykull", world.player))
     set_rule(zulag2Door2, lambda state: state.has("Levers", world.player))
@@ -172,9 +170,8 @@ def set_zulag4_entrance_rules(world: NNTWorld) -> None:
     add_rule(zulag4SligPath, lambda state: state.has("Levers", world.player))
     set_rule(zulag4SligPathG, lambda state: state.has("Grenades", world.player))
     
-    # Checks if the player has enough rescued Mudokons and the abilities needed to complete The Boardroom.
-    # TODO: Make a version of this for Alf's Escape when we implement that.
-    def GoModeCheck(state: CollectionState) -> bool:
+    # Checks if the player has enough rescued Mudokons and the abilities needed to complete The Boardroom or Alf's Escape.
+    def GoModeCheckBoardroom(state: CollectionState) -> bool:
         if state.has("Rescued Mudokon", world.player, world.required_muds) == False: return False
         if state.has("Levers", world.player) == False: return False
         if state.has("Lifts", world.player) == False: return False
@@ -182,8 +179,23 @@ def set_zulag4_entrance_rules(world: NNTWorld) -> None:
         if state.has("Shrykull", world.player) == False: return False
         return True
     
-    boardroomAccess = world.get_entrance("Menu to Boardroom")
-    set_rule(boardroomAccess, GoModeCheck)
+    def GoModeCheckAlf(state: CollectionState) -> bool:
+        if state.has("Rescued Mudokon", world.player, world.required_muds) == False: return False
+        if state.has("Levers", world.player) == False: return False
+        if state.has("Lifts", world.player) == False: return False
+        if state.has("UXB Defusion", world.player) == False: return False
+        if state.has("Grenades", world.player) == False: return False
+        if state.has("Possession", world.player) == False: return False
+        if state.has("Meat", world.player) == False: return False
+        return True
+    
+    if (world.options.goal == 0):
+        boardroomAccess = world.get_entrance("Menu to Boardroom")
+        set_rule(boardroomAccess, GoModeCheckBoardroom)
         
+    if (world.options.goal == 1):
+        alfAccess = world.get_entrance("Menu to Alf's Escape")
+        set_rule(alfAccess, GoModeCheckAlf)
+    
 def set_completion_condition(world: NNTWorld) -> None:
     world.multiworld.completion_condition[world.player] = lambda state: state.has("Victory", world.player)
