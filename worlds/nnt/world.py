@@ -40,7 +40,8 @@ class NNTWorld(World):
         slot_data = self.options.as_dict(
             "goal",
             "death_link",
-            "death_link_amnesty"
+            "death_link_amnesty",
+            "ring_link"
         )
         
         slot_data.update({"required_muds": self.required_muds})
