@@ -39,6 +39,10 @@ def set_rupturefarms_entrance_rules(world: NNTWorld) -> None:
     set_rule(rFarmsUXBRequirements, lambda state: state.has("UXB Defusion", world.player))
     add_rule(rFarmS5Requirements, lambda state: state.has("Possession", world.player))
     set_rule(rFarmS6Requirements, lambda state: state.has("Possession", world.player))
+    
+    if (world.options.area_clears == 1):
+        add_rule(world.get_location("Rupture Farms - Clear"), lambda state: state.has("Lifts", world.player))
+        add_rule(world.get_location("Rupture Farms - Clear"), lambda state: state.has("Grenades", world.player))
 
 def set_stockyards_entrance_rules(world: NNTWorld) -> None:
     stockyardsAccess = world.get_entrance("Menu to Stockyards")
@@ -59,6 +63,14 @@ def set_stockyards_entrance_rules(world: NNTWorld) -> None:
     add_rule(world.get_location("Free Fire Zone ~ Secret Area 5 - Mudokon 2"), lambda state: state.has("Levers", world.player))
     add_rule(world.get_location("Free Fire Zone ~ Secret Area 5 - Mudokon 3"), lambda state: state.has("Levers", world.player))
     set_rule(ffZoneS6Requirements, lambda state: state.has("Levers", world.player))
+    
+    if (world.options.area_clears == 1):
+        add_rule(world.get_location("Stockyard Escape - Clear"), lambda state: state.has("Rocks", world.player))
+        
+        if (world.options.extra_area_clears == 1):
+            add_rule(world.get_location("Stockyard Return - Clear"), lambda state: state.has("Levers", world.player))
+            add_rule(world.get_location("Stockyard Return - Clear"), lambda state: state.has("Rocks", world.player))
+            add_rule(world.get_location("Stockyard Return - Clear"), lambda state: state.has("UXB Defusion", world.player))
     
 def set_paramonia_entrance_rules(world: NNTWorld) -> None:
     paramoniaAccess = world.get_entrance("Menu to Paramonia")
@@ -117,9 +129,14 @@ def set_zulag1_entrance_rules(world: NNTWorld) -> None:
     add_rule(zulag1ShadowRequirements, lambda state: state.has_any(("Grenades", "Spirit Rings"), world.player))
     set_rule(zulag1SligLockRequirements, lambda state: state.has("Possession", world.player))
     set_rule(zulag1ShrykullRequirements, lambda state: state.has("Levers", world.player))
-    add_rule(zulag1ShrykullRequirements, lambda state: state.has("Spirit Rings", world.player)) #Possession might be enough?
     set_rule(zulag1Z2AccessRequirements, lambda state: state.has("Possession", world.player))
     add_rule(zulag1Z2AccessRequirements, lambda state: state.has("Levers", world.player))
+    
+    if (world.options.area_clears == 1):
+        add_rule(world.get_location("Zulag 1 - Clear"), lambda state: state.has("Shrykull", world.player))
+        add_rule(world.get_location("Zulag 1 - Clear"), lambda state: state.has("Lifts", world.player))
+        add_rule(world.get_location("Zulag 1 - Clear"), lambda state: state.has("Possession", world.player))
+        add_rule(world.get_location("Zulag 1 - Clear"), lambda state: state.has("Levers", world.player))
     
 def set_zulag2_entrance_rules(world: NNTWorld) -> None:
     zulag2Access = world.get_entrance("Menu to Zulag 2")
@@ -141,6 +158,10 @@ def set_zulag2_entrance_rules(world: NNTWorld) -> None:
     set_rule(zulag2Door3, lambda state: state.has("Levers", world.player))
     add_rule(zulag2Door3, lambda state: state.has("Grenades", world.player))
     
+    if (world.options.area_clears == 1):
+        add_rule(world.get_location("Zulag 2 - Clear"), lambda state: state.has("Levers", world.player))
+        add_rule(world.get_location("Zulag 2 - Clear"), lambda state: state.has("Grenades", world.player))
+    
 def set_zulag3_entrance_rules(world: NNTWorld) -> None:
     zulag3Access = world.get_entrance("Menu to Zulag 3")
     zulag3Door1 = world.get_entrance("Zulag 3 Door 1 Path")
@@ -157,6 +178,9 @@ def set_zulag3_entrance_rules(world: NNTWorld) -> None:
     set_rule(zulag3Door2, lambda state: state.has("Grenades", world.player))
     set_rule(zulag3Door3Back, lambda state: state.has("Grenades", world.player))
     
+    if (world.options.area_clears == 1):
+        add_rule(world.get_location("Zulag 3 - Clear"), lambda state: state.has("Grenades", world.player))
+    
 def set_zulag4_entrance_rules(world: NNTWorld) -> None:
     zulag4Access = world.get_entrance("Menu to Zulag 4")
     zulag4S1Access = world.get_entrance("Zulag 4 Secret Area 1 Access")
@@ -169,6 +193,12 @@ def set_zulag4_entrance_rules(world: NNTWorld) -> None:
     add_rule(zulag4SligPath, lambda state: state.has("Lifts", world.player))
     add_rule(zulag4SligPath, lambda state: state.has("Levers", world.player))
     set_rule(zulag4SligPathG, lambda state: state.has("Grenades", world.player))
+    
+    if (world.options.area_clears == 1):
+        add_rule(world.get_location("Zulag 4 - Clear"), lambda state: state.has("Levers", world.player))
+        add_rule(world.get_location("Zulag 4 - Clear"), lambda state: state.has("Possession", world.player))
+        add_rule(world.get_location("Zulag 4 - Clear"), lambda state: state.has("Lifts", world.player))
+        add_rule(world.get_location("Zulag 4 - Clear"), lambda state: state.has("Grenades", world.player))
     
     # Checks if the player has enough rescued Mudokons and the abilities needed to complete The Boardroom or Alf's Escape.
     def GoModeCheckBoardroom(state: CollectionState) -> bool:

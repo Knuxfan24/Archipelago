@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from Options import Choice, PerGameCommonOptions, Range, Toggle
+from Options import Choice, PerGameCommonOptions, Range, Toggle, DefaultOnToggle
 
 class Goal(Choice):
     """
@@ -21,6 +21,18 @@ class MudokonRequirement(Range):
     range_start = 25
     range_end = 100
     default = 50
+    
+class AreaClears(DefaultOnToggle):
+    """
+    Whether completing an area should send a check.
+    """
+    display_name = "Area Clear Checks"
+    
+class ExtraAreaClears(Toggle):
+    """
+    Adds extra area clear checks for the Monsaic Lines, Paramonia, Scrabania and Stockyard Return, which are otherwise completely excluded due to having no Mudokons to rescue.
+    """
+    display_name = "Extra Area Clear Checks"
     
 class DeathLink(Toggle):
     """When you die, everyone who enabled DeathLink dies. Of course, the reverse is true too."""
@@ -45,6 +57,8 @@ class JokeRingLink(Toggle):
 class NNTOptions(PerGameCommonOptions):
     goal: Goal
     muds_required: MudokonRequirement
+    area_clears: AreaClears
+    extra_area_clears: ExtraAreaClears
     death_link: DeathLink
     death_link_amnesty: DeathLinkAmnesty
     ring_link: JokeRingLink

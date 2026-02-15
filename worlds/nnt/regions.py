@@ -7,7 +7,7 @@ if TYPE_CHECKING:
 def create_and_connect_regions(world: NNTWorld) -> None:
     # Create the menu regions.
     menu = Region("Menu", world.player, world.multiworld)
-    regions = [menu]
+    regions = [menu]        
     world.multiworld.regions += regions
     
     # Create the area regions.
@@ -29,6 +29,12 @@ def create_and_connect_regions(world: NNTWorld) -> None:
     connect_zulag2_regions(world)
     connect_zulag3_regions(world)
     connect_zulag4_regions(world)
+    
+    # If we have extra area clears and regular area clears on then add and connect the Monsaic Lines region.
+    if (world.options.extra_area_clears == 1 and world.options.area_clears):
+        mLines = Region("Monsaic Lines", world.player, world.multiworld)
+        world.multiworld.regions.append(mLines)
+        menu.connect(mLines, "Menu to Monsaic Lines")
 
 def create_rupturefarms_regions(world: NNTWorld) -> None:
     rFarms = Region("Rupture Farms", world.player, world.multiworld)

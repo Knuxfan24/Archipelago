@@ -19,14 +19,15 @@ ITEM_NAME_TO_ID = {
     "Spirit Rings": 7,
     "Meat": 8,
     "Shrykull": 9,
-    "Rupture Farms": 101, # can't be a starting place without other items
+    "Rupture Farms": 101,
     "Stockyards": 102,
-    "Paramonia": 103, # can't be a starting place without other items
-    "Scrabania": 104, # can't be a starting place without other items
+    "Paramonia": 103,
+    "Scrabania": 104,
     "Zulag 1": 105,
-    "Zulag 2": 106, # can't be a starting place without other items
-    "Zulag 3": 107, # can't be a starting place without other items
-    "Zulag 4": 108, # can't be a starting place without other items
+    "Zulag 2": 106,
+    "Zulag 3": 107,
+    "Zulag 4": 108,
+    "Monsaic Lines": 109, # Only used if Extra Area Clear Checks are on. 
     "Rescued Mudokon": 201,
 }
 
@@ -49,6 +50,7 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Zulag 2": ItemClassification.progression,
     "Zulag 3": ItemClassification.progression,
     "Zulag 4": ItemClassification.progression,
+    "Monsaic Lines": ItemClassification.progression,
     "Rescued Mudokon": ItemClassification.progression_skip_balancing | ItemClassification.filler,
 }
 
@@ -78,7 +80,6 @@ def create_all_items(world: NNTWorld) -> None:
     
     # Determine and handled abilities that need to be given depending on the starting area.
     match starting_area:
-        
         case "Rupture Farms":
             world.push_precollected(world.create_item("Levers"))
             abilities.remove("Levers")
@@ -114,6 +115,9 @@ def create_all_items(world: NNTWorld) -> None:
     # Add the area and ability items to the item pool.
     for area_item in area_access: itempool.append(world.create_item(area_item))
     for ability_item in abilities: itempool.append(world.create_item(ability_item))
+            
+    # If we're using the Extra Area Clears option, then add the item for the Monsaic Lines too.
+    if (world.options.extra_area_clears == 1 and world.options.area_clears == 1): itempool.append(world.create_item("Monsaic Lines"))
             
     # Determine how many remaining locations we have.
     needed_number_of_filler_items = len(world.multiworld.get_unfilled_locations(world.player)) - len(itempool)

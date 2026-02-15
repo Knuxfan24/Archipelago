@@ -39,6 +39,8 @@ class NNTWorld(World):
     def fill_slot_data(self) -> Mapping[str, Any]:
         slot_data = self.options.as_dict(
             "goal",
+            "area_clears",
+            "extra_area_clears",
             "death_link",
             "death_link_amnesty",
             "ring_link"

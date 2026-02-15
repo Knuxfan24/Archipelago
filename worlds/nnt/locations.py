@@ -11,6 +11,7 @@ if TYPE_CHECKING:
 # - Scrabanian Trials
 # - Zulag 2 Doors
 # - Zulag 3 Doors
+# - Area Clears
 LOCATION_NAME_TO_ID = {
     "Rupture Farms Escape ~ Secret Area 1 - Mudokon 1": 1,
     "Rupture Farms Escape ~ Secret Area 1 - Mudokon 2": 2,
@@ -312,7 +313,6 @@ LOCATION_NAME_TO_ID = {
     "Paramonian Trial 4": 1004,
     "Paramonian Trial 5": 1005,
     "Paramonian Trial 6": 1006,
-    "Paramonian Nests": 1007,
     
     "Scrabanian Trial 1": 1011,
     "Scrabanian Trial 2": 1012,
@@ -322,7 +322,6 @@ LOCATION_NAME_TO_ID = {
     "Scrabanian Trial 6": 1016,
     "Scrabanian Trial 7": 1017,
     "Scrabanian Trial 8": 1018,
-    "Scrabanian Nests": 1019,
     
     "Zulag 2 Door 1": 1021,
     "Zulag 2 Door 2": 1022,
@@ -331,6 +330,19 @@ LOCATION_NAME_TO_ID = {
     "Zulag 3 Door 1": 1031,
     "Zulag 3 Door 2": 1032,
     "Zulag 3 Door 3": 1033,
+    
+    "Rupture Farms - Clear": 1041,
+    "Stockyard Escape - Clear": 1042,
+    "Monsaic Lines - Clear": 1043,
+    "Paramonia - Clear": 1044,
+    "Paramonian Nests - Clear": 1045,
+    "Scrabania - Clear": 1046,
+    "Scrabanian Nests - Clear": 1047,
+    "Stockyard Return - Clear": 1048,
+    "Zulag 1 - Clear": 1049,
+    "Zulag 2 - Clear": 1050,
+    "Zulag 3 - Clear": 1051,
+    "Zulag 4 - Clear": 1052,
 }
 
 class NNTLocation(Location):
@@ -349,6 +361,9 @@ def create_all_locations(world: NNTWorld) -> None:
     create_zulag2_locations(world)
     create_zulag3_locations(world)
     create_zulag4_locations(world)
+    
+    if (world.options.area_clears == 1):
+        create_areaclear_locations(world)
 
 def create_rupturefarms_locations(world: NNTWorld) -> None:
     rFarmsS1 = world.get_region("Rupture Farms (Secret Area 1)")
@@ -622,7 +637,6 @@ def create_paramonia_locations(world: NNTWorld) -> None:
     paramoniaTrial5 = world.get_region("Paramonian Temple Trial 5")
     paramoniaTrial5Secret = world.get_region("Paramonian Temple Trial 5 (Secret Area)")
     paramoniaTrial6 = world.get_region("Paramonian Temple Trial 6")
-    paramoniaNest = world.get_region("Paramonian Nests")
     
     paramoniaTrial1.add_locations(get_location_names_with_ids(["Paramonian Trial 1"]), NNTLocation)
     paramoniaTrial2.add_locations(get_location_names_with_ids(["Paramonian Trial 2"]), NNTLocation)
@@ -643,7 +657,6 @@ def create_paramonia_locations(world: NNTWorld) -> None:
         ]
     ))
     paramoniaTrial6.add_locations(get_location_names_with_ids(["Paramonian Trial 6"]), NNTLocation)
-    paramoniaNest.add_locations(get_location_names_with_ids(["Paramonian Nests"]), NNTLocation)
     
 def create_scrabania_locations(world: NNTWorld) -> None:
     scrabaniaStartSecret = world.get_region("Scrabanian Temple Entrance (Secret Area)")
@@ -657,7 +670,6 @@ def create_scrabania_locations(world: NNTWorld) -> None:
     scrabaniaTrial7Secret = world.get_region("Scrabanian Temple Trial 7 (Secret Area)")
     scrabaniaTrial8 = world.get_region("Scrabanian Temple Trial 8")
     scrabaniaTrial8Secret = world.get_region("Scrabanian Temple Trial 8 (Secret Area)")
-    scrabaniaNest = world.get_region("Scrabanian Nests")
     
     scrabaniaStartSecret.add_locations(get_location_names_with_ids(
         [
@@ -695,7 +707,6 @@ def create_scrabania_locations(world: NNTWorld) -> None:
         "Scrabanian Trial 8 ~ Secret Area - Mudokon 6",
         ]
     ))
-    scrabaniaNest.add_locations(get_location_names_with_ids(["Scrabanian Nests"]), NNTLocation)
     
 def create_zulag1_locations(world: NNTWorld) -> None:
     zulag1 = world.get_region("Zulag 1")
@@ -1045,3 +1056,41 @@ def create_zulag4_locations(world: NNTWorld) -> None:
     if world.options.goal == 1:
         alf = world.get_region("Alf's Escape")
         alf.add_event("Alf Rescued", "Victory", location_type=NNTLocation, item_type=items.NNTItem)
+        
+def create_areaclear_locations(world: NNTWorld):
+    rFarms = world.get_region("Rupture Farms")
+    rFarms.add_locations(get_location_names_with_ids(["Rupture Farms - Clear"]), NNTLocation)
+    
+    stockyards = world.get_region("Stockyards")
+    stockyards.add_locations(get_location_names_with_ids(["Stockyard Escape - Clear"]), NNTLocation)
+    if (world.options.extra_area_clears == 1): stockyards.add_locations(get_location_names_with_ids(["Stockyard Return - Clear"]), NNTLocation)
+    
+    if (world.options.extra_area_clears == 1):
+        mLines = world.get_region("Monsaic Lines")
+        mLines.add_locations(get_location_names_with_ids(["Monsaic Lines - Clear"]), NNTLocation)
+        
+    if (world.options.extra_area_clears == 1):
+        paramonia = world.get_region("Paramonia")
+        paramonia.add_locations(get_location_names_with_ids(["Paramonia - Clear"]), NNTLocation)
+    
+    paramoniaNest = world.get_region("Paramonian Nests")
+    paramoniaNest.add_locations(get_location_names_with_ids(["Paramonian Nests - Clear"]), NNTLocation)
+    
+    if (world.options.extra_area_clears == 1):
+        scrabania = world.get_region("Scrabania")
+        scrabania.add_locations(get_location_names_with_ids(["Scrabania - Clear"]), NNTLocation)
+    
+    scrabaniaNest = world.get_region("Scrabanian Nests")
+    scrabaniaNest.add_locations(get_location_names_with_ids(["Scrabanian Nests - Clear"]), NNTLocation)
+    
+    zulag1Z2Access = world.get_region("Zulag 1")
+    zulag1Z2Access.add_locations(get_location_names_with_ids(["Zulag 1 - Clear"]), NNTLocation)
+    
+    zulag2 = world.get_region("Zulag 2")
+    zulag2.add_locations(get_location_names_with_ids(["Zulag 2 - Clear"]), NNTLocation)
+    
+    zulag3 = world.get_region("Zulag 3")
+    zulag3.add_locations(get_location_names_with_ids(["Zulag 3 - Clear"]), NNTLocation)
+    
+    zulag4 = world.get_region("Zulag 4")
+    zulag4.add_locations(get_location_names_with_ids(["Zulag 4 - Clear"]), NNTLocation)
