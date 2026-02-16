@@ -99,6 +99,13 @@ def set_paramonia_entrance_rules(world: NNTWorld) -> None:
     add_rule(paramoniaNestRequirements, lambda state: state.has("Spirit Rings", world.player))
     add_rule(paramoniaNestRequirements, lambda state: state.has("Rocks", world.player))
     
+    if (world.options.area_clears == 1 and world.options.extra_area_clears == 1):
+        add_rule(world.get_location("Paramonia - Clear"), lambda state: state.has("Levers", world.player))
+        add_rule(world.get_location("Paramonia - Clear"), lambda state: state.has("Rocks", world.player))
+        add_rule(world.get_location("Paramonia - Clear"), lambda state: state.has("Lifts", world.player))
+        add_rule(world.get_location("Paramonia - Clear"), lambda state: state.has("UXB Defusion", world.player))
+        add_rule(world.get_location("Paramonia - Clear"), lambda state: state.has("Possession", world.player))
+    
 def set_scrabania_entrance_rules(world: NNTWorld) -> None:
     scrabaniaAccess = world.get_entrance("Menu to Scrabania")
     scrabaniaStartSecretRequirements = world.get_entrance("Scrabania to Temple Entrance Secret")
@@ -120,6 +127,13 @@ def set_scrabania_entrance_rules(world: NNTWorld) -> None:
     set_rule(scrabaniaTrial8Requirements, lambda state: state.has("Lifts", world.player))
     set_rule(scrabaniaNestRequirements, lambda state: state.has("Lifts", world.player))
     add_rule(scrabaniaNestRequirements, lambda state: state.has("Rocks", world.player))
+    
+    if (world.options.area_clears == 1 and world.options.extra_area_clears == 1):
+        add_rule(world.get_location("Scrabania - Clear"), lambda state: state.has("Levers", world.player))
+        add_rule(world.get_location("Scrabania - Clear"), lambda state: state.has("Possession", world.player))
+        add_rule(world.get_location("Scrabania - Clear"), lambda state: state.has("Lifts", world.player))
+        add_rule(world.get_location("Scrabania - Clear"), lambda state: state.has("Spirit Rings", world.player))
+        add_rule(world.get_location("Scrabania - Clear"), lambda state: state.has("Rocks", world.player))
 
 def set_zulag1_entrance_rules(world: NNTWorld) -> None:
     zulag1Access = world.get_entrance("Menu to Zulag 1")
