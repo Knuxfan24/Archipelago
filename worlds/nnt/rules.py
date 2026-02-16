@@ -235,4 +235,4 @@ def set_zulag4_entrance_rules(world: NNTWorld) -> None:
         set_rule(alfAccess, GoModeCheckAlf)
     
 def set_completion_condition(world: NNTWorld) -> None:
-    world.multiworld.completion_condition[world.player] = lambda state: state.has("Victory", world.player)
+    world.multiworld.completion_condition[world.player] = lambda state: state.has_any(("Rupture Farms Destroyed", "Alf Rescued"), world.player)
