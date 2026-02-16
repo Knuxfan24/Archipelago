@@ -5,7 +5,6 @@ from worlds.generic.Rules import add_rule, set_rule
 if TYPE_CHECKING:
     from .world import NNTWorld
 
-
 def set_all_rules(world: NNTWorld) -> None:
     set_rupturefarms_entrance_rules(world)
     set_stockyards_entrance_rules(world)
@@ -16,6 +15,14 @@ def set_all_rules(world: NNTWorld) -> None:
     set_zulag3_entrance_rules(world)
     set_zulag4_entrance_rules(world)
     set_completion_condition(world)
+    
+    # Add the Monsaic Lines rules if we're using both Area Clear location types.
+    if (world.options.area_clears == 1 and world.options.extra_area_clears == 1):
+        mLines = world.get_entrance("Menu to Monsaic Lines")
+        set_rule(mLines, lambda state: state.has("Monsaic Lines", world.player))
+        add_rule(mLines, lambda state: state.has("Levers", world.player))
+        add_rule(mLines, lambda state: state.has("Possession", world.player))
+        add_rule(mLines, lambda state: state.has("Lifts", world.player))
 
 def set_rupturefarms_entrance_rules(world: NNTWorld) -> None:
     rFarmAccess = world.get_entrance("Menu to Rupture Farms")
