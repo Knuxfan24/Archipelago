@@ -29,6 +29,8 @@ ITEM_NAME_TO_ID = {
     "Zulag 4": 108,
     "Monsaic Lines": 109, # Only used if Extra Area Clear Checks are on. 
     "Rescued Mudokon": 201,
+    "Shock Trap": 301,
+    "Trip Trap": 302
 }
 
 # Set the item classifications.
@@ -52,6 +54,8 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Zulag 4": ItemClassification.progression,
     "Monsaic Lines": ItemClassification.progression,
     "Rescued Mudokon": ItemClassification.progression_skip_balancing | ItemClassification.filler,
+    "Shock Trap": ItemClassification.trap,
+    "Trip Trap": ItemClassification.trap,
 }
 
 class NNTItem(Item):
@@ -126,10 +130,16 @@ def create_all_items(world: NNTWorld) -> None:
     world.required_muds = math.ceil((world.options.muds_required * needed_number_of_filler_items) / 100.0)
     actual_filler = needed_number_of_filler_items - world.required_muds
 
-    # Add the Mudokons to the item pool.
+    # Add the required Mudokons to the item pool.
     itempool += [world.create_item("Rescued Mudokon") for _ in range(world.required_muds)]
+    
+    # Add filler to the remaning slots, either as more Mudokons or traps.
+    trap_items = ["Shock Trap", "Trip Trap"]
     for _ in range(actual_filler):
-        itempool.append(NNTItem("Rescued Mudokon", ItemClassification.filler, ITEM_NAME_TO_ID["Rescued Mudokon"], world.player))
+        if world.random.randint(0, 99) < world.options.filler_traps:
+            itempool.append(world.create_item(world.random.choice(trap_items)))
+        else:
+            itempool.append(NNTItem("Rescued Mudokon", ItemClassification.filler, ITEM_NAME_TO_ID["Rescued Mudokon"], world.player))
 
     # Add our pool to the multiworld's.
     world.multiworld.itempool += itempool

@@ -33,6 +33,15 @@ class ExtraAreaClears(Toggle):
     Adds extra area clear checks for the Monsaic Lines, Paramonia, Scrabania and Stockyard Return, which are otherwise completely excluded due to having no Mudokons to rescue.
     """
     display_name = "Extra Area Clear Checks"
+
+class TrapChance(Range):
+    """
+    How many filler Mudokons will be replaced with traps. 0 means no additional traps, 100 means all filler Mudokons are traps.
+    """
+    display_name = "Trap Chance"
+    range_start = 0
+    range_end = 100
+    default = 0
     
 class DeathLink(Toggle):
     """When you die, everyone who enabled DeathLink dies. Of course, the reverse is true too."""
@@ -59,6 +68,7 @@ class NNTOptions(PerGameCommonOptions):
     muds_required: MudokonRequirement
     area_clears: AreaClears
     extra_area_clears: ExtraAreaClears
+    filler_traps: TrapChance
     death_link: DeathLink
     death_link_amnesty: DeathLinkAmnesty
     ring_link: JokeRingLink
