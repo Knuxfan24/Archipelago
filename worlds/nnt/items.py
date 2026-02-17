@@ -30,7 +30,8 @@ ITEM_NAME_TO_ID = {
     "Monsaic Lines": 109, # Only used if Extra Area Clear Checks are on. 
     "Rescued Mudokon": 201,
     "Shock Trap": 301,
-    "Trip Trap": 302
+    "Trip Trap": 302,
+    "lol brawl reference": 303
 }
 
 # Set the item classifications.
@@ -56,6 +57,7 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Rescued Mudokon": ItemClassification.progression_skip_balancing | ItemClassification.filler,
     "Shock Trap": ItemClassification.trap,
     "Trip Trap": ItemClassification.trap,
+    "lol brawl reference": ItemClassification.trap
 }
 
 class NNTItem(Item):
@@ -137,7 +139,14 @@ def create_all_items(world: NNTWorld) -> None:
     trap_items = ["Shock Trap", "Trip Trap"]
     for _ in range(actual_filler):
         if world.random.randint(0, 99) < world.options.filler_traps:
-            itempool.append(world.create_item(world.random.choice(trap_items)))
+            trapItem = world.random.choice(trap_items)
+            
+            # Roll a 1 in 10000 chance to swap this trap out for the "lol brawl reference one"
+            if (world.random.randint(0, 9999) == 0):
+                trapItem = "lol brawl reference"
+                input("Hit the chance for the brawl joke.") # thing to tell me that we've hit that chance, remove this when an actual ap build happens.
+            
+            itempool.append(world.create_item(trapItem))
         else:
             itempool.append(NNTItem("Rescued Mudokon", ItemClassification.filler, ITEM_NAME_TO_ID["Rescued Mudokon"], world.player))
 
