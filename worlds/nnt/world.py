@@ -1,16 +1,17 @@
 from collections.abc import Mapping
 from typing import Any
 from worlds.AutoWorld import World
-from . import items, locations, regions, rules
+from . import items, locations, regions, rules, web_world
 from . import options as nnt_options
 
 class NNTWorld(World):
     """
-    APQuest is a minimal 8bit-era inspired adventure game with grid-like movement.
-    Good games don't need more than six checks.
+    Oddworld: New 'n' Tasty is a remake of the cinematic platform Oddworld: Abe's Oddysee.
     """
     
     game = "New 'n' Tasty"
+    
+    web = web_world.NNTWebWorld()
 
     options_dataclass = nnt_options.NNTOptions
     options: nnt_options.NNTOptions

@@ -59,9 +59,7 @@ class JokeRingLink(Toggle):
     """Makes saving a Mudokon also send out a single Ring to other RingLink games, while a Mudokon dying will take a Ring from other RingLink games.
     This option is purely for the sake of a joke."""
     display_name = "Joke RingLink"
-
-# We must now define a dataclass inheriting from PerGameCommonOptions that we put all our options in.
-# This is in the format "option_name_in_snake_case: OptionClassName".
+    
 @dataclass
 class NNTOptions(PerGameCommonOptions):
     goal: Goal
