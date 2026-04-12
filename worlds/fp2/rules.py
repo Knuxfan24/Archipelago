@@ -254,14 +254,11 @@ def set_all_location_rules(world: FP2World) -> None:
         if world.options.item_boxes_petals:
             set_rule(world.get_location("Stop and Go - Petal Box"), lambda state: state.has("Battlesphere Key", world.player, 14))
             set_rule(world.get_location("Mach Speed Melee - Petal Box"), lambda state: state.has("Battlesphere Key", world.player, 12))
-            set_rule(world.get_location("Vanishing Maze - Petal Box 1"), lambda state: state.has("Battlesphere Key", world.player, 8))
-            set_rule(world.get_location("Vanishing Maze - Petal Box 2"), lambda state: state.has("Battlesphere Key", world.player, 8))
             set_rule(world.get_location("Battlebot Battle Royale - Petal Box"), lambda state: state.has("Battlesphere Key", world.player, 2))
             
         if world.options.item_boxes_shields:
             set_rule(world.get_location("Beginner's Gauntlet - Metal Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 1))
             set_rule(world.get_location("Beginner's Gauntlet - Wood Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 1))
-            set_rule(world.get_location("Beginner's Gauntlet - Petal Box"), lambda state: state.has("Battlesphere Key", world.player, 1))
             set_rule(world.get_location("Flip Fire Gauntlet - Fire Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 7))
             set_rule(world.get_location("Vanishing Maze - Metal Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 8))
             set_rule(world.get_location("Vanishing Maze - Wood Shield Box"), lambda state: state.has("Battlesphere Key", world.player, 8))

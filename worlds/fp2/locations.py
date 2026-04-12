@@ -3254,10 +3254,8 @@ def create_regular_locations(world: FP2World) -> None:
             cArboretumPetalBoxLocations = get_location_names_with_ids(["Clockwork Arboretum - Petal Box 1", "Clockwork Arboretum - Petal Box 2", "Clockwork Arboretum - Petal Box 3", "Clockwork Arboretum - Petal Box 4", "Clockwork Arboretum - Petal Box 5", "Clockwork Arboretum - Petal Box 6", "Clockwork Arboretum - Petal Box 7", "Clockwork Arboretum - Petal Box 8"])
             iDynamoPetalBoxLocations = get_location_names_with_ids(["Inversion Dynamo - Petal Box 1", "Inversion Dynamo - Petal Box 2", "Inversion Dynamo - Petal Box 3", "Inversion Dynamo - Petal Box 4", "Inversion Dynamo - Petal Box 5"])
             lCannonPetalBoxLocations = get_location_names_with_ids(["Lunar Cannon - Petal Box 1", "Lunar Cannon - Petal Box 2", "Lunar Cannon - Petal Box 3", "Lunar Cannon - Petal Box 4"])
-            battlesphere1PetalBoxLocations = get_location_names_with_ids(["Beginner's Gauntlet - Petal Box"])
             battlesphere3PetalBoxLocations = get_location_names_with_ids(["Stop and Go - Petal Box"])
             battlesphere4PetalBoxLocations = get_location_names_with_ids(["Mach Speed Melee - Petal Box"])
-            battlesphere7PetalBoxLocations = get_location_names_with_ids(["Vanishing Maze - Petal Box 1", "Vanishing Maze - Petal Box 2"])
             battlesphereArenaPetalBoxLocations = get_location_names_with_ids(["Battlebot Battle Royale - Petal Box"])
             
             dValleyItems.add_locations(dValleyPetalBoxLocations, FP2Location)
@@ -3283,10 +3281,8 @@ def create_regular_locations(world: FP2World) -> None:
             cArboretumItems.add_locations(cArboretumPetalBoxLocations, FP2Location)
             iDynamoItems.add_locations(iDynamoPetalBoxLocations, FP2Location)
             lCannon.add_locations(lCannonPetalBoxLocations, FP2Location)
-            battlesphereItems.add_locations(battlesphere1PetalBoxLocations, FP2Location)
             battlesphereItems.add_locations(battlesphere3PetalBoxLocations, FP2Location)
             battlesphereItems.add_locations(battlesphere4PetalBoxLocations, FP2Location)
-            battlesphereItems.add_locations(battlesphere7PetalBoxLocations, FP2Location)
             battlesphereItems.add_locations(battlesphereArenaPetalBoxLocations, FP2Location)
         
         # Add the Shield Box locations if needed.
