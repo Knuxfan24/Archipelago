@@ -133,6 +133,7 @@ ITEM_NAME_TO_ID = {
     "Rail Trap": 610,
     "Spam Trap": 611,
     "Syntax Jumpscare Trap": 612,
+    "Trivia Trap": 613,
     
     "Crystals": 701,
     "Extra Life": 702,
@@ -267,6 +268,7 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Rail Trap": ItemClassification.trap,
     "Spam Trap": ItemClassification.trap,
     "Syntax Jumpscare Trap": ItemClassification.trap,
+    "Trivia Trap": ItemClassification.trap,
     
     "Crystals": ItemClassification.filler,
     "Extra Life": ItemClassification.filler,
@@ -314,6 +316,7 @@ def get_random_filler_item_name(world: FP2World) -> str:
     get_trap_weights(world.options.rail_trap_weight, "Rail Trap")
     get_trap_weights(world.options.spam_trap_weight, "Spam Trap")
     get_trap_weights(world.options.syntax_jumpscare_trap_weight, "Syntax Jumpscare Trap")
+    get_trap_weights(world.options.trivia_trap_weight, "Trivia Trap")
     
     # Add the negative Brave Stones to the trap list if the trap stones option is enabled.
     if world.options.trap_stones:

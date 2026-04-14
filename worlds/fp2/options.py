@@ -98,7 +98,8 @@ class BossSanity(DefaultOnToggle):
     display_name = "Boss Sanity"
     
 class ItemBoxSanity(Toggle):
-    """Adds the various item boxes found in stages to the location pool."""
+    """Adds the various item boxes found in stages to the location pool.
+    Currently experimental with a severe lack of logic."""
     display_name = "Item Box Sanity"
     
 class ItemBoxCrystal(DefaultOnToggle):
@@ -186,6 +187,10 @@ class SpamTrapWeight(BaseTrapWeight):
 class SyntaxJumpscareTrapWeight(BaseTrapWeight):
     """Likelihood of receiving a trap that suddenly spawns a large Syntax on the screen."""
     display_name = "Syntax Jumpscare Trap Weight"
+    
+class TriviaTrapWeight(BaseTrapWeight):
+    """Likelihood of receiving a trap that asks a life or death trivia question."""
+    display_name = "Trivia Trap Weight"
 
 class FastWeaponsCore(Toggle):
     """Skips the actual stage of Weapon's Core and goes straight to the Bakunawa Fusion fight."""
@@ -239,7 +244,7 @@ option_groups = [
     ),
     OptionGroup(
         "Trap Weight Options",
-        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight],
+        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, TriviaTrapWeight],
     ),
 ]
 
@@ -281,6 +286,7 @@ class FP2Options(PerGameCommonOptions):
     rail_trap_weight: RailTrapWeight
     spam_trap_weight: SpamTrapWeight
     syntax_jumpscare_trap_weight: SyntaxJumpscareTrapWeight
+    trivia_trap_weight: TriviaTrapWeight
     fast_weapons_core: FastWeaponsCore
     filler_traps: TrapChance
     death_link: DeathLink
