@@ -80,6 +80,11 @@ Shop Hints: Sends out item hints when either Milla's Shop or the Vinyl Shop is a
 1: Only items that have the Progression flag will be hinted for.
 2: All items will be hinted for, regards of type.
 
+Trivia Trap Maximum Difficulty: Determines the highest difficulty the Trivia Trap can pick for its questions. This option has the following three different values:
+0: Easy
+1: Normal
+2: Hard
+
 DeathLink: Overrides the DeathLink value specified in the player YAML.
 
 RingLink: Overrides the RingLink value specified in the player YAML.
