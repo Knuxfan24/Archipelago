@@ -191,6 +191,10 @@ class SyntaxJumpscareTrapWeight(BaseTrapWeight):
 class TriviaTrapWeight(BaseTrapWeight):
     """Likelihood of receiving a trap that asks a life or death trivia question."""
     display_name = "Trivia Trap Weight"
+    
+class MachSpeedTrapWeight(BaseTrapWeight):
+    """Likelihood of receiving a trap that doubles the game's speed for 15 seconds."""
+    display_name = "Mach Speed Trap Weight"
 
 class FastWeaponsCore(Toggle):
     """Skips the actual stage of Weapon's Core and goes straight to the Bakunawa Fusion fight."""
@@ -244,7 +248,7 @@ option_groups = [
     ),
     OptionGroup(
         "Trap Weight Options",
-        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, TriviaTrapWeight],
+        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, TriviaTrapWeight, MachSpeedTrapWeight],
     ),
 ]
 
@@ -287,6 +291,7 @@ class FP2Options(PerGameCommonOptions):
     spam_trap_weight: SpamTrapWeight
     syntax_jumpscare_trap_weight: SyntaxJumpscareTrapWeight
     trivia_trap_weight: TriviaTrapWeight
+    mach_speed_trap_weight: MachSpeedTrapWeight
     fast_weapons_core: FastWeaponsCore
     filler_traps: TrapChance
     death_link: DeathLink
