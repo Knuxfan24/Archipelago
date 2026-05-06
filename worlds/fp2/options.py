@@ -224,6 +224,11 @@ class RingLink(Toggle):
 class TrapLink(Toggle):
     """Whether your received traps are linked to other players."""
     display_name = "TrapLink"
+    
+class DamageLink(Toggle):
+    """Any damage you take is also sent to other players with DamageLink enabled.
+    Of course the reverse is true too."""
+    display_name = "DamageLink"
 
 option_groups = [
     OptionGroup(
@@ -297,3 +302,4 @@ class FP2Options(PerGameCommonOptions):
     death_link: DeathLink
     ring_link: RingLink
     trap_link: TrapLink
+    damage_link: DamageLink
