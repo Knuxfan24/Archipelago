@@ -13,11 +13,11 @@ class Chapters(Choice):
     default = 2
 
 class FillerStarCards(DefaultOnToggle):
-    """Allow extra Star Cards to be added as Filler Items."""
+    """Allow extra Star Cards to be added as Filler Items, allowing there to be more than 48 in the world."""
     display_name = "Filler Star Cards"
 
 class FillerTimeCapsules(DefaultOnToggle):
-    """Allow extra Time Capsules to be added as Filler Items."""
+    """Allow extra Time Capsules to be added as Filler Items, allowing there to be more than 21 in the world."""
     display_name = "Filler Time Capsules"
 
 class Chests(DefaultOnToggle):
@@ -153,7 +153,7 @@ class PieTrapWeight(BaseTrapWeight):
     display_name = "Pie Trap Weight"
     
 class SpringTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that spawns a spring in front of the player.."""
+    """Likelihood of receiving a trap that spawns a diagonal spring atop the player."""
     display_name = "Spring Trap Weight"
     
 class PowerPointTrapWeight(BaseTrapWeight):
@@ -232,12 +232,12 @@ class DamageLink(Toggle):
 
 option_groups = [
     OptionGroup(
-        "Extra Filler Options",
-        [FillerStarCards, FillerTimeCapsules],
+        "Links",
+        [DeathLink, RingLink, TrapLink, DamageLink],
     ),
     OptionGroup(
-        "Chest Options",
-        [Chests, ChestTracers, ChestTracerItems, StrictChestLock],
+        "Extra Filler Options",
+        [FillerStarCards, FillerTimeCapsules],
     ),
     OptionGroup(
         "Shop Options",
@@ -245,11 +245,15 @@ option_groups = [
     ),
     OptionGroup(
         "Sanity Options",
-        [EnemySanity, BossSanity, ItemBoxSanity, ItemBoxCrystal, ItemBoxPetal, ItemBoxShield, ItemBoxGoldGem],
+        [Chests, StrictChestLock, EnemySanity, BossSanity, ItemBoxSanity, ItemBoxCrystal, ItemBoxPetal, ItemBoxShield, ItemBoxGoldGem],
+    ),
+    OptionGroup(
+        "Chest Tracer Options",
+        [ChestTracers, ChestTracerItems],
     ),
     OptionGroup(
         "Trap Options",
-        [TrapChance, TrapBraveStones, DangerousTimeLimit, TrapLink],
+        [TrapChance, TrapBraveStones, DangerousTimeLimit],
     ),
     OptionGroup(
         "Trap Weight Options",
