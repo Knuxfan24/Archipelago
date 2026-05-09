@@ -134,7 +134,7 @@ ITEM_NAME_TO_ID = {
     "Spam Trap": 611,
     "Syntax Jumpscare Trap": 612,
     "Trivia Trap": 613,
-    "Mach Speed Trap": 613,
+    "Mach Speed Trap": 614,
     
     "Crystals": 701,
     "Extra Life": 702,
