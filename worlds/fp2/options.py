@@ -77,18 +77,6 @@ class VinylShopPrice(Range):
     range_start = 100
     range_end = 30000
 
-class ShopInfo(Choice):
-    """How much information about an item should be shown in the shops, Battlesphere challenge list and end of stage Star Card.
-    Full = The item's name and flags will be shown. As will its sprite and description if one is given.
-    Flags = The item's name (and sprite and description if one is given) will be hidden, but the AP trap/progression sprites will still be shown.
-    Hidden = No information about the item other than the receiver will be given.
-    Nothing = Gives no information about the item at all."""
-    display_name = "Show Item Names in Shops"
-    option_full = 0
-    option_flags = 1
-    option_hidden = 2
-    option_nothing = 3
-
 class EnemySanity(DefaultOnToggle):
     """Makes killing each enemy type into checks, adding 72 locations."""
     display_name = "Enemy Sanity"
@@ -241,7 +229,7 @@ option_groups = [
     ),
     OptionGroup(
         "Shop Options",
-        [MillasShop, MillaShopAmount, MillaShopPrice, VinylShop, VinylShopAmount, VinylShopPrice, ShopInfo],
+        [MillasShop, MillaShopAmount, MillaShopPrice, VinylShop, VinylShopAmount, VinylShopPrice],
     ),
     OptionGroup(
         "Sanity Options",
@@ -276,7 +264,6 @@ class FP2Options(PerGameCommonOptions):
     vinyl_shop_amount: VinylShopAmount
     milla_shop_price: MillaShopPrice
     vinyl_shop_price: VinylShopPrice
-    shop_information: ShopInfo
     enemies: EnemySanity
     bosses: BossSanity
     item_boxes: ItemBoxSanity
