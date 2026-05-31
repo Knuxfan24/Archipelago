@@ -656,7 +656,8 @@ def set_all_location_rules(world: FP2World) -> None:
         add_rule(traumagotcha, bRush, "or")
         add_rule(traumagotcha, iDynamo, "or")
         
-        set_rule(traumagotchaCorrupt, iDynamo)
+        set_rule(traumagotchaCorrupt, nLake)
+        add_rule(traumagotchaCorrupt, iDynamo, "or")
         
         set_rule(troopish, sArmory)
         add_rule(troopish, zJungle, "or")
