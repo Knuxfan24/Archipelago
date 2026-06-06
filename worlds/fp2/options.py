@@ -183,6 +183,10 @@ class TriviaTrapWeight(BaseTrapWeight):
 class MachSpeedTrapWeight(BaseTrapWeight):
     """Likelihood of receiving a trap that doubles the game's speed for 15 seconds."""
     display_name = "Mach Speed Trap Weight"
+    
+class ScottTrapWeight(BaseTrapWeight):
+    """Likelihood of receiving a trap that sticks a blue border around the game screen for 30 seconds."""
+    display_name = "Scott The Woz Trap Weight"
 
 class FastWeaponsCore(Toggle):
     """Skips the actual stage of Weapon's Core and goes straight to the Bakunawa Fusion fight."""
@@ -245,7 +249,7 @@ option_groups = [
     ),
     OptionGroup(
         "Trap Weight Options",
-        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, TriviaTrapWeight, MachSpeedTrapWeight],
+        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, TriviaTrapWeight, MachSpeedTrapWeight, ScottTrapWeight],
     ),
 ]
 
@@ -288,6 +292,7 @@ class FP2Options(PerGameCommonOptions):
     syntax_jumpscare_trap_weight: SyntaxJumpscareTrapWeight
     trivia_trap_weight: TriviaTrapWeight
     mach_speed_trap_weight: MachSpeedTrapWeight
+    scott_trap_weight: ScottTrapWeight
     fast_weapons_core: FastWeaponsCore
     filler_traps: TrapChance
     death_link: DeathLink
