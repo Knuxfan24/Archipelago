@@ -200,6 +200,12 @@ class TrapChance(Range):
     range_start = 0
     range_end = 100
     default = 0
+    
+class SonicModCompatibility(Toggle):
+    """
+    Adds seven Chaos Emerald items to the item pool. When all seven are collected the Chaos Emeralds item from the Sonic mod will be added to the player's inventory, allowing usage of a character's Super Form.
+    """
+    display_name = "Sonic Mod Compatibility"
 
 class DeathLink(Choice):
     """When you die, everyone dies. Of course the reverse is true too.
@@ -251,6 +257,10 @@ option_groups = [
         "Trap Weight Options",
         [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, TriviaTrapWeight, MachSpeedTrapWeight, ScottTrapWeight],
     ),
+    OptionGroup(
+        "Mod Compatibility Options",
+        [SonicModCompatibility]
+    ),
 ]
 
 @dataclass
@@ -295,6 +305,7 @@ class FP2Options(PerGameCommonOptions):
     scott_trap_weight: ScottTrapWeight
     fast_weapons_core: FastWeaponsCore
     filler_traps: TrapChance
+    sonic_mod: SonicModCompatibility
     death_link: DeathLink
     ring_link: RingLink
     trap_link: TrapLink

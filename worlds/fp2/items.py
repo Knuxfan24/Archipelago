@@ -53,6 +53,13 @@ ITEM_NAME_TO_ID = {
     "One Hit KO": 321,
     "Petal Armor": 322,
     "Rainbow Charm": 323,
+    "Red Chaos Emerald": 324,
+    "Blue Chaos Emerald": 325,
+    "Yellow Chaos Emerald": 326,
+    "Green Chaos Emerald": 327,
+    "White Chaos Emerald": 328,
+    "Cyan Chaos Emerald": 329,
+    "Purple Chaos Emerald": 330,
     
     "Progressive Chapter": 401,
     "Mystery of the Frozen North": 402,
@@ -190,6 +197,13 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "One Hit KO": ItemClassification.trap,
     "Petal Armor": ItemClassification.useful,
     "Rainbow Charm": ItemClassification.useful,
+    "Red Chaos Emerald": ItemClassification.useful,
+    "Blue Chaos Emerald": ItemClassification.useful,
+    "Yellow Chaos Emerald": ItemClassification.useful,
+    "Green Chaos Emerald": ItemClassification.useful,
+    "White Chaos Emerald": ItemClassification.useful,
+    "Cyan Chaos Emerald": ItemClassification.useful,
+    "Purple Chaos Emerald": ItemClassification.useful,
     
     "Progressive Chapter": ItemClassification.progression,
     "Mystery of the Frozen North": ItemClassification.progression,
@@ -473,6 +487,16 @@ def create_all_items(world: FP2World) -> None:
         # Create and precollect the chosen starting stage and boss.
         world.push_precollected(world.create_item(starting_stage))
         world.push_precollected(world.create_item(starting_boss))
+
+    # If the Sonic Mod Compatibility option is enabled, then add the Chaos Emerald items.
+    if world.options.sonic_mod == 1:
+        itempool.append(world.create_item("Red Chaos Emerald"))
+        itempool.append(world.create_item("Blue Chaos Emerald"))
+        itempool.append(world.create_item("Yellow Chaos Emerald"))
+        itempool.append(world.create_item("Green Chaos Emerald"))
+        itempool.append(world.create_item("White Chaos Emerald"))
+        itempool.append(world.create_item("Cyan Chaos Emerald"))
+        itempool.append(world.create_item("Purple Chaos Emerald"))
 
     # Get the count of items in our pool.
     number_of_items = len(itempool)
