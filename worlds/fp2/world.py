@@ -17,6 +17,16 @@ class FP2World(World):
 
     location_name_to_id = locations.LOCATION_NAME_TO_ID
     item_name_to_id = items.ITEM_NAME_TO_ID
+    
+    item_name_groups = {
+        "Potions": set(["Potion - Extra Stock", "Potion - Strong Revivals", "Potion - Cheaper Stocks", "Potion - Healing Strike", "Potion - Attack Up", "Potion - Strong Shields", "Potion - Accelerator", "Potion - Super Feather"]),
+        "Brave Stones": set(["Element Burst", "Max Life Up", "Crystals to Petals", "Powerup Start", "Shadow Guard", "Payback Ring", "Wood Charm", "Earth Charm", "Water Charm", "Fire Charm", "Metal Charm", "Petal Armor", "Rainbow Charm"]),
+        "Chapter Unlocks": set(["Progressive Chapter", "Mystery of the Frozen North", "Sky Pirate Panic", "Enter the Battlesphere", "Globe Opera", "Justice in the Sky Paradise", "Robot Wars! Snake VS Tarsier", "Echoes of the Dragon War", "Bakunawa", "Dragon Valley", "Shenlin Park", "Tiger Falls", "Robot Graveyard", "Shade Armory", "Snowfields", "Avian Museum", "Airship Sigwada", "Phoenix Highway", "Zao Land", "The Battlesphere", "Globe Opera 1", "Globe Opera 2", "Auditorium", "Palace Courtyard", "Tidal Gate", "Sky Bridge", "Lightning Tower", "Zulon Jungle", "Nalao Lake", "Ancestral Forge", "Magma Starscape", "Diamond Point", "Gravity Bubble", "Bakunawa Chase", "Bakunawa Rush", "Refinery Room", "Clockwork Arboretum", "Inversion Dynamo", "Lunar Cannon", "Merga"]),
+        "Chest Tracers": set(["Chest Tracer - Dragon Valley", "Chest Tracer - Shenlin Park", "Chest Tracer - Tiger Falls", "Chest Tracer - Robot Graveyard", "Chest Tracer - Shade Armory", "Chest Tracer - Avian Museum", "Chest Tracer - Airship Sigwada", "Chest Tracer - Phoenix Highway", "Chest Tracer - Zao Land", "Chest Tracer - Globe Opera 1", "Chest Tracer - Globe Opera 2", "Chest Tracer - Palace Courtyard", "Chest Tracer - Tidal Gate", "Chest Tracer - Sky Bridge", "Chest Tracer - Lightning Tower", "Chest Tracer - Zulon Jungle", "Chest Tracer - Nalao Lake", "Chest Tracer - Ancestral Forge", "Chest Tracer - Magma Starscape", "Chest Tracer - Gravity Bubble", "Chest Tracer - Bakunawa Rush", "Chest Tracer - Clockwork Arboretum", "Chest Tracer - Inversion Dynamo", "Chest Tracer - Lunar Cannon", "Chest Tracer"]),
+        "Traps": set(["Swap Trap", "Mirror Trap", "Pie Trap", "Spring Trap", "PowerPoint Trap", "Zoom Trap", "Aaa Trap", "Spike Ball Trap", "Pixellation Trap", "Rail Trap", "Spam Trap", "Syntax Jumpscare Trap", "Trivia Trap", "Mach Speed Trap", "Scott The Woz Trap", "No Stocks", "Expensive Stocks", "Double Damage", "No Revivals", "No Guarding", "No Petals", "Time Limit", "Items To Bombs", "Life Oscillation", "One Hit KO"]),
+        
+        "Chaos Emeralds": set(["Red Chaos Emerald", "Blue Chaos Emerald", "Yellow Chaos Emerald", "Green Chaos Emerald", "White Chaos Emerald", "Cyan Chaos Emerald", "Purple Chaos Emerald"])
+    }
 
     def create_regions(self) -> None:
         regions.create_and_connect_regions(self)
