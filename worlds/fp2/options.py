@@ -206,6 +206,12 @@ class SonicModCompatibility(Toggle):
     Adds seven Chaos Emerald items to the item pool. When all seven are collected the Chaos Emeralds item from the Sonic mod will be added to the player's inventory, allowing usage of a character's Super Form.
     """
     display_name = "Sonic Mod Compatibility"
+    
+class PotionSellerModCompatibility(Toggle):
+    """
+    Adds the items from the Potion Seller mod to the item pool.
+    """
+    display_name = "Potion Seller Mod Compatibility"
 
 class DeathLink(Choice):
     """When you die, everyone dies. Of course the reverse is true too.
@@ -259,7 +265,7 @@ option_groups = [
     ),
     OptionGroup(
         "Mod Compatibility Options",
-        [SonicModCompatibility]
+        [SonicModCompatibility, PotionSellerModCompatibility]
     ),
 ]
 
@@ -306,6 +312,7 @@ class FP2Options(PerGameCommonOptions):
     fast_weapons_core: FastWeaponsCore
     filler_traps: TrapChance
     sonic_mod: SonicModCompatibility
+    potion_seller_mod: PotionSellerModCompatibility
     death_link: DeathLink
     ring_link: RingLink
     trap_link: TrapLink

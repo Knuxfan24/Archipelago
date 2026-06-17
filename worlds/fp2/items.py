@@ -29,6 +29,9 @@ ITEM_NAME_TO_ID = {
     "Potion - Strong Shields": 206,
     "Potion - Accelerator": 207,
     "Potion - Super Feather": 208,
+    "Potion - Hover": 209,
+    "Potion - Energy": 210,
+    "Potion - Resonance": 211,
     
     "Element Burst": 301,
     "Max Life Up": 302,
@@ -60,6 +63,21 @@ ITEM_NAME_TO_ID = {
     "White Chaos Emerald": 328,
     "Cyan Chaos Emerald": 329,
     "Purple Chaos Emerald": 330,
+    "Angel Tear": 331,
+    "Turtle Godshell": 332,
+    "Tinker Glove": 333,
+    "Pheonix Tonic": 334,
+    "Warpstone": 335,
+    "Madstone": 336,
+    "Guardian Charm": 337,
+    "Explosive Finale": 338,
+    "Idol of Greed": 339,
+    "Bomb Magnet": 340,
+    "Ninja Garb": 341,
+    "Ice Crown": 342,
+    "Invisibility Cloak": 343,
+    "Gravity Boots": 344,
+    "Magic Compass": 345,
     
     "Progressive Chapter": 401,
     "Mystery of the Frozen North": 402,
@@ -173,6 +191,9 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Potion - Strong Shields": ItemClassification.useful,
     "Potion - Accelerator": ItemClassification.useful,
     "Potion - Super Feather": ItemClassification.progression,
+    "Potion - Hover": ItemClassification.useful,
+    "Potion - Energy": ItemClassification.useful,
+    "Potion - Resonance": ItemClassification.useful,
     
     "Element Burst": ItemClassification.useful,
     "Max Life Up": ItemClassification.useful,
@@ -204,6 +225,21 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "White Chaos Emerald": ItemClassification.useful,
     "Cyan Chaos Emerald": ItemClassification.useful,
     "Purple Chaos Emerald": ItemClassification.useful,
+    "Angel Tear": ItemClassification.useful,
+    "Turtle Godshell": ItemClassification.useful,
+    "Tinker Glove": ItemClassification.useful,
+    "Pheonix Tonic": ItemClassification.useful,
+    "Warpstone": ItemClassification.useful,
+    "Madstone": ItemClassification.trap,
+    "Guardian Charm": ItemClassification.useful,
+    "Explosive Finale": ItemClassification.trap,
+    "Idol of Greed": ItemClassification.trap,
+    "Bomb Magnet": ItemClassification.trap,
+    "Ninja Garb": ItemClassification.useful,
+    "Ice Crown": ItemClassification.useful,
+    "Invisibility Cloak": ItemClassification.trap,
+    "Gravity Boots": ItemClassification.useful,
+    "Magic Compass": ItemClassification.useful,
     
     "Progressive Chapter": ItemClassification.progression,
     "Mystery of the Frozen North": ItemClassification.progression,
@@ -497,6 +533,27 @@ def create_all_items(world: FP2World) -> None:
         itempool.append(world.create_item("White Chaos Emerald"))
         itempool.append(world.create_item("Cyan Chaos Emerald"))
         itempool.append(world.create_item("Purple Chaos Emerald"))
+        
+    # If the Potion Seller Mod Compatibility option is enabled, then add its custom items.
+    if world.options.potion_seller_mod == 1:
+        itempool.append(world.create_item("Potion - Hover"))
+        itempool.append(world.create_item("Potion - Energy"))
+        itempool.append(world.create_item("Potion - Resonance"))
+        itempool.append(world.create_item("Angel Tear"))
+        itempool.append(world.create_item("Turtle Godshell"))
+        itempool.append(world.create_item("Tinker Glove"))
+        itempool.append(world.create_item("Pheonix Tonic"))
+        itempool.append(world.create_item("Warpstone"))
+        itempool.append(world.create_item("Madstone"))
+        itempool.append(world.create_item("Guardian Charm"))
+        itempool.append(world.create_item("Explosive Finale"))
+        itempool.append(world.create_item("Idol of Greed"))
+        itempool.append(world.create_item("Bomb Magnet"))
+        itempool.append(world.create_item("Ninja Garb"))
+        itempool.append(world.create_item("Ice Crown"))
+        itempool.append(world.create_item("Invisibility Cloak"))
+        itempool.append(world.create_item("Gravity Boots"))
+        itempool.append(world.create_item("Magic Compass"))
 
     # Get the count of items in our pool.
     number_of_items = len(itempool)
