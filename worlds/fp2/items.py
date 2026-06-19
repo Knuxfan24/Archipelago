@@ -387,6 +387,14 @@ def get_random_filler_item_name(world: FP2World) -> str:
         trap_items.append("Life Oscillation")
         trap_items.append("One Hit KO")
         
+        # Add the negative Brave Stones from the Potion Seller mod to the trap list if the compatibility option is enabled.
+        if world.options.potion_seller_mod:
+            trap_items.append("Invisibility Cloak")
+            trap_items.append("Madstone")
+            trap_items.append("Explosive Finale")
+            trap_items.append("Idol of Greed")
+            trap_items.append("Gravity Boots")
+        
     # Compare a random number to our filler traps value and return a trap if its less.
     # Also check that we actually HAVE any traps in the list.
     if world.random.randint(0, 99) < world.options.filler_traps and len(trap_items) > 0:
