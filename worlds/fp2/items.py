@@ -238,7 +238,7 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Ninja Garb": ItemClassification.useful,
     "Ice Crown": ItemClassification.useful,
     "Invisibility Cloak": ItemClassification.trap,
-    "Gravity Boots": ItemClassification.useful,
+    "Gravity Boots": ItemClassification.trap,
     "Magic Compass": ItemClassification.useful,
     
     "Progressive Chapter": ItemClassification.progression,
