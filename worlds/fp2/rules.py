@@ -57,6 +57,8 @@ def set_all_entrance_rules(world: FP2World) -> None:
         
     # Checks if the player has access to a stage depending on the value of the Chapters option.
     def stageAccessCheck(chapterName, starCardCount, progressiveChapterCount, stageName) -> bool:
+        if world.options.star_locks == 0: starCardCount = 0
+        
         if world.options.chapters == 0: return lambda state: state.has_all_counts({chapterName: 1, "Star Card": starCardCount}, world.player)
         if world.options.chapters == 1: return lambda state: state.has_all_counts({"Progressive Chapter": progressiveChapterCount, "Star Card": starCardCount}, world.player)
         if world.options.chapters == 2: return lambda state: state.has(stageName, world.player)

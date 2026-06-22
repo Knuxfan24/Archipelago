@@ -444,9 +444,12 @@ def create_all_items(world: FP2World) -> None:
     ]
     
     # Loop and create the multitude items.
-    for _ in range(48): itempool.append(world.create_item("Star Card"))
-    for _ in range(21): itempool.append(world.create_item("Time Capsule"))
+    for _ in range(32): itempool.append(world.create_item("Star Card"))
+    for _ in range(13): itempool.append(world.create_item("Time Capsule"))
     for _ in range(18): itempool.append(world.create_item("Battlesphere Key"))
+    
+    for _ in range(world.options.extra_star_cards): itempool.append(world.create_item("Star Card"))
+    for _ in range(world.options.extra_time_capsules): itempool.append(world.create_item("Time Capsule"))
     
     # Add the extra slot items if the option is enabled.
     if world.options.extra_items:

@@ -49,7 +49,7 @@ class FP2World(World):
 
     def fill_slot_data(self) -> Mapping[str, Any]:
         return self.options.as_dict(
-            "death_link", "ring_link", "trap_link", "damage_link", "chest_tracer_items", "chapters", "trap_stones", "fast_weapons_core", "dangerous_time_limit", "chest_tracers", "chests", "chest_tracer_strict", "enemies", "bosses", "milla_shop", "milla_shop_price", "milla_shop_amount", "vinyl_shop", "vinyl_shop_price", "vinyl_shop_amount", "item_boxes", "sonic_mod", "potion_seller_mod"
+            "death_link", "ring_link", "trap_link", "damage_link", "chest_tracer_items", "chapters", "star_locks", "trap_stones", "fast_weapons_core", "dangerous_time_limit", "chest_tracers", "chests", "chest_tracer_strict", "enemies", "bosses", "milla_shop", "milla_shop_price", "milla_shop_amount", "vinyl_shop", "vinyl_shop_price", "vinyl_shop_amount", "item_boxes", "sonic_mod", "potion_seller_mod"
         )
     
     # Add the flags for Universal Tracker.

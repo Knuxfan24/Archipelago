@@ -11,13 +11,33 @@ class Chapters(Choice):
     option_progressive = 1
     option_open = 2
     default = 2
-
+    
+class StarCardLocks(DefaultOnToggle):
+    """If using the Individual or Progressive Chapter Unlocks, should stages beyond Globe Opera be locked by a Star Card requirement.
+    
+    Globe Opera and the Persua Episodes require 11 Star Cards, while the Bakunawa Episode requires 23."""
+    display_name = "Star Card Locks"
+    
+class ExtraStarCards(Range):
+    """How many extra Progression Flagged Star Cards should be added to the Item Pool. """
+    display_name = "Extra Progression Star Cards"
+    range_start = 0
+    range_end = 64
+    default = 16
+    
+class ExtraTimeCapsules(Range):
+    """How many extra Progression Flagged Time Capsules should be added to the Item Pool. """
+    display_name = "Extra Progression Time Capsules"
+    range_start = 0
+    range_end = 32
+    default = 8
+    
 class FillerStarCards(DefaultOnToggle):
-    """Allow extra Star Cards to be added as Filler Items, allowing there to be more than 48 in the world."""
+    """Allow extra Star Cards to be added as Filler Items. Unlike the extra Progression Flagged ones, these can be overwritten with traps."""
     display_name = "Filler Star Cards"
 
 class FillerTimeCapsules(DefaultOnToggle):
-    """Allow extra Time Capsules to be added as Filler Items, allowing there to be more than 21 in the world."""
+    """Allow extra Time Capsules to be added as Filler Items. Unlike the extra Progression Flagged ones, these can be overwritten with traps."""
     display_name = "Filler Time Capsules"
 
 class Chests(DefaultOnToggle):
@@ -193,24 +213,18 @@ class FastWeaponsCore(Toggle):
     display_name = "Fast Weapon's Core"
 
 class TrapChance(Range):
-    """
-    How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps.
-    """
+    """ How many fillers will be replaced with traps. 0 means no additional traps, 100 means all fillers are traps. """
     display_name = "Trap Chance"
     range_start = 0
     range_end = 100
     default = 0
     
 class SonicModCompatibility(Toggle):
-    """
-    Adds seven Chaos Emerald items to the item pool. When all seven are collected the Chaos Emeralds item from the Sonic mod will be added to the player's inventory, allowing usage of a character's Super Form.
-    """
+    """ Adds seven Chaos Emerald items to the item pool. When all seven are collected the Chaos Emeralds item from the Sonic mod will be added to the player's inventory, allowing usage of a character's Super Form."""
     display_name = "Sonic Mod Compatibility"
     
 class PotionSellerModCompatibility(Toggle):
-    """
-    Adds the items from the Potion Seller mod to the item pool.
-    """
+    """Adds the items from the Potion Seller mod to the item pool."""
     display_name = "Potion Seller Mod Compatibility"
 
 class DeathLink(Choice):
@@ -240,8 +254,8 @@ option_groups = [
         [DeathLink, RingLink, TrapLink, DamageLink],
     ),
     OptionGroup(
-        "Extra Filler Options",
-        [FillerStarCards, FillerTimeCapsules],
+        "Extra Progression Items",
+        [ExtraStarCards, ExtraTimeCapsules, FillerStarCards, FillerTimeCapsules],
     ),
     OptionGroup(
         "Shop Options",
@@ -272,6 +286,9 @@ option_groups = [
 @dataclass
 class FP2Options(PerGameCommonOptions):
     chapters: Chapters
+    star_locks: StarCardLocks
+    extra_star_cards: ExtraStarCards
+    extra_time_capsules: ExtraTimeCapsules
     filler_star_cards: FillerStarCards
     filler_time_capsules: FillerTimeCapsules
     chests: Chests
