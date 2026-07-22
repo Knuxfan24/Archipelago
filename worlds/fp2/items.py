@@ -78,6 +78,7 @@ ITEM_NAME_TO_ID = {
     "Invisibility Cloak": 343,
     "Gravity Boots": 344,
     "Magic Compass": 345,
+    "Step Booster": 346,
     
     "Progressive Chapter": 401,
     "Mystery of the Frozen North": 402,
@@ -240,6 +241,7 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Invisibility Cloak": ItemClassification.trap,
     "Gravity Boots": ItemClassification.trap,
     "Magic Compass": ItemClassification.useful,
+    "Step Booster": ItemClassification.useful,
     
     "Progressive Chapter": ItemClassification.progression,
     "Mystery of the Frozen North": ItemClassification.progression,
@@ -565,6 +567,10 @@ def create_all_items(world: FP2World) -> None:
         itempool.append(world.create_item("Invisibility Cloak"))
         itempool.append(world.create_item("Gravity Boots"))
         itempool.append(world.create_item("Magic Compass"))
+        
+    # If the Lightning Mod Compatibility option is enabled, then add the Step Booster to the pool. 
+    if world.options.lightning_mod == 1:
+        itempool.append(world.create_item("Step Booster"))
 
     # Get the count of items in our pool.
     number_of_items = len(itempool)

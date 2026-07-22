@@ -79,6 +79,20 @@ class MillaShopPrice(Range):
     range_end = 100
     default = 1
 
+class GoldGemCrystalCost(Range):
+    """How many Crystal Shards are required to make a Gold Gem."""
+    display_name = "Gold Gem Crystal Cost"
+    range_start = 100
+    range_end = 10000
+    default = 1000
+
+class GoldGemCoreCost(Range):
+    """How many Robot Cores are required to make a Gold Gem."""
+    display_name = "Gold Gem Core Cost"
+    range_start = 5
+    range_end = 100
+    default = 20
+
 class VinylShop(DefaultOnToggle):
     """Makes buying the vinyls from the shop on the level select into checks, adding as many locations as specified in the next option."""
     display_name = "Enable Vinyl Shop"
@@ -226,6 +240,10 @@ class SonicModCompatibility(Toggle):
 class PotionSellerModCompatibility(Toggle):
     """Adds the items from the Potion Seller mod to the item pool."""
     display_name = "Potion Seller Mod Compatibility"
+    
+class LightningModCompatibility(Toggle):
+    """Adds the Step Booster from the Lightning mod to the item pool."""
+    display_name = "Lightning Mod Compatibility"
 
 class DeathLink(Choice):
     """When you die, everyone dies. Of course the reverse is true too.
@@ -259,7 +277,7 @@ option_groups = [
     ),
     OptionGroup(
         "Shop Options",
-        [MillasShop, MillaShopAmount, MillaShopPrice, VinylShop, VinylShopAmount, VinylShopPrice],
+        [MillasShop, MillaShopAmount, MillaShopPrice, GoldGemCrystalCost, GoldGemCoreCost, VinylShop, VinylShopAmount, VinylShopPrice],
     ),
     OptionGroup(
         "Sanity Options",
@@ -279,7 +297,7 @@ option_groups = [
     ),
     OptionGroup(
         "Mod Compatibility Options",
-        [SonicModCompatibility, PotionSellerModCompatibility]
+        [SonicModCompatibility, PotionSellerModCompatibility, LightningModCompatibility]
     ),
 ]
 
@@ -301,6 +319,8 @@ class FP2Options(PerGameCommonOptions):
     vinyl_shop_amount: VinylShopAmount
     milla_shop_price: MillaShopPrice
     vinyl_shop_price: VinylShopPrice
+    gold_gem_crystal_cost: GoldGemCrystalCost
+    gold_gem_core_cost: GoldGemCoreCost
     enemies: EnemySanity
     bosses: BossSanity
     item_boxes: ItemBoxSanity
@@ -330,6 +350,7 @@ class FP2Options(PerGameCommonOptions):
     filler_traps: TrapChance
     sonic_mod: SonicModCompatibility
     potion_seller_mod: PotionSellerModCompatibility
+    lightning_mod: LightningModCompatibility
     death_link: DeathLink
     ring_link: RingLink
     trap_link: TrapLink
