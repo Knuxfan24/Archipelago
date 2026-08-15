@@ -264,6 +264,153 @@ LOCATION_NAME_TO_ID = {
     "Weather Face": 343,
     "Wolf Armor": 344,
     
+    "Dragon Valley - Rainbow S-Rank": 401,
+    "Shenlin Park - Rainbow S-Rank": 402,
+    "Tiger Falls - Rainbow S-Rank": 403,
+    "Robot Graveyard - Rainbow S-Rank": 404,
+    "Shade Armory - Rainbow S-Rank": 405,
+    "Snowfields - Rainbow S-Rank": 406,
+    "Avian Museum - Rainbow S-Rank": 407,
+    "Airship Sigwada - Rainbow S-Rank": 408,
+    "Phoenix Highway - Rainbow S-Rank": 409,
+    "Zao Land - Rainbow S-Rank": 410,
+    "Globe Opera 1 - Rainbow S-Rank": 411,
+    "Globe Opera 2 - Rainbow S-Rank": 412,
+    "Auditorium - Rainbow S-Rank": 413,
+    "Palace Courtyard - Rainbow S-Rank": 414,
+    "Tidal Gate - Rainbow S-Rank": 415,
+    "Sky Bridge - Rainbow S-Rank": 416,
+    "Lightning Tower - Rainbow S-Rank": 417,
+    "Zulon Jungle - Rainbow S-Rank": 418,
+    "Nalao Lake - Rainbow S-Rank": 419,
+    "Ancestral Forge - Rainbow S-Rank": 420,
+    "Magma Starscape - Rainbow S-Rank": 421,
+    "Diamond Point - Rainbow S-Rank": 422,
+    "Gravity Bubble - Rainbow S-Rank": 423,
+    "Bakunawa Chase - Rainbow S-Rank": 424,
+    "Bakunawa Rush - Rainbow S-Rank": 425,
+    "Refinery Room - Rainbow S-Rank": 426,
+    "Clockwork Arboretum - Rainbow S-Rank": 427,
+    "Inversion Dynamo - Rainbow S-Rank": 428,
+    "Lunar Cannon - Rainbow S-Rank": 429,
+    "Merga - Rainbow S-Rank": 430,
+    "Beginner's Gauntlet - Rainbow S-Rank": 431,
+    "Battlebot Battle Royale - Rainbow S-Rank": 432,
+    "Hero Battle Royale - Rainbow S-Rank": 433,
+    "Kalaw's Challenge - Rainbow S-Rank": 434,
+    "Army of One - Rainbow S-Rank": 435,
+    "Ring-Out Challenge - Rainbow S-Rank": 436,
+    "Flip Fire Gauntlet - Rainbow S-Rank": 437,
+    "Vanishing Maze - Rainbow S-Rank": 438,
+    "Mondo Condo - Rainbow S-Rank": 439,
+    "Birds of Prey - Rainbow S-Rank": 480,
+    "Battlebot Revenge - Rainbow S-Rank": 481,
+    "Mach Speed Melee - Rainbow S-Rank": 482,
+    "Galactic Rumble - Rainbow S-Rank": 483,
+    "Stop and Go - Rainbow S-Rank": 484,
+    "Mecha Madness - Rainbow S-Rank": 485,
+    "Rolling Thunder - Rainbow S-Rank": 486,
+    "Blast from the Past - Rainbow S-Rank": 487,
+    "Bubble Battle - Rainbow S-Rank": 488,
+    
+    "Dragon Valley - S-Rank": 501,
+    "Shenlin Park - S-Rank": 502,
+    "Tiger Falls - S-Rank": 503,
+    "Robot Graveyard - S-Rank": 504,
+    "Shade Armory - S-Rank": 505,
+    "Snowfields - S-Rank": 506,
+    "Avian Museum - S-Rank": 507,
+    "Airship Sigwada - S-Rank": 508,
+    "Phoenix Highway - S-Rank": 509,
+    "Zao Land - S-Rank": 510,
+    "Globe Opera 1 - S-Rank": 511,
+    "Globe Opera 2 - S-Rank": 512,
+    "Auditorium - S-Rank": 513,
+    "Palace Courtyard - S-Rank": 514,
+    "Tidal Gate - S-Rank": 515,
+    "Sky Bridge - S-Rank": 516,
+    "Lightning Tower - S-Rank": 517,
+    "Zulon Jungle - S-Rank": 518,
+    "Nalao Lake - S-Rank": 519,
+    "Ancestral Forge - S-Rank": 520,
+    "Magma Starscape - S-Rank": 521,
+    "Diamond Point - S-Rank": 522,
+    "Gravity Bubble - S-Rank": 523,
+    "Bakunawa Chase - S-Rank": 524,
+    "Bakunawa Rush - S-Rank": 525,
+    "Refinery Room - S-Rank": 526,
+    "Clockwork Arboretum - S-Rank": 527,
+    "Inversion Dynamo - S-Rank": 528,
+    "Lunar Cannon - S-Rank": 529,
+    "Merga - S-Rank": 530,
+    "Beginner's Gauntlet - S-Rank": 531,
+    "Battlebot Battle Royale - S-Rank": 532,
+    "Hero Battle Royale - S-Rank": 533,
+    "Kalaw's Challenge - S-Rank": 534,
+    "Army of One - S-Rank": 535,
+    "Ring-Out Challenge - S-Rank": 536,
+    "Flip Fire Gauntlet - S-Rank": 537,
+    "Vanishing Maze - S-Rank": 538,
+    "Mondo Condo - S-Rank": 539,
+    "Birds of Prey - S-Rank": 580,
+    "Battlebot Revenge - S-Rank": 581,
+    "Mach Speed Melee - S-Rank": 582,
+    "Galactic Rumble - S-Rank": 583,
+    "Stop and Go - S-Rank": 584,
+    "Mecha Madness - S-Rank": 585,
+    "Rolling Thunder - S-Rank": 586,
+    "Blast from the Past - S-Rank": 587,
+    "Bubble Battle - S-Rank": 588,
+    
+    "Dragon Valley - A-Rank": 601,
+    "Shenlin Park - A-Rank": 602,
+    "Tiger Falls - A-Rank": 603,
+    "Robot Graveyard - A-Rank": 604,
+    "Shade Armory - A-Rank": 605,
+    "Snowfields - A-Rank": 606,
+    "Avian Museum - A-Rank": 607,
+    "Airship Sigwada - A-Rank": 608,
+    "Phoenix Highway - A-Rank": 609,
+    "Zao Land - A-Rank": 610,
+    "Globe Opera 1 - A-Rank": 611,
+    "Globe Opera 2 - A-Rank": 612,
+    "Auditorium - A-Rank": 613,
+    "Palace Courtyard - A-Rank": 614,
+    "Tidal Gate - A-Rank": 615,
+    "Sky Bridge - A-Rank": 616,
+    "Lightning Tower - A-Rank": 617,
+    "Zulon Jungle - A-Rank": 618,
+    "Nalao Lake - A-Rank": 619,
+    "Ancestral Forge - A-Rank": 620,
+    "Magma Starscape - A-Rank": 621,
+    "Diamond Point - A-Rank": 622,
+    "Gravity Bubble - A-Rank": 623,
+    "Bakunawa Chase - A-Rank": 624,
+    "Bakunawa Rush - A-Rank": 625,
+    "Refinery Room - A-Rank": 626,
+    "Clockwork Arboretum - A-Rank": 627,
+    "Inversion Dynamo - A-Rank": 628,
+    "Lunar Cannon - A-Rank": 629,
+    "Merga - A-Rank": 630,
+    "Beginner's Gauntlet - A-Rank": 631,
+    "Battlebot Battle Royale - A-Rank": 632,
+    "Hero Battle Royale - A-Rank": 633,
+    "Kalaw's Challenge - A-Rank": 634,
+    "Army of One - A-Rank": 635,
+    "Ring-Out Challenge - A-Rank": 636,
+    "Flip Fire Gauntlet - A-Rank": 637,
+    "Vanishing Maze - A-Rank": 638,
+    "Mondo Condo - A-Rank": 639,
+    "Birds of Prey - A-Rank": 680,
+    "Battlebot Revenge - A-Rank": 681,
+    "Mach Speed Melee - A-Rank": 682,
+    "Galactic Rumble - A-Rank": 683,
+    "Stop and Go - A-Rank": 684,
+    "Mecha Madness - A-Rank": 685,
+    "Rolling Thunder - A-Rank": 686,
+    "Blast from the Past - A-Rank": 687,
+    "Bubble Battle - A-Rank": 688,
+    
     "Milla Shop Item 1": 1000,
     "Milla Shop Item 2": 1001,
     "Milla Shop Item 3": 1002,
@@ -3021,6 +3168,105 @@ def create_regular_locations(world: FP2World) -> None:
     lCannon.add_locations(get_location_names_with_ids(["Lunar Cannon - Clear"]), FP2Location)
     merga.add_locations(get_location_names_with_ids(["Merga - Clear"]), FP2Location)
     
+    # Add the Rainbow S-Rank locations.
+    if (world.options.rainbow_s_rank):
+        dValley.add_locations(get_location_names_with_ids(["Dragon Valley - Rainbow S-Rank"]), FP2Location)
+        sPark.add_locations(get_location_names_with_ids(["Shenlin Park - Rainbow S-Rank"]), FP2Location)
+        tFalls.add_locations(get_location_names_with_ids(["Tiger Falls - Rainbow S-Rank"]), FP2Location)
+        rGraveyard.add_locations(get_location_names_with_ids(["Robot Graveyard - Rainbow S-Rank"]), FP2Location)
+        sArmory.add_locations(get_location_names_with_ids(["Shade Armory - Rainbow S-Rank"]), FP2Location)
+        snowfields.add_locations(get_location_names_with_ids(["Snowfields - Rainbow S-Rank"]), FP2Location)
+        aMuseum.add_locations(get_location_names_with_ids(["Avian Museum - Rainbow S-Rank"]), FP2Location)
+        aSigwada.add_locations(get_location_names_with_ids(["Airship Sigwada - Rainbow S-Rank"]), FP2Location)
+        pHighway.add_locations(get_location_names_with_ids(["Phoenix Highway - Rainbow S-Rank"]), FP2Location)
+        zLand.add_locations(get_location_names_with_ids(["Zao Land - Rainbow S-Rank"]), FP2Location)
+        gOpera1.add_locations(get_location_names_with_ids(["Globe Opera 1 - Rainbow S-Rank"]), FP2Location)
+        gOpera2.add_locations(get_location_names_with_ids(["Globe Opera 2 - Rainbow S-Rank"]), FP2Location)
+        auditorium.add_locations(get_location_names_with_ids(["Auditorium - Rainbow S-Rank"]), FP2Location)
+        pCourtyard.add_locations(get_location_names_with_ids(["Palace Courtyard - Rainbow S-Rank"]), FP2Location)
+        tGate.add_locations(get_location_names_with_ids(["Tidal Gate - Rainbow S-Rank"]), FP2Location)
+        sBridge.add_locations(get_location_names_with_ids(["Sky Bridge - Rainbow S-Rank"]), FP2Location)
+        lTower.add_locations(get_location_names_with_ids(["Lightning Tower - Rainbow S-Rank"]), FP2Location)
+        zJungle.add_locations(get_location_names_with_ids(["Zulon Jungle - Rainbow S-Rank"]), FP2Location)
+        nLake.add_locations(get_location_names_with_ids(["Nalao Lake - Rainbow S-Rank"]), FP2Location)
+        aForge.add_locations(get_location_names_with_ids(["Ancestral Forge - Rainbow S-Rank"]), FP2Location)
+        mStarscape.add_locations(get_location_names_with_ids(["Magma Starscape - Rainbow S-Rank"]), FP2Location)
+        dPoint.add_locations(get_location_names_with_ids(["Diamond Point - Rainbow S-Rank"]), FP2Location)
+        gBubble.add_locations(get_location_names_with_ids(["Gravity Bubble - Rainbow S-Rank"]), FP2Location)
+        bChase.add_locations(get_location_names_with_ids(["Bakunawa Chase - Rainbow S-Rank"]), FP2Location)
+        bRush.add_locations(get_location_names_with_ids(["Bakunawa Rush - Rainbow S-Rank"]), FP2Location)
+        rRoom.add_locations(get_location_names_with_ids(["Refinery Room - Rainbow S-Rank"]), FP2Location)
+        cArboretum.add_locations(get_location_names_with_ids(["Clockwork Arboretum - Rainbow S-Rank"]), FP2Location)
+        iDynamo.add_locations(get_location_names_with_ids(["Inversion Dynamo - Rainbow S-Rank"]), FP2Location)
+        lCannon.add_locations(get_location_names_with_ids(["Lunar Cannon - Rainbow S-Rank"]), FP2Location)
+        merga.add_locations(get_location_names_with_ids(["Merga - Rainbow S-Rank"]), FP2Location)
+    
+    # Add the S-Rank locations.
+    if (world.options.s_rank):
+        dValley.add_locations(get_location_names_with_ids(["Dragon Valley - S-Rank"]), FP2Location)
+        sPark.add_locations(get_location_names_with_ids(["Shenlin Park - S-Rank"]), FP2Location)
+        tFalls.add_locations(get_location_names_with_ids(["Tiger Falls - S-Rank"]), FP2Location)
+        rGraveyard.add_locations(get_location_names_with_ids(["Robot Graveyard - S-Rank"]), FP2Location)
+        sArmory.add_locations(get_location_names_with_ids(["Shade Armory - S-Rank"]), FP2Location)
+        snowfields.add_locations(get_location_names_with_ids(["Snowfields - S-Rank"]), FP2Location)
+        aMuseum.add_locations(get_location_names_with_ids(["Avian Museum - S-Rank"]), FP2Location)
+        aSigwada.add_locations(get_location_names_with_ids(["Airship Sigwada - S-Rank"]), FP2Location)
+        pHighway.add_locations(get_location_names_with_ids(["Phoenix Highway - S-Rank"]), FP2Location)
+        zLand.add_locations(get_location_names_with_ids(["Zao Land - S-Rank"]), FP2Location)
+        gOpera1.add_locations(get_location_names_with_ids(["Globe Opera 1 - S-Rank"]), FP2Location)
+        gOpera2.add_locations(get_location_names_with_ids(["Globe Opera 2 - S-Rank"]), FP2Location)
+        auditorium.add_locations(get_location_names_with_ids(["Auditorium - S-Rank"]), FP2Location)
+        pCourtyard.add_locations(get_location_names_with_ids(["Palace Courtyard - S-Rank"]), FP2Location)
+        tGate.add_locations(get_location_names_with_ids(["Tidal Gate - S-Rank"]), FP2Location)
+        sBridge.add_locations(get_location_names_with_ids(["Sky Bridge - S-Rank"]), FP2Location)
+        lTower.add_locations(get_location_names_with_ids(["Lightning Tower - S-Rank"]), FP2Location)
+        zJungle.add_locations(get_location_names_with_ids(["Zulon Jungle - S-Rank"]), FP2Location)
+        nLake.add_locations(get_location_names_with_ids(["Nalao Lake - S-Rank"]), FP2Location)
+        aForge.add_locations(get_location_names_with_ids(["Ancestral Forge - S-Rank"]), FP2Location)
+        mStarscape.add_locations(get_location_names_with_ids(["Magma Starscape - S-Rank"]), FP2Location)
+        dPoint.add_locations(get_location_names_with_ids(["Diamond Point - S-Rank"]), FP2Location)
+        gBubble.add_locations(get_location_names_with_ids(["Gravity Bubble - S-Rank"]), FP2Location)
+        bChase.add_locations(get_location_names_with_ids(["Bakunawa Chase - S-Rank"]), FP2Location)
+        bRush.add_locations(get_location_names_with_ids(["Bakunawa Rush - S-Rank"]), FP2Location)
+        rRoom.add_locations(get_location_names_with_ids(["Refinery Room - S-Rank"]), FP2Location)
+        cArboretum.add_locations(get_location_names_with_ids(["Clockwork Arboretum - S-Rank"]), FP2Location)
+        iDynamo.add_locations(get_location_names_with_ids(["Inversion Dynamo - S-Rank"]), FP2Location)
+        lCannon.add_locations(get_location_names_with_ids(["Lunar Cannon - S-Rank"]), FP2Location)
+        merga.add_locations(get_location_names_with_ids(["Merga - S-Rank"]), FP2Location)
+        
+    # Add the A-Rank locations.
+    if (world.options.a_rank):
+        dValley.add_locations(get_location_names_with_ids(["Dragon Valley - A-Rank"]), FP2Location)
+        sPark.add_locations(get_location_names_with_ids(["Shenlin Park - A-Rank"]), FP2Location)
+        tFalls.add_locations(get_location_names_with_ids(["Tiger Falls - A-Rank"]), FP2Location)
+        rGraveyard.add_locations(get_location_names_with_ids(["Robot Graveyard - A-Rank"]), FP2Location)
+        sArmory.add_locations(get_location_names_with_ids(["Shade Armory - A-Rank"]), FP2Location)
+        snowfields.add_locations(get_location_names_with_ids(["Snowfields - A-Rank"]), FP2Location)
+        aMuseum.add_locations(get_location_names_with_ids(["Avian Museum - A-Rank"]), FP2Location)
+        aSigwada.add_locations(get_location_names_with_ids(["Airship Sigwada - A-Rank"]), FP2Location)
+        pHighway.add_locations(get_location_names_with_ids(["Phoenix Highway - A-Rank"]), FP2Location)
+        zLand.add_locations(get_location_names_with_ids(["Zao Land - A-Rank"]), FP2Location)
+        gOpera1.add_locations(get_location_names_with_ids(["Globe Opera 1 - A-Rank"]), FP2Location)
+        gOpera2.add_locations(get_location_names_with_ids(["Globe Opera 2 - A-Rank"]), FP2Location)
+        auditorium.add_locations(get_location_names_with_ids(["Auditorium - A-Rank"]), FP2Location)
+        pCourtyard.add_locations(get_location_names_with_ids(["Palace Courtyard - A-Rank"]), FP2Location)
+        tGate.add_locations(get_location_names_with_ids(["Tidal Gate - A-Rank"]), FP2Location)
+        sBridge.add_locations(get_location_names_with_ids(["Sky Bridge - A-Rank"]), FP2Location)
+        lTower.add_locations(get_location_names_with_ids(["Lightning Tower - A-Rank"]), FP2Location)
+        zJungle.add_locations(get_location_names_with_ids(["Zulon Jungle - A-Rank"]), FP2Location)
+        nLake.add_locations(get_location_names_with_ids(["Nalao Lake - A-Rank"]), FP2Location)
+        aForge.add_locations(get_location_names_with_ids(["Ancestral Forge - A-Rank"]), FP2Location)
+        mStarscape.add_locations(get_location_names_with_ids(["Magma Starscape - A-Rank"]), FP2Location)
+        dPoint.add_locations(get_location_names_with_ids(["Diamond Point - A-Rank"]), FP2Location)
+        gBubble.add_locations(get_location_names_with_ids(["Gravity Bubble - A-Rank"]), FP2Location)
+        bChase.add_locations(get_location_names_with_ids(["Bakunawa Chase - A-Rank"]), FP2Location)
+        bRush.add_locations(get_location_names_with_ids(["Bakunawa Rush - A-Rank"]), FP2Location)
+        rRoom.add_locations(get_location_names_with_ids(["Refinery Room - A-Rank"]), FP2Location)
+        cArboretum.add_locations(get_location_names_with_ids(["Clockwork Arboretum - A-Rank"]), FP2Location)
+        iDynamo.add_locations(get_location_names_with_ids(["Inversion Dynamo - A-Rank"]), FP2Location)
+        lCannon.add_locations(get_location_names_with_ids(["Lunar Cannon - A-Rank"]), FP2Location)
+        merga.add_locations(get_location_names_with_ids(["Merga - A-Rank"]), FP2Location)
+    
     # Get the Battlesphere Challenge locations and add them to the Battlesphere region.
     battlesphereChallenges = get_location_names_with_ids(
         [
@@ -3045,6 +3291,84 @@ def create_regular_locations(world: FP2World) -> None:
         ]
     )
     battlesphere.add_locations(battlesphereChallenges, FP2Location)
+    
+    # Add the Rainbow S-Rank locations.
+    if (world.options.rainbow_s_rank):
+        battlesphereChallenges = get_location_names_with_ids(
+                [
+                    "Beginner's Gauntlet - Rainbow S-Rank",
+                    "Battlebot Battle Royale - Rainbow S-Rank",
+                    "Hero Battle Royale - Rainbow S-Rank",
+                    "Kalaw's Challenge - Rainbow S-Rank",
+                    "Army of One - Rainbow S-Rank",
+                    "Ring-Out Challenge - Rainbow S-Rank",
+                    "Flip Fire Gauntlet - Rainbow S-Rank",
+                    "Vanishing Maze - Rainbow S-Rank",
+                    "Mondo Condo - Rainbow S-Rank",
+                    "Birds of Prey - Rainbow S-Rank",
+                    "Battlebot Revenge - Rainbow S-Rank",
+                    "Mach Speed Melee - Rainbow S-Rank",
+                    "Galactic Rumble - Rainbow S-Rank",
+                    "Stop and Go - Rainbow S-Rank",
+                    "Mecha Madness - Rainbow S-Rank",
+                    "Rolling Thunder - Rainbow S-Rank",
+                    "Blast from the Past - Rainbow S-Rank",
+                    "Bubble Battle - Rainbow S-Rank"
+                ]
+        )
+        battlesphere.add_locations(battlesphereChallenges, FP2Location)
+        
+    # Add the S-Rank locations.
+    if (world.options.s_rank):
+        battlesphereChallenges = get_location_names_with_ids(
+                [
+                    "Beginner's Gauntlet - S-Rank",
+                    "Battlebot Battle Royale - S-Rank",
+                    "Hero Battle Royale - S-Rank",
+                    "Kalaw's Challenge - S-Rank",
+                    "Army of One - S-Rank",
+                    "Ring-Out Challenge - S-Rank",
+                    "Flip Fire Gauntlet - S-Rank",
+                    "Vanishing Maze - S-Rank",
+                    "Mondo Condo - S-Rank",
+                    "Birds of Prey - S-Rank",
+                    "Battlebot Revenge - S-Rank",
+                    "Mach Speed Melee - S-Rank",
+                    "Galactic Rumble - S-Rank",
+                    "Stop and Go - S-Rank",
+                    "Mecha Madness - S-Rank",
+                    "Rolling Thunder - S-Rank",
+                    "Blast from the Past - S-Rank",
+                    "Bubble Battle - S-Rank"
+                ]
+        )
+        battlesphere.add_locations(battlesphereChallenges, FP2Location)
+        
+    # Add the A-Rank locations.
+    if (world.options.a_rank):
+        battlesphereChallenges = get_location_names_with_ids(
+                [
+                    "Beginner's Gauntlet - A-Rank",
+                    "Battlebot Battle Royale - A-Rank",
+                    "Hero Battle Royale - A-Rank",
+                    "Kalaw's Challenge - A-Rank",
+                    "Army of One - A-Rank",
+                    "Ring-Out Challenge - A-Rank",
+                    "Flip Fire Gauntlet - A-Rank",
+                    "Vanishing Maze - A-Rank",
+                    "Mondo Condo - A-Rank",
+                    "Birds of Prey - A-Rank",
+                    "Battlebot Revenge - A-Rank",
+                    "Mach Speed Melee - A-Rank",
+                    "Galactic Rumble - A-Rank",
+                    "Stop and Go - A-Rank",
+                    "Mecha Madness - A-Rank",
+                    "Rolling Thunder - A-Rank",
+                    "Blast from the Past - A-Rank",
+                    "Bubble Battle - A-Rank"
+                ]
+        )
+        battlesphere.add_locations(battlesphereChallenges, FP2Location)
 
     # Add the chest locations to their approriate stage region if the Chests option is enabled.
     if world.options.chests:

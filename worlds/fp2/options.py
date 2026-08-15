@@ -39,6 +39,25 @@ class FillerStarCards(DefaultOnToggle):
 class FillerTimeCapsules(DefaultOnToggle):
     """Allow extra Time Capsules to be added as Filler Items. Unlike the extra Progression Flagged ones, these can be overwritten with traps."""
     display_name = "Filler Time Capsules"
+    
+class RainbowSRank(Toggle):
+    """Makes getting Rainbow S-Ranks into locations."""
+    display_name = "Enable Rainbow S-Ranks"
+    
+class SRank(Toggle):
+    """Makes getting S-Ranks into locations.
+    Obtaining a Rainbow S-Rank will also send the S-Rank location."""
+    display_name = "Enable S-Ranks"
+    
+class SRankRequiresBraveStone(DefaultOnToggle):
+    """Only adds S-Ranks to logic when at least one Brave Stone is acquired.
+    If disabled, then S-Ranking a stage via completing it without taking damage will be logically expected."""
+    display_name = "S-Ranks Logically Require Brave Stones"
+    
+class ARank(DefaultOnToggle):
+    """Makes getting A-Ranks into locations.
+    Obtaining an S-Rank or Rainbow S-Rank will also send the A-Rank location."""
+    display_name = "Enable A-Ranks"
 
 class Chests(DefaultOnToggle):
     """Makes opening chests into checks, adding 82 locations."""
@@ -276,6 +295,10 @@ option_groups = [
         [ExtraStarCards, ExtraTimeCapsules, FillerStarCards, FillerTimeCapsules],
     ),
     OptionGroup(
+        "Ranks",
+        [RainbowSRank, SRank, SRankRequiresBraveStone, ARank],
+    ),
+    OptionGroup(
         "Shop Options",
         [MillasShop, MillaShopAmount, MillaShopPrice, GoldGemCrystalCost, GoldGemCoreCost, VinylShop, VinylShopAmount, VinylShopPrice],
     ),
@@ -309,6 +332,10 @@ class FP2Options(PerGameCommonOptions):
     extra_time_capsules: ExtraTimeCapsules
     filler_star_cards: FillerStarCards
     filler_time_capsules: FillerTimeCapsules
+    rainbow_s_rank: RainbowSRank
+    s_rank: SRank
+    s_rank_brave_stones: SRankRequiresBraveStone
+    a_rank: ARank
     chests: Chests
     chest_tracers: ChestTracers
     chest_tracer_items: ChestTracerItems
