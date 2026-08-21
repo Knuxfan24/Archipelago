@@ -104,7 +104,15 @@ def set_all_entrance_rules(world: FP2World) -> None:
     set_rule(cArboretum, stageAccessCheck("Bakunawa", 23, 8, "Clockwork Arboretum"))
     set_rule(iDynamo, stageAccessCheck("Bakunawa", 23, 8, "Inversion Dynamo"))
     set_rule(lCannon, stageAccessCheck("Bakunawa", 23, 8, "Lunar Cannon"))
-    set_rule(merga, stageAccessCheck("Bakunawa", 23, 8, "Merga"))
+    
+    # Add access rules for Merga depending on the goal option.
+    if world.options.goal == 1:
+        set_rule(merga, stageAccessCheck("Bakunawa", 23, 8, "Merga"))
+    else:
+        set_rule(merga, lambda state: state.has("Star Card", world.player, 32))
+        if (world.options.chapters == 0): add_rule(merga, lambda state: state.has("Bakunawa", world.player, 1))
+        if (world.options.chapters == 1): add_rule(merga, lambda state: state.has("Progressive Chapter", world.player, 8))
+        
     set_rule(wCore, GoModeCheck)
 
     # If the Chests option is enabled and the chest tracers are included in item form, then add rules for them as well.
@@ -262,8 +270,11 @@ def set_all_location_rules(world: FP2World) -> None:
         add_rule(world.get_location("Clockwork Arboretum - Rainbow S-Rank"), lambda state: state.has("One Hit KO", world.player), "and")
         set_rule(world.get_location("Inversion Dynamo - Rainbow S-Rank"), requiresBraveStone)
         add_rule(world.get_location("Inversion Dynamo - Rainbow S-Rank"), lambda state: state.has("One Hit KO", world.player), "and")
-        set_rule(world.get_location("Merga - Rainbow S-Rank"), requiresBraveStone)
-        add_rule(world.get_location("Merga - Rainbow S-Rank"), lambda state: state.has("One Hit KO", world.player), "and")
+        
+        # Add Merga's clear location if our goal is Weapon's Core.
+        if world.options.goal == 1:
+            set_rule(world.get_location("Merga - Rainbow S-Rank"), requiresBraveStone)
+            add_rule(world.get_location("Merga - Rainbow S-Rank"), lambda state: state.has("One Hit KO", world.player), "and")
         
         set_rule(world.get_location("Beginner's Gauntlet - Rainbow S-Rank"), requiresBraveStone)
         add_rule(world.get_location("Beginner's Gauntlet - Rainbow S-Rank"), lambda state: state.has("One Hit KO", world.player), "and")
@@ -388,9 +399,12 @@ def set_all_location_rules(world: FP2World) -> None:
         set_rule(world.get_location("Inversion Dynamo - S-Rank"), requiresBraveStone)
         add_rule(world.get_location("Inversion Dynamo - S-Rank"), lambda state: state.has("One Hit KO", world.player), "or")
         add_rule(world.get_location("Inversion Dynamo - S-Rank"), lambda state: state.has(world.glitches_item_name, world.player), "or")
-        set_rule(world.get_location("Merga - S-Rank"), requiresBraveStone)
-        add_rule(world.get_location("Merga - S-Rank"), lambda state: state.has("One Hit KO", world.player), "or")
-        add_rule(world.get_location("Merga - S-Rank"), lambda state: state.has(world.glitches_item_name, world.player), "or")
+        
+        # Add Merga's clear location if our goal is Weapon's Core.
+        if world.options.goal == 1:
+            set_rule(world.get_location("Merga - S-Rank"), requiresBraveStone)
+            add_rule(world.get_location("Merga - S-Rank"), lambda state: state.has("One Hit KO", world.player), "or")
+            add_rule(world.get_location("Merga - S-Rank"), lambda state: state.has(world.glitches_item_name, world.player), "or")
         
         set_rule(world.get_location("Beginner's Gauntlet - S-Rank"), requiresBraveStone)
         add_rule(world.get_location("Beginner's Gauntlet - S-Rank"), lambda state: state.has("One Hit KO", world.player), "or")
@@ -1013,11 +1027,15 @@ def set_all_location_rules(world: FP2World) -> None:
         kakugan = world.get_location("Kakugan")
         lBread = world.get_location("Lemon Bread")
         lilac = world.get_location("Lilac")
-        mergaBlueMoon = world.get_location("Merga (Blue Moon)")
-        mergaBloodMoon = world.get_location("Merga (Blood Moon)")
-        mergaSuperMoon = world.get_location("Merga (Super Moon)")
-        mergaEclipse = world.get_location("Merga (Eclipse)")
-        mergaLilith = world.get_location("Merga (Lilith)")
+        
+        # Add Merga's final boss forms if our goal is Weapon's Core.
+        if world.options.goal == 1:
+            mergaBlueMoon = world.get_location("Merga (Blue Moon)")
+            mergaBloodMoon = world.get_location("Merga (Blood Moon)")
+            mergaSuperMoon = world.get_location("Merga (Super Moon)")
+            mergaEclipse = world.get_location("Merga (Eclipse)")
+            mergaLilith = world.get_location("Merga (Lilith)")
+            
         mergaBase = world.get_location("Merga")
         milla = world.get_location("Milla")
         mCube = world.get_location("Monster Cube")
@@ -1091,15 +1109,13 @@ def set_all_location_rules(world: FP2World) -> None:
         set_rule(lilac, requiresBattlesphereChallenge(3))
         add_rule(lilac, pCourtyard, "or")
         
-        set_rule(mergaBlueMoon, merga)
-        
-        set_rule(mergaBloodMoon, merga)
-        
-        set_rule(mergaSuperMoon, merga)
-        
-        set_rule(mergaEclipse, merga)
-        
-        set_rule(mergaLilith, merga)
+        # Add Merga's final boss forms if our goal is Weapon's Core.
+        if world.options.goal == 1:
+            set_rule(mergaBlueMoon, merga)
+            set_rule(mergaBloodMoon, merga)
+            set_rule(mergaSuperMoon, merga)
+            set_rule(mergaEclipse, merga)
+            set_rule(mergaLilith, merga)
         
         set_rule(mergaBase, merga)
         add_rule(mergaBase, pCourtyard, "or")
@@ -1153,4 +1169,7 @@ def set_all_location_rules(world: FP2World) -> None:
         set_rule(wArmor, snowfields)
         
 def set_completion_condition(world: FP2World) -> None:
-    world.multiworld.completion_condition[world.player] = lambda state: state.has("Cordelia's Final Entry", world.player)
+    if world.options.goal == 0:
+        world.multiworld.completion_condition[world.player] = lambda state: state.has("Merga Defeated", world.player)
+    if world.options.goal == 1:
+        world.multiworld.completion_condition[world.player] = lambda state: state.has("Cordelia's Final Entry", world.player)

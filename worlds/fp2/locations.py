@@ -3166,7 +3166,10 @@ def create_regular_locations(world: FP2World) -> None:
     cArboretum.add_locations(get_location_names_with_ids(["Clockwork Arboretum - Clear"]), FP2Location)
     iDynamo.add_locations(get_location_names_with_ids(["Inversion Dynamo - Clear"]), FP2Location)
     lCannon.add_locations(get_location_names_with_ids(["Lunar Cannon - Clear"]), FP2Location)
-    merga.add_locations(get_location_names_with_ids(["Merga - Clear"]), FP2Location)
+    
+    # Add Merga's clear location if our goal is Weapon's Core.
+    if world.options.goal == 1:
+        merga.add_locations(get_location_names_with_ids(["Merga - Clear"]), FP2Location)
     
     # Add the Rainbow S-Rank locations.
     if (world.options.rainbow_s_rank):
@@ -3199,7 +3202,10 @@ def create_regular_locations(world: FP2World) -> None:
         cArboretum.add_locations(get_location_names_with_ids(["Clockwork Arboretum - Rainbow S-Rank"]), FP2Location)
         iDynamo.add_locations(get_location_names_with_ids(["Inversion Dynamo - Rainbow S-Rank"]), FP2Location)
         lCannon.add_locations(get_location_names_with_ids(["Lunar Cannon - Rainbow S-Rank"]), FP2Location)
-        merga.add_locations(get_location_names_with_ids(["Merga - Rainbow S-Rank"]), FP2Location)
+        
+        # Add Merga's clear location if our goal is Weapon's Core.
+        if world.options.goal == 1:
+            merga.add_locations(get_location_names_with_ids(["Merga - Rainbow S-Rank"]), FP2Location)
     
     # Add the S-Rank locations.
     if (world.options.s_rank):
@@ -3232,7 +3238,10 @@ def create_regular_locations(world: FP2World) -> None:
         cArboretum.add_locations(get_location_names_with_ids(["Clockwork Arboretum - S-Rank"]), FP2Location)
         iDynamo.add_locations(get_location_names_with_ids(["Inversion Dynamo - S-Rank"]), FP2Location)
         lCannon.add_locations(get_location_names_with_ids(["Lunar Cannon - S-Rank"]), FP2Location)
-        merga.add_locations(get_location_names_with_ids(["Merga - S-Rank"]), FP2Location)
+        
+        # Add Merga's clear location if our goal is Weapon's Core.
+        if world.options.goal == 1:
+            merga.add_locations(get_location_names_with_ids(["Merga - S-Rank"]), FP2Location)
         
     # Add the A-Rank locations.
     if (world.options.a_rank):
@@ -3265,7 +3274,10 @@ def create_regular_locations(world: FP2World) -> None:
         cArboretum.add_locations(get_location_names_with_ids(["Clockwork Arboretum - A-Rank"]), FP2Location)
         iDynamo.add_locations(get_location_names_with_ids(["Inversion Dynamo - A-Rank"]), FP2Location)
         lCannon.add_locations(get_location_names_with_ids(["Lunar Cannon - A-Rank"]), FP2Location)
-        merga.add_locations(get_location_names_with_ids(["Merga - A-Rank"]), FP2Location)
+        
+        # Add Merga's clear location if our goal is Weapon's Core.
+        if world.options.goal == 1:
+            merga.add_locations(get_location_names_with_ids(["Merga - A-Rank"]), FP2Location)
     
     # Get the Battlesphere Challenge locations and add them to the Battlesphere region.
     battlesphereChallenges = get_location_names_with_ids(
@@ -3702,9 +3714,18 @@ def create_regular_locations(world: FP2World) -> None:
         enemySanity.add_locations(enemySanityLocations, FP2Location)
     if world.options.bosses:
         bossSanity = world.get_region("Boss")
-        bossSanityLocations = get_location_names_with_ids(["Acrabelle", "Askal", "Astral Golmech (Aaa)", "Astral Golmech (Askal)", "Beast One", "Beast Two", "Beast Three", "BFF2000", "Captain Kalaw", "Carol", "Corazon", "Crabulon", "Discord", "Drake Cocoon", "Duality", "General Gong", "Gnawsa Lock", "Herald", "Hundred Drillion", "Kakugan", "Lemon Bread", "Lilac", "Merga (Blue Moon)", "Merga (Blood Moon)", "Merga (Super Moon)", "Merga (Eclipse)", "Merga (Lilith)", "Merga", "Milla", "Monster Cube", "Neera", "Proto Pincer", "Rail Driver", "Rosebud", "Serpentine", "Shell Growth", "Storm Slider", "Syntax Spider", "Titan Armor", "Trigger Joy", "Trigger Lancer", "Tunnel Driver", "Weather Face", "Wolf Armor"])
+        bossSanityLocations = get_location_names_with_ids(["Acrabelle", "Askal", "Astral Golmech (Aaa)", "Astral Golmech (Askal)", "Beast One", "Beast Two", "Beast Three", "BFF2000", "Captain Kalaw", "Carol", "Corazon", "Crabulon", "Discord", "Drake Cocoon", "Duality", "General Gong", "Gnawsa Lock", "Herald", "Hundred Drillion", "Kakugan", "Lemon Bread", "Lilac", "Merga", "Milla", "Monster Cube", "Neera", "Proto Pincer", "Rail Driver", "Rosebud", "Serpentine", "Shell Growth", "Storm Slider", "Syntax Spider", "Titan Armor", "Trigger Joy", "Trigger Lancer", "Tunnel Driver", "Weather Face", "Wolf Armor"])
         bossSanity.add_locations(bossSanityLocations, FP2Location)
         
+        # Add Merga's forms if our goal is Weapon's Core (her normal form is also fought in Palace Courtyard, so its always included).
+        if world.options.goal == 1:
+            bossSanityLocations = get_location_names_with_ids(["Merga (Blue Moon)", "Merga (Blood Moon)", "Merga (Super Moon)", "Merga (Eclipse)", "Merga (Lilith)"])
+            bossSanity.add_locations(bossSanityLocations, FP2Location)
+        
 def create_events(world: FP2World) -> None:
-    wCore = world.get_region("Weapon's Core")
-    wCore.add_event("Weapon's Core - Clear", "Cordelia's Final Entry", location_type=FP2Location, item_type=items.FP2Item)
+    if world.options.goal == 0:
+        merga = world.get_region("Merga")
+        merga.add_event("Merga - Clear", "Merga Defeated", location_type=FP2Location, item_type=items.FP2Item)
+    if world.options.goal == 1:
+        wCore = world.get_region("Weapon's Core")
+        wCore.add_event("Weapon's Core - Clear", "Cordelia's Final Entry", location_type=FP2Location, item_type=items.FP2Item)

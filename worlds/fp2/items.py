@@ -350,7 +350,7 @@ def get_random_filler_item_name(world: FP2World) -> str:
     
     # Add extra items to the filler list depend on our settings.
     if world.options.filler_star_cards: filler_items.append("Star Card")
-    if world.options.filler_time_capsules: filler_items.append("Time Capsule")
+    if world.options.filler_time_capsules & world.options.goal == 1: filler_items.append("Time Capsule")
     if world.options.milla_shop: filler_items.append("Gold Gem")
     if world.options.vinyl_shop: filler_items.append("Crystals")
     
@@ -448,11 +448,14 @@ def create_all_items(world: FP2World) -> None:
     
     # Loop and create the multitude items.
     for _ in range(32): itempool.append(world.create_item("Star Card"))
-    for _ in range(13): itempool.append(world.create_item("Time Capsule"))
+    for _ in range(world.options.extra_star_cards): itempool.append(world.create_item("Star Card"))
+    
     for _ in range(18): itempool.append(world.create_item("Battlesphere Key"))
     
-    for _ in range(world.options.extra_star_cards): itempool.append(world.create_item("Star Card"))
-    for _ in range(world.options.extra_time_capsules): itempool.append(world.create_item("Time Capsule"))
+    # Only create the Time Capsules if our goal is Weapon's Core.
+    if (world.options.goal == 1):
+        for _ in range(world.options.extra_time_capsules): itempool.append(world.create_item("Time Capsule"))
+        for _ in range(13): itempool.append(world.create_item("Time Capsule"))
     
     # Add the extra slot items if the option is enabled.
     if world.options.extra_items:
@@ -520,7 +523,11 @@ def create_all_items(world: FP2World) -> None:
         
         # Create a list of the stages and boss stages.
         stage_items = ["Dragon Valley", "Shenlin Park", "Tiger Falls", "Robot Graveyard", "Shade Armory", "Avian Museum", "Airship Sigwada", "Phoenix Highway", "Zao Land", "Globe Opera 1", "Globe Opera 2", "Palace Courtyard", "Tidal Gate", "Sky Bridge", "Lightning Tower", "Zulon Jungle", "Nalao Lake", "Ancestral Forge", "Magma Starscape", "Gravity Bubble", "Bakunawa Chase", "Bakunawa Rush", "Clockwork Arboretum", "Inversion Dynamo", "Lunar Cannon"]
-        boss_items = ["Snowfields", "Auditorium", "Diamond Point", "Refinery Room", "Merga"]
+        boss_items = ["Snowfields", "Auditorium", "Diamond Point", "Refinery Room"]
+            
+        # If our goal is Weapon's Core, then add Merga's stage access to the pool too.
+        if world.options.goal == 1:
+            boss_items.append("Merga")
             
         # Pick a starting stage and starting boss.
         starting_stage = world.random.choice(stage_items)

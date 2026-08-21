@@ -1,6 +1,15 @@
 from dataclasses import dataclass
 from Options import OptionGroup, Choice, PerGameCommonOptions, Range, Toggle, DefaultOnToggle
 
+class GoalStage(Choice):
+    """Which stage should be the final one.
+    Both require 32 Star Cards, but Weapon's Core also requires 13 Time Capsules.
+    Selecting Merga as the goal completely removes Time Capsules from the item pool."""
+    display_name = "Goal Stage"
+    option_merga = 0
+    option_weapons_core = 1
+    default = 1
+
 class Chapters(Choice):
     """Determines how stages should be unlocked.
     Individual = Stages unlock in sets, based on their grouping in the Adventure Mode.
@@ -326,6 +335,7 @@ option_groups = [
 
 @dataclass
 class FP2Options(PerGameCommonOptions):
+    goal: GoalStage
     chapters: Chapters
     star_locks: StarCardLocks
     extra_star_cards: ExtraStarCards
