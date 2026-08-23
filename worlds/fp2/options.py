@@ -328,8 +328,16 @@ option_groups = [
         [TrapChance, TrapBraveStones, DangerousTimeLimit],
     ),
     OptionGroup(
-        "Trap Weight Options",
-        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, TriviaTrapWeight, MachSpeedTrapWeight, ScottTrapWeight, WordleTrapWeight],
+        "Trap Weights (Annoyance)",
+        [PowerPointTrapWeight, AaaTrapWeight, PixellationTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, ScottTrapWeight]
+    ),
+    OptionGroup(
+        "Trap Weights (Gameplay)",
+        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, ZoomTrapWeight, SpikeBallTrapWeight, RailTrapWeight, MachSpeedTrapWeight]
+    ),
+    OptionGroup(
+        "Trap Weights (Mini-Game)",
+        [TriviaTrapWeight, WordleTrapWeight]
     ),
     OptionGroup(
         "Mod Compatibility Options",
