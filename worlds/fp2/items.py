@@ -163,6 +163,7 @@ ITEM_NAME_TO_ID = {
     "Trivia Trap": 613,
     "Mach Speed Trap": 614,
     "Scott The Woz Trap": 615,
+    "Wordle Trap": 616,
     
     "Crystals": 701,
     "Extra Life": 702,
@@ -173,7 +174,9 @@ ITEM_NAME_TO_ID = {
     "Fire Shield": 707,
     "Metal Shield": 708,
     "Powerup": 709,
-    "Gold Gem": 710
+    "Gold Gem": 710,
+    
+    "Test Item": 2424
 }
 
 # Set the item classifications.
@@ -326,6 +329,7 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Trivia Trap": ItemClassification.trap,
     "Mach Speed Trap": ItemClassification.trap,
     "Scott The Woz Trap": ItemClassification.trap,
+    "Wordle Trap": ItemClassification.trap,
     
     "Crystals": ItemClassification.filler,
     "Extra Life": ItemClassification.filler,
@@ -336,7 +340,9 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Fire Shield": ItemClassification.filler,
     "Metal Shield": ItemClassification.filler,
     "Powerup": ItemClassification.filler,
-    "Gold Gem": ItemClassification.filler
+    "Gold Gem": ItemClassification.filler,
+    
+    "Test Item": ItemClassification.trap
 }
 
 class FP2Item(Item):
@@ -376,6 +382,7 @@ def get_random_filler_item_name(world: FP2World) -> str:
     get_trap_weights(world.options.trivia_trap_weight, "Trivia Trap")
     get_trap_weights(world.options.mach_speed_trap_weight, "Mach Speed Trap")
     get_trap_weights(world.options.scott_trap_weight, "Scott The Woz Trap")
+    get_trap_weights(world.options.wordle_trap_weight, "Wordle Trap")
     
     # Add the negative Brave Stones to the trap list if the trap stones option is enabled.
     if world.options.trap_stones:

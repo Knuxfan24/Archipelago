@@ -249,6 +249,10 @@ class MachSpeedTrapWeight(BaseTrapWeight):
 class ScottTrapWeight(BaseTrapWeight):
     """Likelihood of receiving a trap that sticks a blue border around the game screen for 30 seconds."""
     display_name = "Scott The Woz Trap Weight"
+    
+class WordleTrapWeight(BaseTrapWeight):
+    """Likelihood of receiving a trap that forces the player to guess a five letter word in six attempts."""
+    display_name = "Wordle Trap Weight"
 
 class FastWeaponsCore(Toggle):
     """Skips the actual stage of Weapon's Core and goes straight to the Bakunawa Fusion fight."""
@@ -325,7 +329,7 @@ option_groups = [
     ),
     OptionGroup(
         "Trap Weight Options",
-        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, TriviaTrapWeight, MachSpeedTrapWeight, ScottTrapWeight],
+        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, PowerPointTrapWeight, ZoomTrapWeight, AaaTrapWeight, SpikeBallTrapWeight, PixellationTrapWeight, RailTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, TriviaTrapWeight, MachSpeedTrapWeight, ScottTrapWeight, WordleTrapWeight],
     ),
     OptionGroup(
         "Mod Compatibility Options",
@@ -383,6 +387,7 @@ class FP2Options(PerGameCommonOptions):
     trivia_trap_weight: TriviaTrapWeight
     mach_speed_trap_weight: MachSpeedTrapWeight
     scott_trap_weight: ScottTrapWeight
+    wordle_trap_weight: WordleTrapWeight
     fast_weapons_core: FastWeaponsCore
     filler_traps: TrapChance
     sonic_mod: SonicModCompatibility
