@@ -140,7 +140,9 @@ def create_all_items(world: NNTWorld) -> None:
     itempool += [world.create_item("Rescued Mudokon") for _ in range(world.required_muds)]
     
     # Add filler to the remaning slots, either as more Mudokons or traps.
-    trap_items = ["Shock Trap", "Trip Trap", "Drop Trap"] # TODO: Add the QuikSave Trap if I decide to actually include it.
+    trap_items = ["Shock Trap", "Trip Trap", "Drop Trap"]
+    if world.options.quiksave_trap: trap_items.append("QuikSave Trap")
+    
     for _ in range(actual_filler):
         if world.random.randint(0, 99) < world.options.filler_traps:
             trapItem = world.random.choice(trap_items)

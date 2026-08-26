@@ -43,6 +43,10 @@ class TrapChance(Range):
     range_end = 100
     default = 0
     
+class QuikSaveTrap(Toggle):
+    """Whether or not QuikSave Traps should be included in the trap pool."""
+    display_name = "QuikSave Trap Enabled"
+    
 class DeathLink(Toggle):
     """When you die, everyone who enabled DeathLink dies. Of course, the reverse is true too."""
     display_name = "DeathLink"
@@ -70,3 +74,4 @@ class NNTOptions(PerGameCommonOptions):
     death_link: DeathLink
     death_link_amnesty: DeathLinkAmnesty
     ring_link: JokeRingLink
+    quiksave_trap: QuikSaveTrap
