@@ -67,8 +67,9 @@ def set_stockyards_entrance_rules(world: NNTWorld) -> None:
     set_rule(ffZoneS2Requirements, lambda state: state.has("Possession", world.player))
     set_rule(ffZoneRockRequirements, lambda state: state.has("Rocks", world.player))
     set_rule(ffZoneS4Requirements, lambda state: state.has("Possession", world.player))
-    add_rule(world.get_location("Free Fire Zone ~ Secret Area 5 - Mudokon 2"), lambda state: state.has("Levers", world.player))
-    add_rule(world.get_location("Free Fire Zone ~ Secret Area 5 - Mudokon 3"), lambda state: state.has("Levers", world.player))
+    if (world.options.no_nnt_muds == 0):
+        add_rule(world.get_location("Free Fire Zone ~ Secret Area 5 - Mudokon 2"), lambda state: state.has("Levers", world.player))
+        add_rule(world.get_location("Free Fire Zone ~ Secret Area 5 - Mudokon 3"), lambda state: state.has("Levers", world.player))
     set_rule(ffZoneS6Requirements, lambda state: state.has("Levers", world.player))
     
     if (world.options.area_clears == 1):
@@ -169,9 +170,10 @@ def set_zulag2_entrance_rules(world: NNTWorld) -> None:
     add_rule(zulag2Access, lambda state: state.has("Possession", world.player))
     add_rule(zulag2Access, lambda state: state.has("Lifts", world.player))
     add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 2"), lambda state: state.has("Levers", world.player))
-    add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 7"), lambda state: state.has("Levers", world.player))
-    add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 6"), lambda state: state.has("Levers", world.player))
-    add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 5"), lambda state: state.has("Levers", world.player))
+    if world.options.no_nnt_muds == 0:
+        add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 7"), lambda state: state.has("Levers", world.player))
+        add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 6"), lambda state: state.has("Levers", world.player))
+        add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 5"), lambda state: state.has("Levers", world.player))
     add_rule(world.get_location("Zulag 2 Door 1"), lambda state: state.has("Levers", world.player))
     set_rule(zulag2Door1Back, lambda state: state.has("Shrykull", world.player))
     set_rule(zulag2Door2, lambda state: state.has("Levers", world.player))

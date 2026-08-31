@@ -33,6 +33,13 @@ class ExtraAreaClears(Toggle):
     Adds extra area clear checks for the Monsaic Lines, Paramonia, Scrabania and Stockyard Return, which are otherwise completely excluded due to having no Mudokons to rescue.
     """
     display_name = "Extra Area Clear Checks"
+    
+class OriginalMudsOnly(Toggle):
+    """
+    Removes the locations for the extra Mudokons that New 'n' Tasty added to bring the original 99 up to 299.
+    This drops the Mudokon count from 294 to 97, as two are in the Boardroom unlike in the original game.
+    """
+    display_name = "Exclude New 'n' Tasty's New Mudokons"
 
 class TrapChance(Range):
     """
@@ -70,6 +77,7 @@ class NNTOptions(PerGameCommonOptions):
     muds_required: MudokonRequirement
     area_clears: AreaClears
     extra_area_clears: ExtraAreaClears
+    no_nnt_muds: OriginalMudsOnly
     filler_traps: TrapChance
     death_link: DeathLink
     death_link_amnesty: DeathLinkAmnesty

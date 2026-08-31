@@ -362,8 +362,25 @@ def create_all_locations(world: NNTWorld) -> None:
     create_zulag3_locations(world)
     create_zulag4_locations(world)
     
-    if (world.options.area_clears == 1):
+    if world.options.area_clears == 1:
         create_areaclear_locations(world)
+        
+    # Remove the extra Mudokon locations if the no_nnt_muds option is on.
+    if world.options.no_nnt_muds == 1:
+        for region in world.get_regions():
+            locations_to_remove = []
+            region_locations = region.get_locations()
+            
+            # Loop through each location in this region and check its address. If its between 100 and 300, then flag it for removal.
+            for location in region_locations:
+                if location.address != None:
+                    if (int(location.address) >= 100 and int(location.address < 300)):
+                        locations_to_remove.append(location)
+                        
+            # Loop through and remove each location we've flagged.
+            for location in locations_to_remove:
+                region.locations.remove(location)
+    
 
 def create_rupturefarms_locations(world: NNTWorld) -> None:
     rFarmsS1 = world.get_region("Rupture Farms (Secret Area 1)")
