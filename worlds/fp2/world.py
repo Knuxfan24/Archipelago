@@ -36,6 +36,7 @@ class FP2World(World):
         rules.set_all_rules(self)
 
     def create_items(self) -> None:
+        items.get_filler_and_traps(self)
         items.create_all_items(self)
         
     def create_item(self, name: str) -> items.FP2Item:

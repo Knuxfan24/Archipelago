@@ -345,66 +345,15 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Test Item": ItemClassification.trap
 }
 
+# Define the filler and trap item name lists.
+filler_items = ["Extra Life", "Invincibility", "Wood Shield", "Earth Shield", "Water Shield", "Fire Shield", "Metal Shield", "Powerup"]
+trap_items = []
+
 class FP2Item(Item):
     game = "Freedom Planet 2"
 
 # Determines an item to act as filler.
 def get_random_filler_item_name(world: FP2World) -> str:
-    # Create the filler and trap item lists.
-    filler_items = ["Extra Life", "Invincibility", "Wood Shield", "Earth Shield", "Water Shield", "Fire Shield", "Metal Shield", "Powerup"]
-    trap_items = []
-    
-    # Add extra items to the filler list depend on our settings.
-    if world.options.filler_star_cards: filler_items.append("Star Card")
-    if world.options.filler_time_capsules & world.options.goal == 1: filler_items.append("Time Capsule")
-    if world.options.milla_shop: filler_items.append("Gold Gem")
-    if world.options.vinyl_shop: filler_items.append("Crystals")
-    
-    # Local function to add 1, 2 or 3 copies of a trap depending on its weight option.
-    def get_trap_weights(option, trapName):
-        if option >= 1: trap_items.append(trapName)
-        if option >= 2: trap_items.append(trapName)
-        if option == 3: trap_items.append(trapName)
-    
-    # Add the traps to the trap list.
-    get_trap_weights(world.options.swap_trap_weight, "Swap Trap")
-    get_trap_weights(world.options.mirror_trap_weight, "Mirror Trap")
-    get_trap_weights(world.options.pie_trap_weight, "Pie Trap")
-    get_trap_weights(world.options.spring_trap_weight, "Spring Trap")
-    get_trap_weights(world.options.powerpoint_trap_weight, "PowerPoint Trap")
-    get_trap_weights(world.options.zoom_trap_weight, "Zoom Trap")
-    get_trap_weights(world.options.aaa_trap_weight, "Aaa Trap")
-    get_trap_weights(world.options.spikeball_trap_weight, "Spike Ball Trap")
-    get_trap_weights(world.options.pixellation_trap_weight, "Pixellation Trap")
-    get_trap_weights(world.options.rail_trap_weight, "Rail Trap")
-    get_trap_weights(world.options.spam_trap_weight, "Spam Trap")
-    get_trap_weights(world.options.syntax_jumpscare_trap_weight, "Syntax Jumpscare Trap")
-    get_trap_weights(world.options.trivia_trap_weight, "Trivia Trap")
-    get_trap_weights(world.options.mach_speed_trap_weight, "Mach Speed Trap")
-    get_trap_weights(world.options.scott_trap_weight, "Scott The Woz Trap")
-    get_trap_weights(world.options.wordle_trap_weight, "Wordle Trap")
-    
-    # Add the negative Brave Stones to the trap list if the trap stones option is enabled.
-    if world.options.trap_stones:
-        trap_items.append("No Stocks")
-        trap_items.append("Expensive Stocks")
-        trap_items.append("Double Damage")
-        trap_items.append("No Revivals")
-        trap_items.append("No Guarding")
-        trap_items.append("No Petals")
-        trap_items.append("Time Limit")
-        trap_items.append("Items To Bombs")
-        trap_items.append("Life Oscillation")
-        trap_items.append("One Hit KO")
-        
-        # Add the negative Brave Stones from the Potion Seller mod to the trap list if the compatibility option is enabled.
-        if world.options.potion_seller_mod:
-            trap_items.append("Invisibility Cloak")
-            trap_items.append("Madstone")
-            trap_items.append("Explosive Finale")
-            trap_items.append("Idol of Greed")
-            trap_items.append("Gravity Boots")
-        
     # Compare a random number to our filler traps value and return a trap if its less.
     # Also check that we actually HAVE any traps in the list.
     if world.random.randint(0, 99) < world.options.filler_traps and len(trap_items) > 0:
@@ -417,6 +366,42 @@ def create_item_with_correct_classification(world: FP2World, name: str) -> FP2It
     classification = DEFAULT_ITEM_CLASSIFICATIONS[name]
     return FP2Item(name, classification, ITEM_NAME_TO_ID[name], world.player)
 
+def get_filler_and_traps(world: FP2World) -> None:
+    # Add extra items to the filler list depend on our settings.
+    if world.options.filler_star_cards: filler_items.append("Star Card")
+    if world.options.filler_time_capsules & world.options.goal == 1: filler_items.append("Time Capsule")
+    if world.options.milla_shop: filler_items.append("Gold Gem")
+    if world.options.vinyl_shop: filler_items.append("Crystals")
+    
+    def get_trap_weights(option):
+        # Loop through each trap and its weight value in the provided option dictionary.
+        for key, value in option:
+            # Skip this trap entirely if its weight is set to none.
+            if (value == "none"): continue
+            
+            # Check that the weight value is valid and that this trap actually exists.
+            if (value not in world.options.trap_weight_annoyance.valid_values): raise Exception(f"Got invalid weight \"{value}\" for trap \"{key}\"!\nValid options are \"none\", \"low\", \"medium\" or \"high\".")
+            if (key not in world.item_names): raise Exception(f"Trap weight called for non-existant trap \"{key}\"!")
+                        
+            # If this item is one from the Potion Seller Mod, then check for the compatibility option.
+            if (bool(world.options.potion_seller_mod) is False):
+                if (key == "Invisibility Cloak" or key == "Madstone" or key == "Explosive Finale" or key == "Idol of Greed" or key == "Gravity Boots"):
+                    continue
+            
+            # Determine how many copies of this trap need to be added to the pool.
+            trap_count = 1
+            if (value == "medium"): trap_count = 2
+            if (value == "high"): trap_count = 3
+            
+            # Append the right amount of this trap to the pool.
+            for _ in range(trap_count): trap_items.append(key)
+        
+    # Add the traps to the trap list.
+    get_trap_weights(world.options.trap_weight_annoyance.items())
+    get_trap_weights(world.options.trap_weight_gameplay.items())
+    get_trap_weights(world.options.trap_weight_minigame.items())
+    if (world.options.trap_stones): get_trap_weights(world.options.trap_weight_brave_stones.items())
+    
 def create_all_items(world: FP2World) -> None:
     # Create our item pool.
     itempool: list[Item] = [

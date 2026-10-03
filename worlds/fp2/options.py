@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from Options import OptionGroup, Choice, PerGameCommonOptions, Range, Toggle, DefaultOnToggle
+from Options import OptionGroup, Choice, PerGameCommonOptions, Range, Toggle, DefaultOnToggle, OptionDict
 
 class GoalStage(Choice):
     """Which stage should be the final one.
@@ -172,87 +172,9 @@ class ExtraItems(DefaultOnToggle):
     """Adds the unused extra item/potion slots to the item pool."""
     display_name = "Include Extra Item Slots"
 
-class TrapBraveStones(Toggle):
-    """Treat negative Brave Stones as traps and auto activate them upon receiving."""
-    display_name = "Trap Brave Stones"
-
 class DangerousTimeLimit(Toggle):
     """Make the Time Limit Brave Stone kill the player upon the timer running out."""
     display_name = "Dangerous Time Limit"
-
-class BaseTrapWeight(Choice):
-    """Base class for trap weights.
-    The available options are 0 (off), 1 (low), 2 (medium), and 3 (high).
-    2 and 3 add an extra copy to the list, hopefully increasing the chances of the generator picking it. 3 adds a second copy on top of the first."""
-    option_none = 0
-    option_low = 1
-    option_medium = 2
-    option_high = 3
-    default = 1
-    
-class SwapTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that swaps the player character."""
-    display_name = "Swap Trap Weight"
-    
-class MirrorTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that mirrors the stage for thirty seconds."""
-    display_name = "Mirror Trap Weight"
-    
-class PieTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that spawns one of Acrabelle's pies on the player."""
-    display_name = "Pie Trap Weight"
-    
-class SpringTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that spawns a diagonal spring atop the player."""
-    display_name = "Spring Trap Weight"
-    
-class PowerPointTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that locks the game to fifteen frames per second for thirty seconds."""
-    display_name = "PowerPoint Trap Weight"
-    
-class ZoomTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that zooms the screen in for thirty seconds."""
-    display_name = "Zoom Trap Weight"
-    
-class AaaTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap of Aaa screaming for a while."""
-    display_name = "Aaa Trap Weight"
-    
-class SpikeBallTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that spawns multiple spike balls moving towards the player."""
-    display_name = "Spike Ball Trap Weight"
-    
-class PixellationTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that pixellates the screen for thirty seconds."""
-    display_name = "Pixellation Trap Weight"
-    
-class RailTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that turns every surface in the stage into a rail."""
-    display_name = "Rail Trap Weight"
-    
-class SpamTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that puts random spam messages onto the screen to distract the player."""
-    display_name = "Spam Trap Weight"
-    
-class SyntaxJumpscareTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that suddenly spawns a large Syntax on the screen."""
-    display_name = "Syntax Jumpscare Trap Weight"
-    
-class TriviaTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that asks a life or death trivia question."""
-    display_name = "Trivia Trap Weight"
-    
-class MachSpeedTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that doubles the game's speed for 15 seconds."""
-    display_name = "Mach Speed Trap Weight"
-    
-class ScottTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that sticks a blue border around the game screen for 30 seconds."""
-    display_name = "Scott The Woz Trap Weight"
-    
-class WordleTrapWeight(BaseTrapWeight):
-    """Likelihood of receiving a trap that forces the player to guess a five letter word in six attempts."""
-    display_name = "Wordle Trap Weight"
 
 class FastWeaponsCore(Toggle):
     """Skips the actual stage of Weapon's Core and goes straight to the Bakunawa Fusion fight."""
@@ -298,6 +220,88 @@ class DamageLink(Toggle):
     Of course the reverse is true too."""
     display_name = "DamageLink"
 
+class TrapBraveStones(Toggle):
+    """Treat negative Brave Stones as traps, allowing the copies specified in Trap Weights (Brave Stones) to be added to the item pool along the always placed ones and auto activating them upon receiving."""
+    display_name = "Trap Brave Stones"
+   
+class TrapWeightsBraveStones(OptionDict):
+    """How likely it is to receive an extra copy of a negative Brave Stone as a trap. Valid options are:
+    none
+    low
+    medium
+    high
+    
+    These will only be added if the Trap Brave Stones option is enabled.
+    In addition, the Invisibility Cloak, Madstone, Explosive Finale, Idol of Greed and Gravity Boots will only be added if the Potion Seller Mod Compatibility is enabled."""
+    display_name = "Trap Weights (Brave Stones)"
+    default = {
+        "No Stocks": "low",
+        "Expensive Stocks": "low",
+        "Double Damage": "low",
+        "No Revivals": "low",
+        "No Guarding": "low",
+        "No Petals": "low",
+        "Time Limit": "low",
+        "Items To Bombs": "low",
+        "Life Oscillation": "low",
+        "One Hit KO": "low",
+        "Invisibility Cloak": "low",
+        "Madstone": "low",
+        "Explosive Finale": "low",
+        "Idol of Greed": "low",
+        "Gravity Boots": "low",
+    }
+    valid_values = ["low", "medium", "high"]
+    
+class TrapWeightsAnnoyance(OptionDict):
+    """How likely it is to receive a trap designed primarly to annoy the player. Valid options are:
+    none
+    low
+    medium
+    high"""
+    display_name = "Trap Weights (Annoyance)"
+    default = {
+        "PowerPoint Trap": "low",
+        "Aaa Trap": "low",
+        "Pixellation Trap": "low",
+        "Spam Trap": "low",
+        "Syntax Jumpscare Trap": "low",
+        "Scott The Woz Trap": "low",
+    }
+    valid_values = ["low", "medium", "high"]
+    
+class TrapWeightsGameplay(OptionDict):
+    """How likely it is to receive a trap designed to impact gameplay. Valid options are:
+    none
+    low
+    medium
+    high"""
+    display_name = "Trap Weights (Gameplay)"
+    default = {
+        "Swap Trap": "low",
+        "Mirror Trap": "low",
+        "Pie Trap": "low",
+        "Spring Trap": "low",
+        "Zoom Trap": "low",
+        "Spike Ball Trap": "low",
+        "Rail Trap": "low",
+        "Mach Speed Trap": "low",
+    }
+    valid_values = ["low", "medium", "high"]
+    
+class TrapWeightsMiniGame(OptionDict):
+    """How likely it is to receive a trap that forces the player to play a life or death mini-game. Valid options are:
+    none
+    low
+    medium
+    high"""
+    display_name = "Trap Weights (Mini-Game)"
+    default = {
+        "Trivia Trap": "low",
+        "Wordle Trap": "low"
+    }
+    valid_values = ["low", "medium", "high"]
+
 option_groups = [
     OptionGroup(
         "Links",
@@ -325,19 +329,7 @@ option_groups = [
     ),
     OptionGroup(
         "Trap Options",
-        [TrapChance, TrapBraveStones, DangerousTimeLimit],
-    ),
-    OptionGroup(
-        "Trap Weights (Annoyance)",
-        [PowerPointTrapWeight, AaaTrapWeight, PixellationTrapWeight, SpamTrapWeight, SyntaxJumpscareTrapWeight, ScottTrapWeight]
-    ),
-    OptionGroup(
-        "Trap Weights (Gameplay)",
-        [SwapTrapWeight, MirrorTrapWeight, PieTrapWeight, SpringTrapWeight, ZoomTrapWeight, SpikeBallTrapWeight, RailTrapWeight, MachSpeedTrapWeight]
-    ),
-    OptionGroup(
-        "Trap Weights (Mini-Game)",
-        [TriviaTrapWeight, WordleTrapWeight]
+        [TrapChance, TrapBraveStones, DangerousTimeLimit, TrapWeightsBraveStones, TrapWeightsAnnoyance, TrapWeightsGameplay, TrapWeightsMiniGame],
     ),
     OptionGroup(
         "Mod Compatibility Options",
@@ -379,23 +371,11 @@ class FP2Options(PerGameCommonOptions):
     item_boxes_goldgems: ItemBoxGoldGem
     extra_items: ExtraItems
     trap_stones: TrapBraveStones
+    trap_weight_brave_stones: TrapWeightsBraveStones
+    trap_weight_annoyance: TrapWeightsAnnoyance
+    trap_weight_gameplay: TrapWeightsGameplay
+    trap_weight_minigame: TrapWeightsMiniGame
     dangerous_time_limit: DangerousTimeLimit
-    swap_trap_weight: SwapTrapWeight
-    mirror_trap_weight: MirrorTrapWeight
-    pie_trap_weight: PieTrapWeight
-    spring_trap_weight: SpringTrapWeight
-    powerpoint_trap_weight: PowerPointTrapWeight
-    zoom_trap_weight: ZoomTrapWeight
-    aaa_trap_weight: AaaTrapWeight
-    spikeball_trap_weight: SpikeBallTrapWeight
-    pixellation_trap_weight: PixellationTrapWeight
-    rail_trap_weight: RailTrapWeight
-    spam_trap_weight: SpamTrapWeight
-    syntax_jumpscare_trap_weight: SyntaxJumpscareTrapWeight
-    trivia_trap_weight: TriviaTrapWeight
-    mach_speed_trap_weight: MachSpeedTrapWeight
-    scott_trap_weight: ScottTrapWeight
-    wordle_trap_weight: WordleTrapWeight
     fast_weapons_core: FastWeaponsCore
     filler_traps: TrapChance
     sonic_mod: SonicModCompatibility
