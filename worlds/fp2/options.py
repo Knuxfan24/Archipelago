@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from Options import OptionGroup, Choice, PerGameCommonOptions, Range, Toggle, DefaultOnToggle, OptionDict
+from Options import OptionGroup, Choice, PerGameCommonOptions, Range, Toggle, DefaultOnToggle, OptionDict, OptionSet
 
 class GoalStage(Choice):
     """Which stage should be the final one.
@@ -302,7 +302,55 @@ class TrapWeightsMiniGame(OptionDict):
     }
     valid_values = ["low", "medium", "high"]
 
+class ValidStartingStages(OptionSet):
+    """Stages that the generator can choose to be the starting stage if using the Open Chapters option."""
+    display_name = "Valid Starting Stages"
+    default = frozenset({
+        "Dragon Valley",
+        "Shenlin Park",
+        "Tiger Falls",
+        "Robot Graveyard",
+        "Shade Armory",
+        "Avian Museum",
+        "Airship Sigwada",
+        "Phoenix Highway",
+        "Zao Land",
+        "Globe Opera 1",
+        "Globe Opera 2",
+        "Palace Courtyard",
+        "Tidal Gate",
+        "Sky Bridge",
+        "Lightning Tower",
+        "Zulon Jungle",
+        "Nalao Lake",
+        "Ancestral Forge",
+        "Magma Starscape",
+        "Gravity Bubble",
+        "Bakunawa Chase",
+        "Bakunawa Rush",
+        "Clockwork Arboretum",
+        "Inversion Dynamo",
+        "Lunar Cannon",
+    })
+
+class ValidStartingBosses(OptionSet):
+    """Bosses that the generator can choose to be the starting stage if using the Open Chapters option.
+    Merga is only a valid option if the goal is set to Weapon's Core."""
+    display_name = "Valid Starting Bosses"
+    default = frozenset({
+        "Snowfields",
+        "Auditorium",
+        "Diamond Point",
+        "Refinery Room",
+        "Merga"
+    })
+
+
 option_groups = [
+    OptionGroup(
+        "Goal Options",
+        [GoalStage, Chapters, ValidStartingStages, ValidStartingBosses]
+    ),
     OptionGroup(
         "Links",
         [DeathLink, RingLink, TrapLink, DamageLink],
@@ -312,7 +360,7 @@ option_groups = [
         [ExtraStarCards, ExtraTimeCapsules, FillerStarCards, FillerTimeCapsules],
     ),
     OptionGroup(
-        "Ranks",
+        "Rank Sanity Options",
         [RainbowSRank, SRank, SRankRequiresBraveStone, ARank],
     ),
     OptionGroup(
@@ -320,7 +368,7 @@ option_groups = [
         [MillasShop, MillaShopAmount, MillaShopPrice, GoldGemCrystalCost, GoldGemCoreCost, VinylShop, VinylShopAmount, VinylShopPrice],
     ),
     OptionGroup(
-        "Sanity Options",
+        "Object Sanity Options",
         [Chests, StrictChestLock, EnemySanity, BossSanity, ItemBoxSanity, ItemBoxCrystal, ItemBoxPetal, ItemBoxShield, ItemBoxGoldGem],
     ),
     OptionGroup(
@@ -385,3 +433,5 @@ class FP2Options(PerGameCommonOptions):
     ring_link: RingLink
     trap_link: TrapLink
     damage_link: DamageLink
+    starting_stages: ValidStartingStages
+    starting_bosses: ValidStartingBosses

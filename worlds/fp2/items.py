@@ -2,6 +2,7 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
 from BaseClasses import Item, ItemClassification
+import logging
 if TYPE_CHECKING:
     from .world import FP2World
 
@@ -521,9 +522,24 @@ def create_all_items(world: FP2World) -> None:
         if world.options.goal == 1:
             boss_items.append("Merga")
             
-        # Pick a starting stage and starting boss.
+        # Get the valid stages and bosses from the player YAML.
+        player_defined_start_stages = list(world.options.starting_stages.value)
+        player_defined_start_bosses = list(world.options.starting_bosses.value)
+        
+        # Pick a starting stage and starting boss. If the player YAML has the lists, then pick from those instead.
         starting_stage = world.random.choice(stage_items)
         starting_boss = world.random.choice(boss_items)
+        if (len(player_defined_start_stages)) > 0: starting_stage = world.random.choice(player_defined_start_stages)
+        if (len(player_defined_start_bosses)) > 0: starting_boss = world.random.choice(player_defined_start_bosses)
+        
+        # If the goal is set to Merga, make sure we haven't picked her boss stage as the starting boss stage.
+        if (world.options.goal == 0):
+            while (starting_boss == "Merga"):
+                if (len(player_defined_start_bosses)) == 1:
+                    starting_boss = world.random.choice(boss_items)
+                    logging.warning(f"Player YAML has goal set to Merga, but Merga is also the only defined starting boss. Replacing with {starting_boss} instead.")
+                else:
+                    starting_boss = world.random.choice(player_defined_start_bosses)
         
         # Add the items for the other stages and bosses to the item pool.
         for stage in stage_items:
