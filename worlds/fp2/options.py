@@ -286,6 +286,7 @@ class TrapWeightsGameplay(OptionDict):
         "Spike Ball Trap": "low",
         "Rail Trap": "low",
         "Mach Speed Trap": "low",
+        "Flood Trap": "low"
     }
     valid_values = ["low", "medium", "high"]
     

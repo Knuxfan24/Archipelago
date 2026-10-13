@@ -165,6 +165,7 @@ ITEM_NAME_TO_ID = {
     "Mach Speed Trap": 614,
     "Scott The Woz Trap": 615,
     "Wordle Trap": 616,
+    "Flood Trap": 617,
     
     "Crystals": 701,
     "Extra Life": 702,
@@ -331,6 +332,7 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Mach Speed Trap": ItemClassification.trap,
     "Scott The Woz Trap": ItemClassification.trap,
     "Wordle Trap": ItemClassification.trap,
+    "Flood Trap": ItemClassification.trap,
     
     "Crystals": ItemClassification.filler,
     "Extra Life": ItemClassification.filler,
