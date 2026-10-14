@@ -608,7 +608,11 @@ def create_all_items(world: FP2World) -> None:
         if (itemName == "Star Card" or itemName == "Time Capsule"):
             itempool.append(FP2Item(itemName, ItemClassification.filler, ITEM_NAME_TO_ID[itemName], world.player))
             
-        # If not, then just use the normal create_item function.
+        # If the selected item shows up in the trap items list, then force its classification to be a trap to get around all negative Brave Stones being marked as progression.
+        elif (itemName in trap_items):
+            itempool.append(FP2Item(itemName, ItemClassification.trap, ITEM_NAME_TO_ID[itemName], world.player))
+            
+        # If not, then just use the normal create_item function to automate the classification.
         else:
             itempool.append(world.create_item(itemName))
 
