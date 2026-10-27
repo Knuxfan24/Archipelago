@@ -33,7 +33,8 @@ ITEM_NAME_TO_ID = {
     "Trip Trap": 302,
     "lol brawl reference": 303,
     "QuikSave Trap": 304,
-    "Drop Trap": 305
+    "Drop Trap": 305,
+    "DVD Screensaver Trap": 306,
 }
 
 # Set the item classifications.
@@ -61,7 +62,8 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Trip Trap": ItemClassification.trap,
     "lol brawl reference": ItemClassification.trap,
     "QuikSave Trap": ItemClassification.trap,
-    "Drop Trap": ItemClassification.trap
+    "Drop Trap": ItemClassification.trap,
+    "DVD Screensaver Trap": ItemClassification.trap,
 }
 
 class NNTItem(Item):
@@ -140,7 +142,7 @@ def create_all_items(world: NNTWorld) -> None:
     itempool += [world.create_item("Rescued Mudokon") for _ in range(world.required_muds)]
     
     # Add filler to the remaning slots, either as more Mudokons or traps.
-    trap_items = ["Shock Trap", "Trip Trap", "Drop Trap"]
+    trap_items = ["Shock Trap", "Trip Trap", "Drop Trap", "DVD Screensaver Trap"]
     if world.options.quiksave_trap: trap_items.append("QuikSave Trap")
     
     for _ in range(actual_filler):
