@@ -267,6 +267,7 @@ class TrapWeightsAnnoyance(OptionDict):
         "Spam Trap": "low",
         "Syntax Jumpscare Trap": "low",
         "Scott The Woz Trap": "low",
+        "DVD Screensaver Trap": "low",
     }
     valid_values = ["low", "medium", "high"]
     

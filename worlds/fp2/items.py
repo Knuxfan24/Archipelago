@@ -166,6 +166,7 @@ ITEM_NAME_TO_ID = {
     "Scott The Woz Trap": 615,
     "Wordle Trap": 616,
     "Flood Trap": 617,
+    "DVD Screensaver Trap": 618,
     
     "Crystals": 701,
     "Extra Life": 702,
@@ -333,6 +334,7 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Scott The Woz Trap": ItemClassification.trap,
     "Wordle Trap": ItemClassification.trap,
     "Flood Trap": ItemClassification.trap,
+    "DVD Screensaver Trap": ItemClassification.trap,
     
     "Crystals": ItemClassification.filler,
     "Extra Life": ItemClassification.filler,
