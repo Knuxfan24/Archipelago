@@ -176,6 +176,7 @@ def set_zulag2_entrance_rules(world: NNTWorld) -> None:
         add_rule(world.get_location("Zulag 2 ~ Door 1 - Mudokon 5"), lambda state: state.has("Levers", world.player))
     add_rule(world.get_location("Zulag 2 Door 1"), lambda state: state.has("Levers", world.player))
     set_rule(zulag2Door1Back, lambda state: state.has("Shrykull", world.player))
+    add_rule(zulag2Door1Back, lambda state: state.has("Levers", world.player))
     set_rule(zulag2Door2, lambda state: state.has("Levers", world.player))
     add_rule(zulag2Door2, lambda state: state.has("Grenades", world.player))
     set_rule(zulag2Door3, lambda state: state.has("Levers", world.player))
