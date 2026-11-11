@@ -22,6 +22,12 @@ class MudokonRequirement(Range):
     range_end = 100
     default = 50
     
+class GenocideRun(Toggle):
+    """
+    Whether Mudokon checks should be awarded for killing them instead of saving them. This will remove certain Mudokons from the location pool that have no way to be killed.
+    """
+    display_name = "Genocide Run"
+    
 class AreaClears(DefaultOnToggle):
     """
     Whether completing an area should send a check.
@@ -75,6 +81,7 @@ class JokeRingLink(Toggle):
 class NNTOptions(PerGameCommonOptions):
     goal: Goal
     muds_required: MudokonRequirement
+    genocide: GenocideRun
     area_clears: AreaClears
     extra_area_clears: ExtraAreaClears
     no_nnt_muds: OriginalMudsOnly

@@ -381,6 +381,7 @@ def create_all_locations(world: NNTWorld) -> None:
             for location in locations_to_remove:
                 region.locations.remove(location)
     
+    # TODO: Figure out which Mudokons can't be killed and remove their locations if we're doing a genocide run.
 
 def create_rupturefarms_locations(world: NNTWorld) -> None:
     rFarmsS1 = world.get_region("Rupture Farms (Secret Area 1)")

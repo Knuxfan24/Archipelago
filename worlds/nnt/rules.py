@@ -224,9 +224,12 @@ def set_zulag4_entrance_rules(world: NNTWorld) -> None:
         add_rule(world.get_location("Zulag 4 - Clear"), lambda state: state.has("Lifts", world.player))
         add_rule(world.get_location("Zulag 4 - Clear"), lambda state: state.has("Grenades", world.player))
     
-    # Checks if the player has enough rescued Mudokons and the abilities needed to complete The Boardroom or Alf's Escape.
+    # Checks if the player has enough rescued Mudokons/Mudokon Pops and the abilities needed to complete The Boardroom or Alf's Escape.
     def GoModeCheckBoardroom(state: CollectionState) -> bool:
-        if state.has("Rescued Mudokon", world.player, world.required_muds) == False: return False
+        if (world.options.genocide == 0):
+            if state.has("Rescued Mudokon", world.player, world.required_muds) == False: return False
+        else:
+            if state.has("Mudokon Pop", world.player, world.required_muds) == False: return False
         if state.has("Levers", world.player) == False: return False
         if state.has("Lifts", world.player) == False: return False
         if state.has("UXB Defusion", world.player) == False: return False
@@ -234,7 +237,10 @@ def set_zulag4_entrance_rules(world: NNTWorld) -> None:
         return True
     
     def GoModeCheckAlf(state: CollectionState) -> bool:
-        if state.has("Rescued Mudokon", world.player, world.required_muds) == False: return False
+        if (world.options.genocide == 0):
+            if state.has("Rescued Mudokon", world.player, world.required_muds) == False: return False
+        else:
+            if state.has("Mudokon Pop", world.player, world.required_muds) == False: return False
         if state.has("Levers", world.player) == False: return False
         if state.has("Lifts", world.player) == False: return False
         if state.has("UXB Defusion", world.player) == False: return False

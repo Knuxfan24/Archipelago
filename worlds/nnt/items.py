@@ -28,7 +28,8 @@ ITEM_NAME_TO_ID = {
     "Zulag 3": 107,
     "Zulag 4": 108,
     "Monsaic Lines": 109, # Only used if Extra Area Clear Checks are on. 
-    "Rescued Mudokon": 201,
+    "Rescued Mudokon": 201, # Progression item for a normal run.
+    "Mudokon Pop": 202, # Progression item for a genocide run.
     "Shock Trap": 301,
     "Trip Trap": 302,
     "lol brawl reference": 303,
@@ -58,6 +59,7 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Zulag 4": ItemClassification.progression,
     "Monsaic Lines": ItemClassification.progression,
     "Rescued Mudokon": ItemClassification.progression_skip_balancing | ItemClassification.filler,
+    "Mudokon Pop": ItemClassification.progression_skip_balancing | ItemClassification.filler,
     "Shock Trap": ItemClassification.trap,
     "Trip Trap": ItemClassification.trap,
     "lol brawl reference": ItemClassification.trap,
@@ -71,7 +73,8 @@ class NNTItem(Item):
 
 # TODO: Maybe create some junk items solely for this?
 def get_random_filler_item_name(world: NNTWorld) -> str:
-    return "Rescued Mudokon"
+    if (world.options.genocide == 0): return "Rescued Mudokon"
+    else: return "Mudokon Pop"
 
 def create_item_with_correct_classification(world: NNTWorld, name: str) -> NNTItem:
     classification = DEFAULT_ITEM_CLASSIFICATIONS[name]
@@ -139,7 +142,8 @@ def create_all_items(world: NNTWorld) -> None:
     actual_filler = needed_number_of_filler_items - world.required_muds
 
     # Add the required Mudokons to the item pool.
-    itempool += [world.create_item("Rescued Mudokon") for _ in range(world.required_muds)]
+    if (world.options.genocide == 0): itempool += [world.create_item("Rescued Mudokon") for _ in range(world.required_muds)]
+    else: itempool += [world.create_item("Mudokon Pop") for _ in range(world.required_muds)]
     
     # Add filler to the remaning slots, either as more Mudokons or traps.
     trap_items = ["Shock Trap", "Trip Trap", "Drop Trap", "DVD Screensaver Trap"]
@@ -156,7 +160,8 @@ def create_all_items(world: NNTWorld) -> None:
             
             itempool.append(world.create_item(trapItem))
         else:
-            itempool.append(NNTItem("Rescued Mudokon", ItemClassification.filler, ITEM_NAME_TO_ID["Rescued Mudokon"], world.player))
+            if (world.options.genocide == 0): itempool.append(NNTItem("Rescued Mudokon", ItemClassification.filler, ITEM_NAME_TO_ID["Rescued Mudokon"], world.player))
+            else: itempool.append(NNTItem("Mudokon Pop", ItemClassification.filler, ITEM_NAME_TO_ID["Mudokon Pop"], world.player))
 
     # Add our pool to the multiworld's.
     world.multiworld.itempool += itempool
