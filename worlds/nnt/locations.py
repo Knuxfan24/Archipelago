@@ -343,6 +343,24 @@ LOCATION_NAME_TO_ID = {
     "Zulag 2 - Clear": 1050,
     "Zulag 3 - Clear": 1051,
     "Zulag 4 - Clear": 1052,
+    
+    "Paramonian Trial 1 Bell Song Stone": 1101,
+    "Paramonian Trial 2 Bell Song Stone": 1102,
+    "Paramonian Trial 3 Bell Song Stone": 1103,
+    "Paramonian Trial 4 Bell Song Stone": 1104,
+    "Paramonian Trial 5 Bell Song Stone": 1105,
+    "Paramonian Trial 6 Bell Song Stone": 1106,
+    
+    "Scrabanian Trial 1 Bell Song Stone": 1111,
+    "Scrabanian Trial 2 Bell Song Stone": 1112,
+    "Scrabanian Trial 3 Bell Song Stone": 1113,
+    "Scrabanian Trial 4 Bell Song Stone": 1114,
+    "Scrabanian Trial 5 Bell Song Stone": 1115,
+    "Scrabanian Trial 6 Bell Song Stone": 1116,
+    "Scrabanian Trial 7 Bell Song Stone": 1117,
+    "Scrabanian Trial 8 Bell Song Stone": 1118,
+    
+    "Monsaic Lines Bell Song Stone": 1120,
 }
 
 class NNTLocation(Location):
@@ -665,11 +683,11 @@ def create_paramonia_locations(world: NNTWorld) -> None:
     paramoniaTrial5Secret = world.get_region("Paramonian Temple Trial 5 (Secret Area)")
     paramoniaTrial6 = world.get_region("Paramonian Temple Trial 6")
     
-    paramoniaTrial1.add_locations(get_location_names_with_ids(["Paramonian Trial 1"]), NNTLocation)
-    paramoniaTrial2.add_locations(get_location_names_with_ids(["Paramonian Trial 2"]), NNTLocation)
-    paramoniaTrial3.add_locations(get_location_names_with_ids(["Paramonian Trial 3"]), NNTLocation)
-    paramoniaTrial4.add_locations(get_location_names_with_ids(["Paramonian Trial 4"]), NNTLocation)
-    paramoniaTrial5.add_locations(get_location_names_with_ids(["Paramonian Trial 5"]), NNTLocation)
+    paramoniaTrial1.add_locations(get_location_names_with_ids(["Paramonian Trial 1"]), NNTLocation); paramoniaTrial1.add_locations(get_location_names_with_ids(["Paramonian Trial 1 Bell Song Stone"]), NNTLocation)
+    paramoniaTrial2.add_locations(get_location_names_with_ids(["Paramonian Trial 2"]), NNTLocation); paramoniaTrial2.add_locations(get_location_names_with_ids(["Paramonian Trial 2 Bell Song Stone"]), NNTLocation)
+    paramoniaTrial3.add_locations(get_location_names_with_ids(["Paramonian Trial 3"]), NNTLocation); paramoniaTrial3.add_locations(get_location_names_with_ids(["Paramonian Trial 3 Bell Song Stone"]), NNTLocation)
+    paramoniaTrial4.add_locations(get_location_names_with_ids(["Paramonian Trial 4"]), NNTLocation); paramoniaTrial4.add_locations(get_location_names_with_ids(["Paramonian Trial 4 Bell Song Stone"]), NNTLocation)
+    paramoniaTrial5.add_locations(get_location_names_with_ids(["Paramonian Trial 5"]), NNTLocation); paramoniaTrial5.add_locations(get_location_names_with_ids(["Paramonian Trial 5 Bell Song Stone"]), NNTLocation)
     paramoniaTrial5Secret.add_locations(get_location_names_with_ids(
         [
         "Paramonian Trial 5 ~ Secret Area - Mudokon 1",
@@ -683,7 +701,7 @@ def create_paramonia_locations(world: NNTWorld) -> None:
         "Paramonian Trial 5 ~ Secret Area - Mudokon 9",
         ]
     ))
-    paramoniaTrial6.add_locations(get_location_names_with_ids(["Paramonian Trial 6"]), NNTLocation)
+    paramoniaTrial6.add_locations(get_location_names_with_ids(["Paramonian Trial 6"]), NNTLocation); paramoniaTrial6.add_locations(get_location_names_with_ids(["Paramonian Trial 6 Bell Song Stone"]), NNTLocation)
     
 def create_scrabania_locations(world: NNTWorld) -> None:
     scrabaniaStartSecret = world.get_region("Scrabanian Temple Entrance (Secret Area)")
@@ -707,14 +725,16 @@ def create_scrabania_locations(world: NNTWorld) -> None:
         ]
     ))
     
-    scrabaniaTrial1.add_locations(get_location_names_with_ids(["Scrabanian Trial 1"]), NNTLocation)
-    scrabaniaTrial2.add_locations(get_location_names_with_ids(["Scrabanian Trial 2"]), NNTLocation)
-    scrabaniaTrial3.add_locations(get_location_names_with_ids(["Scrabanian Trial 3"]), NNTLocation)
-    scrabaniaTrial4.add_locations(get_location_names_with_ids(["Scrabanian Trial 4"]), NNTLocation)
-    scrabaniaTrial5.add_locations(get_location_names_with_ids(["Scrabanian Trial 5"]), NNTLocation)
-    scrabaniaTrial6.add_locations(get_location_names_with_ids(["Scrabanian Trial 6"]), NNTLocation)
+    scrabaniaTrial1.add_locations(get_location_names_with_ids(["Scrabanian Trial 1"]), NNTLocation); scrabaniaTrial1.add_locations(get_location_names_with_ids(["Scrabanian Trial 1 Bell Song Stone"]), NNTLocation)
+    scrabaniaTrial2.add_locations(get_location_names_with_ids(["Scrabanian Trial 2"]), NNTLocation); scrabaniaTrial2.add_locations(get_location_names_with_ids(["Scrabanian Trial 2 Bell Song Stone"]), NNTLocation)
+    scrabaniaTrial3.add_locations(get_location_names_with_ids(["Scrabanian Trial 3"]), NNTLocation); scrabaniaTrial3.add_locations(get_location_names_with_ids(["Scrabanian Trial 3 Bell Song Stone"]), NNTLocation)
+    scrabaniaTrial4.add_locations(get_location_names_with_ids(["Scrabanian Trial 4"]), NNTLocation); scrabaniaTrial4.add_locations(get_location_names_with_ids(["Scrabanian Trial 4 Bell Song Stone"]), NNTLocation)
+    scrabaniaTrial5.add_locations(get_location_names_with_ids(["Scrabanian Trial 5"]), NNTLocation); scrabaniaTrial5.add_locations(get_location_names_with_ids(["Scrabanian Trial 5 Bell Song Stone"]), NNTLocation)
+    scrabaniaTrial6.add_locations(get_location_names_with_ids(["Scrabanian Trial 6"]), NNTLocation); scrabaniaTrial6.add_locations(get_location_names_with_ids(["Scrabanian Trial 6 Bell Song Stone"]), NNTLocation)
+    scrabaniaTrial7.add_locations(get_location_names_with_ids(["Scrabanian Trial 7"]), NNTLocation); scrabaniaTrial7.add_locations(get_location_names_with_ids(["Scrabanian Trial 7 Bell Song Stone"]), NNTLocation)
+    scrabaniaTrial8.add_locations(get_location_names_with_ids(["Scrabanian Trial 8"]), NNTLocation); scrabaniaTrial8.add_locations(get_location_names_with_ids(["Scrabanian Trial 8 Bell Song Stone"]), NNTLocation)
+    
     if (world.options.genocide == 0):
-        scrabaniaTrial7.add_locations(get_location_names_with_ids(["Scrabanian Trial 7"]), NNTLocation)
         scrabaniaTrial7Secret.add_locations(get_location_names_with_ids(
             [
             "Scrabanian Trial 7 ~ Secret Area - Mudokon 1",
@@ -724,7 +744,6 @@ def create_scrabania_locations(world: NNTWorld) -> None:
             "Scrabanian Trial 7 ~ Secret Area - Mudokon 5",
             ]
         ))
-        scrabaniaTrial8.add_locations(get_location_names_with_ids(["Scrabanian Trial 8"]), NNTLocation)
         scrabaniaTrial8Secret.add_locations(get_location_names_with_ids(
             [
             "Scrabanian Trial 8 ~ Secret Area - Mudokon 1",
@@ -1096,6 +1115,8 @@ def create_areaclear_locations(world: NNTWorld):
     if (world.options.extra_area_clears == 1):
         mLines = world.get_region("Monsaic Lines")
         mLines.add_locations(get_location_names_with_ids(["Monsaic Lines - Clear"]), NNTLocation)
+        if (world.options.bell_song_items):
+            mLines.add_locations(get_location_names_with_ids(["Monsaic Lines Bell Song Stone"]), NNTLocation)
         
     if (world.options.extra_area_clears == 1):
         paramonia = world.get_region("Paramonia")

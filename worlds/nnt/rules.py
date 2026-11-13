@@ -23,6 +23,8 @@ def set_all_rules(world: NNTWorld) -> None:
         add_rule(mLines, lambda state: state.has("Levers", world.player))
         add_rule(mLines, lambda state: state.has("Possession", world.player))
         add_rule(mLines, lambda state: state.has("Lifts", world.player))
+        if (world.options.bell_song_items):
+            add_rule(mLines, lambda state: state.has("Monsaic Lines Bell Song", world.player))
 
 def set_rupturefarms_entrance_rules(world: NNTWorld) -> None:
     rFarmAccess = world.get_entrance("Menu to Rupture Farms")
@@ -114,6 +116,20 @@ def set_paramonia_entrance_rules(world: NNTWorld) -> None:
         add_rule(world.get_location("Paramonia - Clear"), lambda state: state.has("Lifts", world.player))
         add_rule(world.get_location("Paramonia - Clear"), lambda state: state.has("UXB Defusion", world.player))
         add_rule(world.get_location("Paramonia - Clear"), lambda state: state.has("Possession", world.player))
+        
+    if (world.options.bell_song_items == 1):
+        add_rule(world.get_location("Paramonian Trial 1"), lambda state: state.has("Paramonian Trial 1 Bell Song", world.player))
+        add_rule(world.get_location("Paramonian Trial 2"), lambda state: state.has("Paramonian Trial 2 Bell Song", world.player))
+        add_rule(world.get_location("Paramonian Trial 3"), lambda state: state.has("Paramonian Trial 3 Bell Song", world.player))
+        add_rule(world.get_location("Paramonian Trial 4"), lambda state: state.has("Paramonian Trial 4 Bell Song", world.player))
+        add_rule(world.get_location("Paramonian Trial 5"), lambda state: state.has("Paramonian Trial 5 Bell Song", world.player))
+        add_rule(world.get_location("Paramonian Trial 6"), lambda state: state.has("Paramonian Trial 6 Bell Song", world.player))
+        add_rule(paramoniaNestRequirements, lambda state: state.has("Paramonian Trial 1 Bell Song", world.player))
+        add_rule(paramoniaNestRequirements, lambda state: state.has("Paramonian Trial 2 Bell Song", world.player))
+        add_rule(paramoniaNestRequirements, lambda state: state.has("Paramonian Trial 3 Bell Song", world.player))
+        add_rule(paramoniaNestRequirements, lambda state: state.has("Paramonian Trial 4 Bell Song", world.player))
+        add_rule(paramoniaNestRequirements, lambda state: state.has("Paramonian Trial 5 Bell Song", world.player))
+        add_rule(paramoniaNestRequirements, lambda state: state.has("Paramonian Trial 6 Bell Song", world.player))
     
 def set_scrabania_entrance_rules(world: NNTWorld) -> None:
     scrabaniaAccess = world.get_entrance("Menu to Scrabania")
@@ -143,6 +159,24 @@ def set_scrabania_entrance_rules(world: NNTWorld) -> None:
         add_rule(world.get_location("Scrabania - Clear"), lambda state: state.has("Lifts", world.player))
         add_rule(world.get_location("Scrabania - Clear"), lambda state: state.has("Spirit Rings", world.player))
         add_rule(world.get_location("Scrabania - Clear"), lambda state: state.has("Rocks", world.player))
+        
+    if (world.options.bell_song_items == 1):
+        add_rule(world.get_location("Scrabanian Trial 1"), lambda state: state.has("Scrabanian Trial 1 Bell Song", world.player))
+        add_rule(world.get_location("Scrabanian Trial 2"), lambda state: state.has("Scrabanian Trial 2 Bell Song", world.player))
+        add_rule(world.get_location("Scrabanian Trial 3"), lambda state: state.has("Scrabanian Trial 3 Bell Song", world.player))
+        add_rule(world.get_location("Scrabanian Trial 4"), lambda state: state.has("Scrabanian Trial 4 Bell Song", world.player))
+        add_rule(world.get_location("Scrabanian Trial 5"), lambda state: state.has("Scrabanian Trial 5 Bell Song", world.player))
+        add_rule(world.get_location("Scrabanian Trial 6"), lambda state: state.has("Scrabanian Trial 6 Bell Song", world.player))
+        add_rule(world.get_location("Scrabanian Trial 7"), lambda state: state.has("Scrabanian Trial 7 Bell Song", world.player))
+        add_rule(world.get_location("Scrabanian Trial 8"), lambda state: state.has("Scrabanian Trial 8 Bell Song", world.player))
+        add_rule(scrabaniaNestRequirements, lambda state: state.has("Scrabanian Trial 1 Bell Song", world.player))
+        add_rule(scrabaniaNestRequirements, lambda state: state.has("Scrabanian Trial 2 Bell Song", world.player))
+        add_rule(scrabaniaNestRequirements, lambda state: state.has("Scrabanian Trial 3 Bell Song", world.player))
+        add_rule(scrabaniaNestRequirements, lambda state: state.has("Scrabanian Trial 4 Bell Song", world.player))
+        add_rule(scrabaniaNestRequirements, lambda state: state.has("Scrabanian Trial 5 Bell Song", world.player))
+        add_rule(scrabaniaNestRequirements, lambda state: state.has("Scrabanian Trial 6 Bell Song", world.player))
+        add_rule(scrabaniaNestRequirements, lambda state: state.has("Scrabanian Trial 7 Bell Song", world.player))
+        add_rule(scrabaniaNestRequirements, lambda state: state.has("Scrabanian Trial 8 Bell Song", world.player))
 
 def set_zulag1_entrance_rules(world: NNTWorld) -> None:
     zulag1Access = world.get_entrance("Menu to Zulag 1")

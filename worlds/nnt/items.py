@@ -19,6 +19,21 @@ ITEM_NAME_TO_ID = {
     "Spirit Rings": 7,
     "Meat": 8,
     "Shrykull": 9,
+    "Paramonian Trial 1 Bell Song": 10,
+    "Paramonian Trial 2 Bell Song": 11,
+    "Paramonian Trial 3 Bell Song": 12,
+    "Paramonian Trial 4 Bell Song": 13,
+    "Paramonian Trial 5 Bell Song": 14,
+    "Paramonian Trial 6 Bell Song": 15,
+    "Scrabanian Trial 1 Bell Song": 16,
+    "Scrabanian Trial 2 Bell Song": 17,
+    "Scrabanian Trial 3 Bell Song": 18,
+    "Scrabanian Trial 4 Bell Song": 19,
+    "Scrabanian Trial 5 Bell Song": 20,
+    "Scrabanian Trial 6 Bell Song": 21,
+    "Scrabanian Trial 7 Bell Song": 22,
+    "Scrabanian Trial 8 Bell Song": 23,
+    "Monsaic Lines Bell Song": 24,
     "Rupture Farms": 101,
     "Stockyards": 102,
     "Paramonia": 103,
@@ -49,6 +64,21 @@ DEFAULT_ITEM_CLASSIFICATIONS = {
     "Spirit Rings": ItemClassification.progression,
     "Meat": ItemClassification.progression,
     "Shrykull": ItemClassification.progression,
+    "Paramonian Trial 1 Bell Song": ItemClassification.progression,
+    "Paramonian Trial 2 Bell Song": ItemClassification.progression,
+    "Paramonian Trial 3 Bell Song": ItemClassification.progression,
+    "Paramonian Trial 4 Bell Song": ItemClassification.progression,
+    "Paramonian Trial 5 Bell Song": ItemClassification.progression,
+    "Paramonian Trial 6 Bell Song": ItemClassification.progression,
+    "Scrabanian Trial 1 Bell Song": ItemClassification.progression,
+    "Scrabanian Trial 2 Bell Song": ItemClassification.progression,
+    "Scrabanian Trial 3 Bell Song": ItemClassification.progression,
+    "Scrabanian Trial 4 Bell Song": ItemClassification.progression,
+    "Scrabanian Trial 5 Bell Song": ItemClassification.progression,
+    "Scrabanian Trial 6 Bell Song": ItemClassification.progression,
+    "Scrabanian Trial 7 Bell Song": ItemClassification.progression,
+    "Scrabanian Trial 8 Bell Song": ItemClassification.progression,
+    "Monsaic Lines Bell Song": ItemClassification.progression,
     "Rupture Farms": ItemClassification.progression,
     "Stockyards": ItemClassification.progression,
     "Paramonia": ItemClassification.progression,
@@ -133,6 +163,24 @@ def create_all_items(world: NNTWorld) -> None:
             
     # If we're using the Extra Area Clears option, then add the item for the Monsaic Lines too.
     if (world.options.extra_area_clears == 1 and world.options.area_clears == 1): itempool.append(world.create_item("Monsaic Lines"))
+            
+    # Add the Bell Songs if we're using that option.
+    if (world.options.bell_song_items):
+        itempool.append(world.create_item("Paramonian Trial 1 Bell Song"))
+        itempool.append(world.create_item("Paramonian Trial 2 Bell Song"))
+        itempool.append(world.create_item("Paramonian Trial 3 Bell Song"))
+        itempool.append(world.create_item("Paramonian Trial 4 Bell Song"))
+        itempool.append(world.create_item("Paramonian Trial 5 Bell Song"))
+        itempool.append(world.create_item("Paramonian Trial 6 Bell Song"))
+        itempool.append(world.create_item("Scrabanian Trial 1 Bell Song"))
+        itempool.append(world.create_item("Scrabanian Trial 2 Bell Song"))
+        itempool.append(world.create_item("Scrabanian Trial 3 Bell Song"))
+        itempool.append(world.create_item("Scrabanian Trial 4 Bell Song"))
+        itempool.append(world.create_item("Scrabanian Trial 5 Bell Song"))
+        itempool.append(world.create_item("Scrabanian Trial 6 Bell Song"))
+        itempool.append(world.create_item("Scrabanian Trial 7 Bell Song"))
+        itempool.append(world.create_item("Scrabanian Trial 8 Bell Song"))
+        if (world.options.extra_area_clears == 1 and world.options.area_clears == 1): itempool.append(world.create_item("Monsaic Lines Bell Song"))
             
     # Determine how many remaining locations we have.
     needed_number_of_filler_items = len(world.multiworld.get_unfilled_locations(world.player)) - len(itempool)

@@ -40,6 +40,12 @@ class ExtraAreaClears(Toggle):
     """
     display_name = "Extra Area Clear Checks"
     
+class BellSongs(Toggle):
+    """
+    Adds extra locations for the Bell Song stones in Monsaic Lines, Paramonia Trials and Scrabania Trials. This also makes the actual bell song an item in the multiworld.
+    """
+    display_name = "Bell Song Items and Locations"
+    
 class OriginalMudsOnly(Toggle):
     """
     Removes the locations for the extra Mudokons that New 'n' Tasty added to bring the original 99 up to 299.
@@ -84,6 +90,7 @@ class NNTOptions(PerGameCommonOptions):
     genocide: GenocideRun
     area_clears: AreaClears
     extra_area_clears: ExtraAreaClears
+    bell_song_items: BellSongs
     no_nnt_muds: OriginalMudsOnly
     filler_traps: TrapChance
     death_link: DeathLink
