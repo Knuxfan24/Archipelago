@@ -381,7 +381,7 @@ def create_all_locations(world: NNTWorld) -> None:
             for location in locations_to_remove:
                 region.locations.remove(location)
     
-    # TODO: Figure out which Mudokons can't be killed and remove their locations if we're doing a genocide run.
+    # TODO: Figure out which Mudokons can't be killed and remove their locations if we're doing a genocide run. Need to do the four Zulags.
 
 def create_rupturefarms_locations(world: NNTWorld) -> None:
     rFarmsS1 = world.get_region("Rupture Farms (Secret Area 1)")
@@ -482,18 +482,19 @@ def create_rupturefarms_locations(world: NNTWorld) -> None:
         ]
     )
     
-    rFarmsS3Muds = get_location_names_with_ids(
-        [
-            "Rupture Farms Escape ~ Secret Area 3 - Mudokon 1",
-            "Rupture Farms Escape ~ Secret Area 3 - Mudokon 2",
-            "Rupture Farms Escape ~ Secret Area 3 - Mudokon 3",
-            "Rupture Farms Escape ~ Secret Area 3 - Mudokon 4",
-            "Rupture Farms Escape ~ Secret Area 3 - Mudokon 5",
-            "Rupture Farms Escape ~ Secret Area 3 - Mudokon 6",
-            "Rupture Farms Escape ~ Secret Area 3 - Mudokon 7",
-            "Rupture Farms Escape ~ Secret Area 3 - Mudokon 8",
-        ]
-    )
+    if (world.options.genocide == 0):
+        rFarmsS3Muds = get_location_names_with_ids(
+            [
+                "Rupture Farms Escape ~ Secret Area 3 - Mudokon 1",
+                "Rupture Farms Escape ~ Secret Area 3 - Mudokon 2",
+                "Rupture Farms Escape ~ Secret Area 3 - Mudokon 3",
+                "Rupture Farms Escape ~ Secret Area 3 - Mudokon 4",
+                "Rupture Farms Escape ~ Secret Area 3 - Mudokon 5",
+                "Rupture Farms Escape ~ Secret Area 3 - Mudokon 6",
+                "Rupture Farms Escape ~ Secret Area 3 - Mudokon 7",
+                "Rupture Farms Escape ~ Secret Area 3 - Mudokon 8",
+            ]
+        )
     
     rFarmsS4Muds = get_location_names_with_ids(
         [
@@ -535,7 +536,7 @@ def create_rupturefarms_locations(world: NNTWorld) -> None:
     
     rFarmsS1.add_locations(rFarmsS1Muds, NNTLocation)
     rFarmsS2.add_locations(rFarmsS2Muds, NNTLocation)
-    rFarmsS3.add_locations(rFarmsS3Muds, NNTLocation)
+    if (world.options.genocide == 0): rFarmsS3.add_locations(rFarmsS3Muds, NNTLocation)
     rFarmsS4.add_locations(rFarmsS4Muds, NNTLocation)
     rFarmsInteractables.add_locations(rFarmsInteractablesMuds, NNTLocation)
     rFarmsGameSpeak.add_locations(rFarmsGameSpeakMuds, NNTLocation)
@@ -613,18 +614,26 @@ def create_stockyards_locations(world: NNTWorld) -> None:
         ]
     )
     
-    ffZoneS5Muds = get_location_names_with_ids(
-        [
-        "Free Fire Zone ~ Secret Area 5 - Mudokon 1",
-        "Free Fire Zone ~ Secret Area 5 - Mudokon 2",
-        "Free Fire Zone ~ Secret Area 5 - Mudokon 3",
-        "Free Fire Zone ~ Secret Area 5 - Mudokon 4",
-        "Free Fire Zone ~ Secret Area 5 - Mudokon 5",
-        "Free Fire Zone ~ Secret Area 5 - Mudokon 6",
-        "Free Fire Zone ~ Secret Area 5 - Mudokon 7",
-        "Free Fire Zone ~ Secret Area 5 - Mudokon 8",
-        ]
-    )
+    if (world.options.genocide == 0):
+        ffZoneS5Muds = get_location_names_with_ids(
+            [
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 1",
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 2",
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 3",
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 4",
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 5",
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 6",
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 7",
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 8",
+            ]
+        )
+    else:
+        ffZoneS5Muds = get_location_names_with_ids(
+            [
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 2",
+            "Free Fire Zone ~ Secret Area 5 - Mudokon 3",
+            ]
+        )
     
     ffZoneS6Muds = get_location_names_with_ids(
         [
@@ -704,27 +713,28 @@ def create_scrabania_locations(world: NNTWorld) -> None:
     scrabaniaTrial4.add_locations(get_location_names_with_ids(["Scrabanian Trial 4"]), NNTLocation)
     scrabaniaTrial5.add_locations(get_location_names_with_ids(["Scrabanian Trial 5"]), NNTLocation)
     scrabaniaTrial6.add_locations(get_location_names_with_ids(["Scrabanian Trial 6"]), NNTLocation)
-    scrabaniaTrial7.add_locations(get_location_names_with_ids(["Scrabanian Trial 7"]), NNTLocation)
-    scrabaniaTrial7Secret.add_locations(get_location_names_with_ids(
-        [
-        "Scrabanian Trial 7 ~ Secret Area - Mudokon 1",
-        "Scrabanian Trial 7 ~ Secret Area - Mudokon 2",
-        "Scrabanian Trial 7 ~ Secret Area - Mudokon 3",
-        "Scrabanian Trial 7 ~ Secret Area - Mudokon 4",
-        "Scrabanian Trial 7 ~ Secret Area - Mudokon 5",
-        ]
-    ))
-    scrabaniaTrial8.add_locations(get_location_names_with_ids(["Scrabanian Trial 8"]), NNTLocation)
-    scrabaniaTrial8Secret.add_locations(get_location_names_with_ids(
-        [
-        "Scrabanian Trial 8 ~ Secret Area - Mudokon 1",
-        "Scrabanian Trial 8 ~ Secret Area - Mudokon 2",
-        "Scrabanian Trial 8 ~ Secret Area - Mudokon 3",
-        "Scrabanian Trial 8 ~ Secret Area - Mudokon 4",
-        "Scrabanian Trial 8 ~ Secret Area - Mudokon 5",
-        "Scrabanian Trial 8 ~ Secret Area - Mudokon 6",
-        ]
-    ))
+    if (world.options.genocide == 0):
+        scrabaniaTrial7.add_locations(get_location_names_with_ids(["Scrabanian Trial 7"]), NNTLocation)
+        scrabaniaTrial7Secret.add_locations(get_location_names_with_ids(
+            [
+            "Scrabanian Trial 7 ~ Secret Area - Mudokon 1",
+            "Scrabanian Trial 7 ~ Secret Area - Mudokon 2",
+            "Scrabanian Trial 7 ~ Secret Area - Mudokon 3",
+            "Scrabanian Trial 7 ~ Secret Area - Mudokon 4",
+            "Scrabanian Trial 7 ~ Secret Area - Mudokon 5",
+            ]
+        ))
+        scrabaniaTrial8.add_locations(get_location_names_with_ids(["Scrabanian Trial 8"]), NNTLocation)
+        scrabaniaTrial8Secret.add_locations(get_location_names_with_ids(
+            [
+            "Scrabanian Trial 8 ~ Secret Area - Mudokon 1",
+            "Scrabanian Trial 8 ~ Secret Area - Mudokon 2",
+            "Scrabanian Trial 8 ~ Secret Area - Mudokon 3",
+            "Scrabanian Trial 8 ~ Secret Area - Mudokon 4",
+            "Scrabanian Trial 8 ~ Secret Area - Mudokon 5",
+            "Scrabanian Trial 8 ~ Secret Area - Mudokon 6",
+            ]
+        ))
     
 def create_zulag1_locations(world: NNTWorld) -> None:
     zulag1 = world.get_region("Zulag 1")

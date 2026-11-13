@@ -43,9 +43,16 @@ def set_rupturefarms_entrance_rules(world: NNTWorld) -> None:
     set_rule(rFarmS4Requirements, lambda state: state.has("Grenades", world.player))
     set_rule(rFarmsInteractablesRequirements, lambda state: state.has("Lifts", world.player))
     set_rule(rFarmS5Requirements, lambda state: state.has("Grenades", world.player))
-    set_rule(rFarmsUXBRequirements, lambda state: state.has("UXB Defusion", world.player))
+    if (world.options.genocide == 0): set_rule(rFarmsUXBRequirements, lambda state: state.has("UXB Defusion", world.player)) # These can be rescued without UXB Defusion with some QuikSave shenanigans. One for glitched logic if I add that?
     add_rule(rFarmS5Requirements, lambda state: state.has("Possession", world.player))
     set_rule(rFarmS6Requirements, lambda state: state.has("Possession", world.player))
+    
+    if (world.options.genocide == 1):
+        add_rule(world.get_location("Rupture Farms Escape ~ GameSpeak Tutorial - Mudokon 1"), lambda state: state.has("Grenades", world.player))
+        if (world.options.no_nnt_muds == 0):
+            add_rule(world.get_location("Rupture Farms Escape ~ GameSpeak Tutorial - Mudokon 2"), lambda state: state.has("Grenades", world.player))
+            add_rule(world.get_location("Rupture Farms Escape ~ GameSpeak Tutorial - Mudokon 3"), lambda state: state.has("Grenades", world.player))
+            add_rule(world.get_location("Rupture Farms Escape ~ GameSpeak Tutorial - Mudokon 4"), lambda state: state.has("Grenades", world.player))
     
     if (world.options.area_clears == 1):
         add_rule(world.get_location("Rupture Farms - Clear"), lambda state: state.has("Lifts", world.player))
@@ -64,10 +71,11 @@ def set_stockyards_entrance_rules(world: NNTWorld) -> None:
     set_rule(stockyardsS1Requirements, lambda state: state.has("Levers", world.player))
     set_rule(ffZoneS1Requirements, lambda state: state.has("Levers", world.player))
     add_rule(ffZoneS1Requirements, lambda state: state.has("Possession", world.player))
-    set_rule(ffZoneS2Requirements, lambda state: state.has("Possession", world.player))
+    set_rule(ffZoneS2Requirements, lambda state: state.has("Possession", world.player)) # TODO: Some of these could be annoying to kill in a Genocide run.
+    # TODO: Secret Area 3's Mudokons might not be killable?
     set_rule(ffZoneRockRequirements, lambda state: state.has("Rocks", world.player))
     set_rule(ffZoneS4Requirements, lambda state: state.has("Possession", world.player))
-    if (world.options.no_nnt_muds == 0):
+    if (world.options.no_nnt_muds == 0 and world.options.genocide == 0):
         add_rule(world.get_location("Free Fire Zone ~ Secret Area 5 - Mudokon 2"), lambda state: state.has("Levers", world.player))
         add_rule(world.get_location("Free Fire Zone ~ Secret Area 5 - Mudokon 3"), lambda state: state.has("Levers", world.player))
     set_rule(ffZoneS6Requirements, lambda state: state.has("Levers", world.player))
@@ -118,8 +126,8 @@ def set_scrabania_entrance_rules(world: NNTWorld) -> None:
     scrabaniaNestRequirements = world.get_entrance("Scrabania Temple HUB to Nests")
     
     set_rule(scrabaniaAccess, lambda state: state.has("Scrabania", world.player))
+    add_rule(scrabaniaAccess, lambda state: state.has("UXB Defusion", world.player)) # Scrabania's HUB can be accessed without UXB Defusion, but it requires a slightly precise jump. One for glitched logic if I add that?
     set_rule(scrabaniaStartSecretRequirements, lambda state: state.has("Possession", world.player))
-    add_rule(scrabaniaStartSecretRequirements, lambda state: state.has("UXB Defusion", world.player))
     set_rule(scrabaniaTempleHubRequirements, lambda state: state.has("Levers", world.player))
     add_rule(scrabaniaTempleHubRequirements, lambda state: state.has("Possession", world.player))
     set_rule(scrabaniaTrial1Requirements, lambda state: state.has("Rocks", world.player))
